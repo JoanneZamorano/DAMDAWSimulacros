@@ -8,42 +8,67 @@ const subjects = [
     title: 'Lenguaje de Marcas',
     description: 'HTML, CSS y fundamentos del desarrollo web',
     icon: Code,
-    available: true, // Already available
+    simulacros: {
+      junio: '/quiz/lenguaje-marcas',
+      diciembreI: null,
+      diciembreII: null,
+    }
   },
   {
     id: 'programacion',
     title: 'Programación',
     description: 'Conceptos de programación y algoritmos',
     icon: Terminal,
-    available: true, // Set to available
+    simulacros: {
+      junio: '/quiz/programacion',
+      diciembreI: null,
+      diciembreII: null,
+    }
   },
   {
     id: 'entornos-desarrollo',
     title: 'Entornos de Desarrollo',
     description: 'IDEs, control de versiones y herramientas',
     icon: Hammer,
-    available: false,
+    simulacros: {
+      junio: null,
+      diciembreI: null,
+      diciembreII: null,
+    }
   },
   {
     id: 'bases-datos',
     title: 'Bases de Datos',
     description: 'SQL, diseño y gestión de bases de datos',
     icon: Database,
-    available: false,
+    simulacros: {
+      junio: null,
+      diciembreI: null,
+      diciembreII: null,
+    }
   },
   {
     id: 'python',
     title: 'Python',
     description: 'Programación en Python y sus librerías',
     icon: BookOpen,
-    available: true, // Activated Python quiz
+    simulacros: {
+      junio: '/quiz/python',
+      diciembreI: null,
+      diciembreII: null,
+    }
   },
   {
     id: 'sistemas-informaticos',
     title: 'Sistemas Informáticos',
     description: 'Sistemas operativos y arquitectura',
     icon: Server,
-    available: true, // Set to available
+    simulacros: {
+      junio: '/quiz/sistemas-informaticos',
+      diciembreI: null,
+      diciembreII: null,
+    },
+    specialLabel: 'Proyecto II'
   },
 ]
 
@@ -56,21 +81,23 @@ export default function HomePage() {
             DAM/DAW <span className="text-blue-500">SIMULACROS</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            1er curso
+            Pon a prueba tus conocimientos con exámenes interactivos de todas las asignaturas
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {subjects.map((subject) => {
             const Icon = subject.icon
-            const content = (
-              <Card className="h-full p-6 bg-card border-border hover:border-blue-500 transition-all group">
+            const hasAnySimulacro = Object.values(subject.simulacros).some(link => link !== null)
+            
+            return (
+              <Card key={subject.id} className="h-full p-6 bg-card border-border hover:border-blue-500/50 transition-all">
                 <div className="flex flex-col h-full space-y-4">
                   <div className="flex items-start justify-between">
-                    <div className="p-3 rounded-lg bg-blue-500/10 text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all">
+                    <div className="p-3 rounded-lg bg-blue-500/10 text-blue-500">
                       <Icon className="w-6 h-6" />
                     </div>
-                    {!subject.available && (
+                    {!hasAnySimulacro && (
                       <span className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">
                         Próximamente
                       </span>
@@ -86,29 +113,51 @@ export default function HomePage() {
                     </p>
                   </div>
 
-                  {subject.available && (
-                    <div className="pt-2">
-                      <span className="text-blue-500 font-semibold group-hover:underline">
-                        Iniciar examen →
-                      </span>
-                    </div>
-                  )}
+                  <div className="pt-2 space-y-2 border-t border-border">
+                    {/* Simulacro Junio */}
+                    {subject.simulacros.junio ? (
+                      <Link 
+                        href={subject.simulacros.junio}
+                        className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                      >
+                        → Simulacro Junio{subject.specialLabel ? ` (${subject.specialLabel})` : ''}
+                      </Link>
+                    ) : (
+                      <div className="text-sm text-muted-foreground/50">
+                        → Simulacro Junio: Próximamente
+                      </div>
+                    )}
+
+                    {/* Simulacro Diciembre I */}
+                    {subject.simulacros.diciembreI ? (
+                      <Link 
+                        href={subject.simulacros.diciembreI}
+                        className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                      >
+                        → Simulacro Diciembre I
+                      </Link>
+                    ) : (
+                      <div className="text-sm text-muted-foreground/50">
+                        → Simulacro Diciembre I: Próximamente
+                      </div>
+                    )}
+
+                    {/* Simulacro Diciembre II */}
+                    {subject.simulacros.diciembreII ? (
+                      <Link 
+                        href={subject.simulacros.diciembreII}
+                        className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                      >
+                        → Simulacro Diciembre II
+                      </Link>
+                    ) : (
+                      <div className="text-sm text-muted-foreground/50">
+                        → Simulacro Diciembre II: Próximamente
+                      </div>
+                    )}
+                  </div>
                 </div>
               </Card>
-            )
-
-            if (subject.available) {
-              return (
-                <Link key={subject.id} href={`/quiz/${subject.id}`}>
-                  {content}
-                </Link>
-              )
-            }
-
-            return (
-              <div key={subject.id} className="cursor-not-allowed opacity-60">
-                {content}
-              </div>
             )
           })}
         </div>
@@ -116,7 +165,7 @@ export default function HomePage() {
         <div className="mt-12 text-center">
           <Card className="inline-block p-6 bg-card border-border">
             <p className="text-sm text-muted-foreground">
-              2025
+              Más simulacros se añadirán próximamente
             </p>
           </Card>
         </div>
