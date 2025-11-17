@@ -36,7 +36,7 @@ const subjects = [
     title: 'Python',
     description: 'Programación en Python y sus librerías',
     icon: BookOpen,
-    available: false,
+    available: true, // Activated Python quiz
   },
   {
     id: 'sistemas-informaticos',
