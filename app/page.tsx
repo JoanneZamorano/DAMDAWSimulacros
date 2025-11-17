@@ -20,8 +20,8 @@ const subjects = [
     description: 'Conceptos de programación y algoritmos',
     icon: Terminal,
     simulacros: {
-      junio: '/quiz/programacion',
-      diciembreI: null,
+      junio: '/quiz/programacion/junio',
+      diciembreI: '/quiz/programacion/diciembre-1',
       diciembreII: null,
     }
   },
@@ -81,7 +81,7 @@ export default function HomePage() {
             DAM/DAW <span className="text-blue-500">SIMULACROS</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Exámenes interactivos de todas las asignaturas | 1er curso
+            Pon a prueba tus conocimientos con exámenes interactivos de todas las asignaturas
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function HomePage() {
                         href={subject.simulacros.diciembreI}
                         className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
                       >
-                        → Simulacro Diciembre I
+                        → Simulacro Diciembre I{subject.specialLabel ? ` (${subject.specialLabel})` : ''}
                       </Link>
                     ) : (
                       <div className="text-sm text-muted-foreground/50">
