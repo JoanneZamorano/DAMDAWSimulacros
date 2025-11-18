@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Card } from '@/components/ui/card'
-import { BookOpen, Code, Database, Hammer, Server, Terminal } from 'lucide-react'
+import { BookOpen, Code, Database, Hammer, Server, Terminal, Briefcase } from 'lucide-react'
 
 const subjects = [
   {
@@ -42,10 +42,19 @@ const subjects = [
     description: 'SQL, diseño y gestión de bases de datos',
     icon: Database,
     simulacros: {
-      junio: null,
-      diciembreI: null,
-      diciembreII: null,
-    }
+      junio: '/quiz/bases-datos/unidad-1',
+      diciembreI: '/quiz/bases-datos/unidad-2',
+      diciembreII: '/quiz/bases-datos/unidad-3',
+    },
+    customLabels: {
+      junio: 'U1: Sistemas de almacenamiento',
+      diciembreI: 'U2: Modelo E/R',
+      diciembreII: 'U3: Modelo Relacional y Normalización',
+    },
+    extraSimulacros: [
+      { label: 'U4: Introducción a SQL: DDL', link: '/quiz/bases-datos/unidad-4' },
+      { label: 'U5: Lenguaje SQL: DML', link: '/quiz/bases-datos/unidad-5' },
+    ]
   },
   {
     id: 'python',
@@ -70,6 +79,17 @@ const subjects = [
     },
     specialLabel: 'Proyecto II'
   },
+  {
+    id: 'ipe-1',
+    title: 'IPE I: Itinerario para la empleabilidad',
+    description: 'Desarrollo profesional y competencias laborales',
+    icon: Briefcase,
+    simulacros: {
+      junio: null,
+      diciembreI: '/quiz/ipe-1/diciembre',
+      diciembreII: null,
+    }
+  },
 ]
 
 export default function HomePage() {
@@ -81,7 +101,7 @@ export default function HomePage() {
             DAM/DAW <span className="text-blue-500">SIMULACROS</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Exámenes interactivos de todas las asignaturas | 1er curso
+            Pon a prueba tus conocimientos con exámenes interactivos de todas las asignaturas
           </p>
         </div>
 
@@ -120,11 +140,11 @@ export default function HomePage() {
                         href={subject.simulacros.junio}
                         className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
                       >
-                        → Simulacro Junio{subject.specialLabel ? ` (${subject.specialLabel})` : ''}
+                        → {subject.customLabels?.junio || `Simulacro Junio${subject.specialLabel ? ` (${subject.specialLabel})` : ''}`}
                       </Link>
                     ) : (
                       <div className="text-sm text-muted-foreground/50">
-                        → Simulacro Junio: Próximamente
+                        → {subject.customLabels?.junio || 'Simulacro Junio'}: Próximamente
                       </div>
                     )}
 
@@ -134,11 +154,11 @@ export default function HomePage() {
                         href={subject.simulacros.diciembreI}
                         className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
                       >
-                        → Simulacro Diciembre I{subject.specialLabel ? ` (${subject.specialLabel})` : ''}
+                        → {subject.customLabels?.diciembreI || `Simulacro Diciembre I${subject.specialLabel ? ` (${subject.specialLabel})` : ''}`}
                       </Link>
                     ) : (
                       <div className="text-sm text-muted-foreground/50">
-                        → Simulacro Diciembre I: Próximamente
+                        → {subject.customLabels?.diciembreI || 'Simulacro Diciembre I'}: Próximamente
                       </div>
                     )}
 
@@ -148,13 +168,24 @@ export default function HomePage() {
                         href={subject.simulacros.diciembreII}
                         className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
                       >
-                        → Simulacro Diciembre II
+                        → {subject.customLabels?.diciembreII || 'Simulacro Diciembre II'}
                       </Link>
                     ) : (
                       <div className="text-sm text-muted-foreground/50">
-                        → Simulacro Diciembre II: Próximamente
+                        → {subject.customLabels?.diciembreII || 'Simulacro Diciembre II'}: Próximamente
                       </div>
                     )}
+
+                    {/* Extra Simulacros */}
+                    {subject.extraSimulacros && subject.extraSimulacros.map((extraSimulacro, index) => (
+                      <Link 
+                        key={index}
+                        href={extraSimulacro.link}
+                        className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                      >
+                        → {extraSimulacro.label}
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </Card>
