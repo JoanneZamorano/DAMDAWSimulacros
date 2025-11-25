@@ -12,7 +12,7 @@ const subjects = [
     hoverBorder: "hover:border-orange-500/50",
     simulacros: {
       junio: "/quiz/lenguaje-marcas",
-      diciembreI: null,
+      diciembreI: "/quiz/lenguaje-marcas/diciembre-1",
       diciembreII: null,
     },
   },
