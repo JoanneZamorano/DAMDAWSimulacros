@@ -15,6 +15,7 @@ const subjects = [
       diciembreI: "/quiz/lenguaje-marcas/diciembre-1",
       diciembreII: "/quiz/lenguaje-marcas/diciembre-2",
     },
+    extraSimulacros: [{ label: "Kahoot XPATH", link: "/quiz/lenguaje-marcas/kahoot-xpath" }],
   },
   {
     id: "programacion",
