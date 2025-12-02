@@ -226,20 +226,12 @@ export default function ProgramacionJunioQuiz() {
   const [showResult, setShowResult] = useState(false)
   const [score, setScore] = useState(0)
   const [answeredQuestions, setAnsweredQuestions] = useState<number[]>([])
-  const [shuffledQuestions] = useState(() => {
-    const shuffled = [...questions]
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1))
-      ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
-    }
-    return shuffled
-  })
 
   const handleAnswer = (answerIndex: number) => {
     if (selectedAnswer !== null) return
 
     setSelectedAnswer(answerIndex)
-    const isCorrect = answerIndex === shuffledQuestions[currentQuestion].correctAnswer
+    const isCorrect = answerIndex === questions[currentQuestion].correctAnswer
 
     if (isCorrect) {
       setScore(score + 1)
@@ -249,7 +241,7 @@ export default function ProgramacionJunioQuiz() {
   }
 
   const handleNext = () => {
-    if (currentQuestion < shuffledQuestions.length - 1) {
+    if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1)
       setSelectedAnswer(null)
     } else {
@@ -263,11 +255,10 @@ export default function ProgramacionJunioQuiz() {
     setShowResult(false)
     setScore(0)
     setAnsweredQuestions([])
-    window.location.reload()
   }
 
   if (showResult) {
-    const percentage = Math.round((score / shuffledQuestions.length) * 100)
+    const percentage = Math.round((score / questions.length) * 100)
     return (
       <div className="min-h-screen bg-background flex items-center justify-center p-4">
         <Card className="w-full max-w-2xl p-8 bg-card border-border">
@@ -275,7 +266,7 @@ export default function ProgramacionJunioQuiz() {
             <h2 className="text-3xl font-bold text-foreground">Resultado Final</h2>
             <div className="text-6xl font-bold text-primary">{percentage}%</div>
             <p className="text-xl text-muted-foreground">
-              Has acertado {score} de {shuffledQuestions.length} preguntas
+              Has acertado {score} de {questions.length} preguntas
             </p>
             {percentage >= 80 && <p className="text-lg text-green-500">Excelente trabajo</p>}
             {percentage >= 60 && percentage < 80 && (
@@ -298,8 +289,8 @@ export default function ProgramacionJunioQuiz() {
     )
   }
 
-  const question = shuffledQuestions[currentQuestion]
-  const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100
+  const question = questions[currentQuestion]
+  const progress = ((currentQuestion + 1) / questions.length) * 100
 
   return (
     <div className="min-h-screen bg-background p-4">
@@ -314,7 +305,7 @@ export default function ProgramacionJunioQuiz() {
           <div className="flex justify-between items-center mb-2">
             <h1 className="text-2xl font-bold text-foreground">Programación - Simulacro Junio</h1>
             <span className="text-muted-foreground">
-              Pregunta {currentQuestion + 1} de {shuffledQuestions.length}
+              Pregunta {currentQuestion + 1} de {questions.length}
             </span>
           </div>
           <div className="w-full bg-secondary rounded-full h-2">
@@ -368,7 +359,7 @@ export default function ProgramacionJunioQuiz() {
           {selectedAnswer !== null && (
             <div className="mt-6">
               <Button onClick={handleNext} size="lg" className="w-full">
-                {currentQuestion < shuffledQuestions.length - 1 ? "Siguiente pregunta" : "Ver resultados"}
+                {currentQuestion < questions.length - 1 ? "Siguiente pregunta" : "Ver resultados"}
               </Button>
             </div>
           )}

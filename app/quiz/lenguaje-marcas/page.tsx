@@ -245,26 +245,15 @@ const questions: Question[] = [
   },
 ]
 
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array]
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[newArray[i], newArray[j]] = [newArray[j], newArray[i]]
-  }
-  return newArray
-}
-
 export default function LenguajeMarcasQuiz() {
   const [started, setStarted] = useState(false)
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [showFeedback, setShowFeedback] = useState(false)
   const [score, setScore] = useState(0)
-  const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([])
   const [finished, setFinished] = useState(false)
 
   const startQuiz = () => {
-    setShuffledQuestions(shuffleArray(questions))
     setStarted(true)
     setCurrentQuestionIndex(0)
     setSelectedAnswer(null)
@@ -279,13 +268,13 @@ export default function LenguajeMarcasQuiz() {
     setSelectedAnswer(answerIndex)
     setShowFeedback(true)
 
-    if (answerIndex === shuffledQuestions[currentQuestionIndex].correctAnswer) {
+    if (answerIndex === questions[currentQuestionIndex].correctAnswer) {
       setScore(score + 1)
     }
   }
 
   const handleNext = () => {
-    if (currentQuestionIndex < shuffledQuestions.length - 1) {
+    if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1)
       setSelectedAnswer(null)
       setShowFeedback(false)
@@ -323,8 +312,8 @@ export default function LenguajeMarcasQuiz() {
               <div className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground">Preguntas Aleatorizadas</p>
-                  <p className="text-sm text-muted-foreground">Cada sesión es diferente</p>
+                  <p className="font-semibold text-foreground">Orden Consistente</p>
+                  <p className="text-sm text-muted-foreground">Mismas preguntas en cada sesión</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -350,7 +339,7 @@ export default function LenguajeMarcasQuiz() {
   }
 
   if (finished) {
-    const percentage = Math.round((score / shuffledQuestions.length) * 100)
+    const percentage = Math.round((score / questions.length) * 100)
     return (
       <div className="min-h-screen bg-background flex items-center justify-center p-4">
         <Card className="w-full max-w-lg p-8 bg-card border-border">
@@ -359,7 +348,7 @@ export default function LenguajeMarcasQuiz() {
             <div className="py-8">
               <div className="text-6xl font-bold text-blue-500 mb-2">{percentage}%</div>
               <p className="text-xl text-muted-foreground">
-                {score} de {shuffledQuestions.length} correctas
+                {score} de {questions.length} correctas
               </p>
             </div>
 
@@ -394,7 +383,7 @@ export default function LenguajeMarcasQuiz() {
     )
   }
 
-  const currentQuestion = shuffledQuestions[currentQuestionIndex]
+  const currentQuestion = questions[currentQuestionIndex]
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
@@ -410,7 +399,7 @@ export default function LenguajeMarcasQuiz() {
         <div className="space-y-6">
           <div className="flex justify-between items-center text-sm text-muted-foreground">
             <span>
-              Pregunta {currentQuestionIndex + 1} de {shuffledQuestions.length}
+              Pregunta {currentQuestionIndex + 1} de {questions.length}
             </span>
             <span>Puntuación: {score}</span>
           </div>
@@ -418,7 +407,7 @@ export default function LenguajeMarcasQuiz() {
           <div className="h-2 bg-muted rounded-full overflow-hidden">
             <div
               className="h-full bg-orange-500 transition-all duration-300"
-              style={{ width: `${((currentQuestionIndex + 1) / shuffledQuestions.length) * 100}%` }}
+              style={{ width: `${((currentQuestionIndex + 1) / questions.length) * 100}%` }}
             />
           </div>
 
@@ -466,7 +455,7 @@ export default function LenguajeMarcasQuiz() {
                 )}
               </div>
               <Button onClick={handleNext} className="bg-orange-500 hover:bg-orange-600 text-white">
-                {currentQuestionIndex < shuffledQuestions.length - 1 ? "Siguiente" : "Ver Resultados"}
+                {currentQuestionIndex < questions.length - 1 ? "Siguiente" : "Ver Resultados"}
               </Button>
             </div>
           )}

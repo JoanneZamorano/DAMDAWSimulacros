@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
+import { CheckCircle2, XCircle, ChevronLeft } from "lucide-react"
 import Link from "next/link"
 
 const questions = [
@@ -111,7 +111,7 @@ const questions = [
     correctAnswer: 1,
   },
   {
-    question: "¿Qué comando DCL se utiliza para eliminar un usuario de una base de datos?",
+    question: "¿Qué comando se utiliza para eliminar un usuario de una base de datos?",
     options: ["DELETE USER", "DROP USER", "REMOVE USER", "ERASE USER"],
     correctAnswer: 1,
   },
@@ -191,6 +191,7 @@ const questions = [
 export default function KahootBBDD0212Part2() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
+  const [answeredQuestions, setAnsweredQuestions] = useState<boolean[]>(Array(questions.length).fill(false))
   const [showResult, setShowResult] = useState(false)
   const [score, setScore] = useState(0)
   const [incorrectCount, setIncorrectCount] = useState(0)
@@ -215,14 +216,25 @@ export default function KahootBBDD0212Part2() {
   }, [])
 
   const handleAnswer = (answerIndex: number) => {
-    if (selectedAnswer !== null) return
+    if (answeredQuestions[currentQuestion]) return
 
     setSelectedAnswer(answerIndex)
+
+    const newAnswered = [...answeredQuestions]
+    newAnswered[currentQuestion] = true
+    setAnsweredQuestions(newAnswered)
 
     if (answerIndex === shuffledQuestions[currentQuestion].correctAnswer) {
       setScore(score + 1)
     } else {
       setIncorrectCount(incorrectCount + 1)
+    }
+  }
+
+  const previousQuestion = () => {
+    if (currentQuestion > 0) {
+      setCurrentQuestion(currentQuestion - 1)
+      setSelectedAnswer(null)
     }
   }
 
@@ -256,6 +268,7 @@ export default function KahootBBDD0212Part2() {
     setShowResult(false)
     setScore(0)
     setIncorrectCount(0)
+    setAnsweredQuestions(Array(questions.length).fill(false))
   }
 
   if (showResult) {
@@ -268,19 +281,20 @@ export default function KahootBBDD0212Part2() {
         <div className="max-w-3xl mx-auto">
           <Card className="p-8 bg-card border-border">
             <div className="text-center space-y-6">
-              <h2 className="text-3xl font-bold text-foreground">Resultados del Test</h2>
-              <div className="space-y-4">
-                <div className="text-6xl font-bold text-blue-600">{percentage}%</div>
-                <div className="space-y-2 text-lg text-muted-foreground">
-                  <p>
-                    Aciertos: <span className="text-green-500 font-semibold">{score}</span> | Fallos:{" "}
-                    <span className="text-red-500 font-semibold">{incorrectCount}</span>
-                  </p>
-                  <p className="text-sm italic">
-                    Puntuación con fórmula de corrección: {correctedScore.toFixed(2)} / {maxScore}
-                  </p>
-                  <p className="text-xs text-muted-foreground/70">(Fórmula: Aciertos - Fallos/3)</p>
-                </div>
+              <h2 className="text-3xl font-bold text-foreground">Resultados del Simulacro</h2>
+              <div className="text-6xl font-bold text-blue-600">{percentage}%</div>
+              <p className="text-xl text-muted-foreground">
+                Has acertado {score} de {questions.length} preguntas
+              </p>
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p>
+                  Aciertos: <span className="text-green-500 font-semibold">{score}</span> | Fallos:{" "}
+                  <span className="text-red-500 font-semibold">{incorrectCount}</span>
+                </p>
+                <p className="text-xs italic">
+                  Puntuación con fórmula de corrección: {correctedScore.toFixed(2)} / {maxScore}
+                </p>
+                <p className="text-xs text-muted-foreground/70">(Fórmula: Aciertos - Fallos/3)</p>
               </div>
               <div className="flex gap-4 justify-center flex-wrap">
                 <Button onClick={resetQuiz} size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -300,76 +314,93 @@ export default function KahootBBDD0212Part2() {
   }
 
   const question = shuffledQuestions[currentQuestion]
-  const progress = ((currentQuestion + 1) / shuffledQuestions.length) * 100
+  const isAnswered = answeredQuestions[currentQuestion]
 
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
       <div className="max-w-3xl mx-auto space-y-6">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Salir del examen
-        </Link>
-
-        <div className="flex items-center justify-between text-sm text-muted-foreground">
-          <span>
-            Pregunta {currentQuestion + 1} de {shuffledQuestions.length}
-          </span>
-          <span>Puntuación: {score}</span>
-        </div>
-
-        <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
-          <div className="bg-blue-600 h-full transition-all duration-300" style={{ width: `${progress}%` }} />
+        <div className="flex items-center justify-between">
+          <Link href="/">
+            <Button variant="ghost" size="sm">
+              <ChevronLeft className="w-4 h-4 mr-2" />
+              Volver
+            </Button>
+          </Link>
+          <div className="flex items-center gap-2">
+            <span className="text-sm font-medium text-muted-foreground">
+              Pregunta {currentQuestion + 1} de {questions.length}
+            </span>
+            <span className="text-sm font-medium text-blue-600">
+              {answeredQuestions.filter((a) => a).length} respondidas
+            </span>
+          </div>
         </div>
 
         <Card className="p-6 md:p-8 bg-card border-border">
           <div className="space-y-6">
-            <h2 className="text-xl md:text-2xl font-semibold text-foreground">{question.question}</h2>
+            <div className="flex items-start justify-between gap-4">
+              <h2 className="text-xl md:text-2xl font-semibold text-foreground flex-1">{question.question}</h2>
+              <div className="text-sm font-medium text-muted-foreground whitespace-nowrap">
+                {score}/{questions.length}
+              </div>
+            </div>
 
-            <div className="grid gap-3">
+            <div className="space-y-3">
               {question.options.map((option, index) => {
                 const isSelected = selectedAnswer === index
                 const isCorrect = index === question.correctAnswer
-                const showFeedback = selectedAnswer !== null
-
-                let buttonClass = "justify-start text-left h-auto py-4 px-6 border-2 transition-colors "
-                if (!showFeedback) {
-                  buttonClass += "border-border hover:border-blue-600/50 hover:bg-accent"
-                } else if (isCorrect) {
-                  buttonClass += "border-green-500 bg-green-500/10"
-                } else if (isSelected) {
-                  buttonClass += "border-red-500 bg-red-500/10"
-                } else {
-                  buttonClass += "border-border opacity-50"
-                }
+                const showCorrect = isAnswered && isCorrect
+                const showIncorrect = isAnswered && isSelected && !isCorrect
 
                 return (
-                  <Button
+                  <button
                     key={index}
                     onClick={() => handleAnswer(index)}
-                    disabled={selectedAnswer !== null}
-                    variant="outline"
-                    className={buttonClass}
+                    disabled={isAnswered}
+                    className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
+                      showCorrect
+                        ? "border-green-500 bg-green-500/10"
+                        : showIncorrect
+                          ? "border-red-500 bg-red-500/10"
+                          : isSelected
+                            ? "border-blue-600 bg-blue-600/10"
+                            : "border-border hover:border-blue-600/50 bg-card"
+                    } ${isAnswered ? "cursor-not-allowed" : "cursor-pointer"}`}
                   >
-                    <span className="text-base">{option}</span>
-                    {showFeedback && isCorrect && <span className="ml-auto text-green-500">✓</span>}
-                    {showFeedback && isSelected && !isCorrect && <span className="ml-auto text-red-500">✗</span>}
-                  </Button>
+                    <div className="flex items-center justify-between">
+                      <span className="text-foreground">{option}</span>
+                      {showCorrect && <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 ml-2" />}
+                      {showIncorrect && <XCircle className="w-5 h-5 text-red-500 flex-shrink-0 ml-2" />}
+                    </div>
+                  </button>
                 )
               })}
             </div>
 
-            {selectedAnswer !== null && (
-              <div className="pt-4">
-                <Button onClick={nextQuestion} className="w-full bg-blue-600 hover:bg-blue-700" size="lg">
-                  {currentQuestion < shuffledQuestions.length - 1 ? "Siguiente" : "Ver Resultados"}
-                </Button>
-              </div>
-            )}
+            <div className="flex gap-3 pt-4">
+              <Button
+                onClick={previousQuestion}
+                disabled={currentQuestion === 0}
+                variant="outline"
+                className="flex-1 bg-transparent"
+              >
+                Anterior
+              </Button>
+              <Button onClick={nextQuestion} disabled={!isAnswered} className="flex-1 bg-blue-600 hover:bg-blue-700">
+                {currentQuestion === questions.length - 1 ? "Ver Resultados" : "Siguiente"}
+              </Button>
+            </div>
           </div>
         </Card>
+
+        <div className="w-full bg-muted rounded-full h-2 mt-4">
+          <div
+            className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+            style={{
+              width: `${((currentQuestion + 1) / questions.length) * 100}%`,
+            }}
+          />
+        </div>
       </div>
     </div>
   )
