@@ -58,7 +58,7 @@ const subjects = [
     hoverBorder: "hover:border-blue-600/50",
     simulacros: {
       junio: "/quiz/bases-datos/unidad-1",
-      diciembreI: "/quiz/bases-datos/unidad-2",
+      diciembreI: "/quiz/bases-datos/unidad-2", // Enabled U2: Modelo E/R link
       diciembreII: "/quiz/bases-datos/unidad-3",
     },
     customLabels: {
