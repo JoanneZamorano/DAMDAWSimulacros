@@ -10,13 +10,13 @@ const questions = [
   {
     question: "Usuario y Roles: Para que un usuario pueda ser administrador, debe haber sido editor primero.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question:
       "Empleados y Gerentes: Para que un empleado pueda ser gerente, debe haber asistido a un curso de liderazgo.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question:
@@ -28,13 +28,13 @@ const questions = [
     question:
       'Relaciones de los músicos con respecto a las orquestas: cada músico puede "tocar" o "dirigir", en función de la obra musical, pero no ambas a la vez.',
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question:
       "Pedido y Artículos: Para que un pedido pueda incluir artículos de lujo, debe haber incluido artículos básicos primero.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question:
@@ -46,13 +46,13 @@ const questions = [
     question:
       "Un estudiante, respecto a un curso concreto, debe escoger si se matricula en dicho curso en la modalidad presencial, o bien en la modalidad online. Una vez fijada, ya no podrá cambiar.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question:
       "Profesor y Curso: Un profesor puede impartir un curso o recibirlo, dependiendo del año lectivo y de la asignación del claustro, pero no ambas cosas simultáneamente.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question:
@@ -75,12 +75,12 @@ const questions = [
     question:
       "Cliente y Promociones: Un cliente puede aplicar en cada compra una promoción de descuento o una de envío gratuito, pero no ambas en la misma compra.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question: "Un libro es editado por una Universidad o por una Editorial, pero no por los dos a la vez.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question: "Contrato y Renovación: Para que un contrato se renueve, debe haber existido un contrato previo.",
@@ -91,48 +91,48 @@ const questions = [
     question:
       "Obras de arte: para que un artista cree una obra de arte en mármol, debe haber creado antes un boceto en barro y otro antes en cartón-piedra.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question:
       "Empleado y Turno: Un empleado puede escoger a lo largo del año, y en periodos de 6 meses, trabajar en el turno de mañana o en el de tarde, pero no en ambos simultáneamente.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question: "Proyecto y Evaluación: Para que un proyecto sea evaluado, debe haber sido completado primero.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question:
       "Un cliente de banco debe escoger entre abrirse una cuenta bancaria de Ahorro o Corriente, pero no de los dos tipos simultáneamente; dicha cuenta no cambiará nunca su modalidad.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question:
       "Cliente y Descuento: Para que un cliente reciba un descuento por fidelidad, debe haber realizado al menos cinco compras previas. El descuento solo es posible si se cumplen las compras previas.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 3,
+    correctAnswer: 1,
   },
   {
     question:
       "Un estudiante puede elegir entre dos clubes escolares: el de ciencias o el de arte. Si el estudiante se une al de ciencias, no puede unirse al de arte, ni simultáneamente ni en otro momento. La elección es exclusiva y definitiva.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question:
       "Un jugador de fútbol puede jugar como delantero o como defensa, pero no ambas posiciones al mismo tiempo. Puede jugar como delantero en un partido y como defensa en otro partido, pero no en ambas posiciones simultáneamente.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question:
       "Un empleado es contratado o bien a tiempo completo o bien a tiempo parcial, pero no ambos; y la empresa ya no puede cambiar esa modalidad.",
     options: ["Exclusividad", "Inclusividad", "Exclusión", "Inclusión"],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question:
@@ -162,7 +162,7 @@ const questions = [
     question:
       "Tipo de Animal de Compañía (principal): Una mascota puede ser perro, gato, pájaro, pez, otro. No todas las personas tienen mascotas, y una mascota principal se clasifica en una de estas categorías.",
     options: ["TOTAL y EXCLUSIVA", "TOTAL y SOLAPADA", "PARCIAL y EXCLUSIVA", "PARCIAL y SOLAPADA"],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question:
@@ -180,7 +180,7 @@ const questions = [
     question:
       "Nivel Educativo Alcanzado (máximo): El nivel educativo más alto completado por una persona es primaria, secundaria, formación profesional, o universitaria. Se quiere representar el nivel máximo alcanzado, y una persona solo tiene uno como máximo.",
     options: ["TOTAL y EXCLUSIVA", "TOTAL y SOLAPADA", "PARCIAL y EXCLUSIVA", "PARCIAL y SOLAPADA"],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     question:
@@ -222,7 +222,7 @@ const questions = [
     question:
       "Géneros Cinematográficos Favoritos: Toda persona tiene ciertos géneros de películas que le gustan (posiblemente ninguno). Las categorías son comedia, drama, acción, ciencia ficción, terror, documental. Una persona que disfruta de la ciencia ficción y el terror pertenece a ambas.",
     options: ["TOTAL y EXCLUSIVA", "TOTAL y SOLAPADA", "PARCIAL y EXCLUSIVA", "PARCIAL y SOLAPADA"],
-    correctAnswer: 1,
+    correctAnswer: 3,
   },
   {
     question:
