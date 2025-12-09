@@ -41,7 +41,7 @@ const subjects = [
     simulacros: {
       junio: "/quiz/entornos-desarrollo/junio",
       diciembreI: "/quiz/entornos-desarrollo/diciembre-1",
-      diciembreII: null,
+      diciembreII: "/quiz/entornos-desarrollo/diciembre-2",
     },
     extraSimulacros: [
       { label: "Kahoot UML", link: "/quiz/entornos-desarrollo/kahoot-uml" },
