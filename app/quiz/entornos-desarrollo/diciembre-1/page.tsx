@@ -240,7 +240,7 @@ const questions: Question[] = [
   },
   {
     question: "El mensaje asíncrono en un diagrama de secuencia se representa con:",
-    options: ["Rombo", "Flecha discontinua", "Triángulo relleno", "Flecha rellena con espera"],
+    options: ["Rombo", "Línea continua y flecha abierta", "Triángulo relleno", "Flecha rellena con espera"],
     correctAnswer: 1,
   },
 ]
