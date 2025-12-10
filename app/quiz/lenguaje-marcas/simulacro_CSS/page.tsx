@@ -233,7 +233,7 @@ const questions = [
       "/* comentario */",
       "// comentario",
       "# comentario",
-      ""
+      "<!-- comentario -->"
     ],
     correctAnswer: 0
   },
