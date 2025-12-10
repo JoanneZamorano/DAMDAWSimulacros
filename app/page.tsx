@@ -34,7 +34,10 @@ const subjects = [
       diciembreI: "/quiz/programacion/diciembre-1",
       diciembreII: "/quiz/programacion/diciembre-2",
     },
-    extraSimulacros: [{ label: "Kahoot 2/12", link: "/quiz/programacion/kahoot-0212" }],
+    extraSimulacros: [
+      { label: "Kahoot 2/12", link: "/quiz/programacion/kahoot-0212" },
+      { label: "Kahoot 9/12", link: "/quiz/programacion/kahoot-0912" },
+    ],
   },
   {
     id: "entornos-desarrollo",
