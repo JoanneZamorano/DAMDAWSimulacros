@@ -85,7 +85,7 @@ const subjects = [
       { label: "REPASO Test 4", link: "/quiz/bases-datos/REPASO_Test4" },
       { label: "REPASO Test 5", link: "/quiz/bases-datos/REPASO_Test5" },
       { label: "REPASO Test 6", link: "/quiz/bases-datos/REPASO_Test6" },      
-      { label: "Simulacro Diciembre II", link: "/quiz/bases-datos/simulacro-diciembre-2" },
+      { label: "Simulacro Diciembre II", link: "/quiz/bases-datos/simulacro-diciembre-2", color: "text-red-500 hover:text-red-300" },
       { label: "TEST EXTRA", link: "/quiz/bases-datos/test-extra", color: "text-green-500 hover:text-green-400" },
     ],
   },
