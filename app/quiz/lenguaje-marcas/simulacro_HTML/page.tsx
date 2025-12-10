@@ -205,7 +205,7 @@ const questions = [
       "<script>",
       "<info>"
     ],
-    correctAnswer: 1
+    correctAnswer: 0
   },
   {
     question: "¿Qué atributo se usa para ejecutar JavaScript cuando se hace clic?",

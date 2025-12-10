@@ -129,7 +129,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "¿Qué selector aplica estilo a todos los párrafos dentro de un div?",
+    question: "¿Qué selector aplica estilo a todos los párrafos que son hijos directos de un div?",
     options: ["div > p", "div + p", "div ~ p", "div p"],
     correctAnswer: 0,
   },
