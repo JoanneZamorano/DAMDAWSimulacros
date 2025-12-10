@@ -10,19 +10,16 @@ const subjects = [
     icon: Code,
     color: "bg-orange-500",
     hoverBorder: "hover:border-orange-500/50",
-    //simulacros: {
-      //junio: "/quiz/lenguaje-marcas",
-      //diciembreI: "/quiz/lenguaje-marcas/diciembre-1",
-      //diciembreII: "/quiz/lenguaje-marcas/diciembre-2",
-    //},
+    simulacros: {
+      junio: "/quiz/lenguaje-marcas",
+      diciembreI: "/quiz/lenguaje-marcas/diciembre-1",
+      diciembreII: "/quiz/lenguaje-marcas/diciembre-2",
+    },
     extraSimulacros: [
       { label: "Kahoot XPATH", link: "/quiz/lenguaje-marcas/kahoot-xpath" },
       { label: "simulacro HTML", link: "/quiz/lenguaje-marcas/simulacro_HTML" },
       { label: "simulacro CSS", link: "/quiz/lenguaje-marcas/simulacro_CSS" },
       { label: "simulacro XPATH", link: "/quiz/lenguaje-marcas/simulacro_XPATH" },
-      { label: "Simulacro Junio", link: "/quiz/lenguaje-marcas", color: "text-red-500 hover:text-red-400" },
-      { label: "Simulacro Diciembre I", link: "/quiz/lenguaje-marcas/diciembre-1", color: "text-red-500 hover:text-red-400" },
-      { label: "Simulacro Diciembre II", link: "/quiz/lenguaje-marcas/diciembre-2", color: "text-red-500 hover:text-red-400" },
     ],
   },
   {
