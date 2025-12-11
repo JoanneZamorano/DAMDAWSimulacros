@@ -112,7 +112,7 @@ const subjects = [
     simulacros: {
       junio: "/quiz/sistemas-informaticos",
       diciembreI: "/quiz/sistemas-informaticos/diciembre-1", // Enabled link to Simulacro Diciembre I
-      diciembreII: null,
+      diciembreII: "/quiz/sistemas-informaticos/diciembre-2",
     },
     // specialLabel: "Proyecto II",
     extraSimulacros: [{ label: "Kahoot Linux", link: "/quiz/sistemas-informaticos/kahoot-linux" }],
