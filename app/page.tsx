@@ -99,7 +99,7 @@ const subjects = [
     simulacros: {
       junio: "/quiz/python/junio-1",
       diciembreI: "/quiz/python/diciembre-1",
-      diciembreII: null,
+      diciembreII: "/quiz/python/diciembre-2",
     },
   },
   {
