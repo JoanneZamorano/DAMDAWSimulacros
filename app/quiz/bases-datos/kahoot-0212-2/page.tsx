@@ -64,7 +64,7 @@ const questions = [
   },
   {
     question:
-      "¿Qué tipo de restricción en MERE se utiliza para representar que una entidad puede participar en solo una relación de las posibles, pero no al mismo tiempo?",
+      "¿Qué tipo de restricción en MERE se utiliza para representar que una entidad puede participar en cualquier relación de las posibles, pero no al mismo tiempo?",
     options: ["Exclusión", "Inclusión", "Exclusividad", "Inclusividad"],
     correctAnswer: 0,
   },
