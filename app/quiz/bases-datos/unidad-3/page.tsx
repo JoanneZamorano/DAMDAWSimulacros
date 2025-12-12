@@ -17,7 +17,7 @@ const questions: Question[] = [
   {
     id: 1,
     question: "¿Cuál de las siguientes es una restricción inherente del modelo relacional?",
-    options: ["CHECK", "Integridad referencial", "TRIGGER", "ASSERTION"],
+    options: ["CHECK", "Integridad de entidad", "TRIGGER", "ASSERTION"],
     correctAnswer: 1,
   },
   {
