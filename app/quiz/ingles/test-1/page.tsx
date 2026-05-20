@@ -9,9 +9,157 @@ import Link from "next/link"
 interface Question { question: string; options: string[]; correctAnswer: number }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para Ingles - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para Ingles - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
-]
+  {
+    question: "1. I'm ......... the budget for new car models.",
+    options: ["responsible of", "responsible at", "responsibility for", "responsible for"],
+    correctAnswer: 3,
+  },
+  {
+    question: "2. If you work more hours than usual, you do",
+    options: ["overtime", "flexitime", "part-time", "commission"],
+    correctAnswer: 0,
+  },
+  {
+    question: "3. A ......... employee is very enthusiastic and wants to succeed.",
+    options: ["methodical", "numerate", "motivated", "flexible"],
+    correctAnswer: 2,
+  },
+  {
+    question: "4. She is very skilled ......... using Excel and data analysis.",
+    options: ["with", "to", "at/in", "on"],
+    correctAnswer: 2,
+  },
+  {
+    question: "5. Factory workers often work in ......... : day, night...",
+    options: ["clocks", "rounds", "shifts", "routines"],
+    correctAnswer: 2,
+  },
+  {
+    question: "6. I work ......... a multinational company in the tech sector.",
+    options: ["with", "for", "at", "in"],
+    correctAnswer: 1,
+  },
+  {
+    question: "7. Employers look for candidates who are ......... and can work independently.",
+    options: ["self-starters", "commuters", "managers", "team players"],
+    correctAnswer: 0,
+  },
+  {
+    question: "8. Many students find ........ jobs during the holidays.",
+    options: ["regular", "permanent", "temporary", "fixed"],
+    correctAnswer: 2,
+  },
+  {
+    question: "9. Employees can ......... in at any time between 8 and 10.",
+    options: ["shift", "sign", "log", "clock"],
+    correctAnswer: 3,
+  },
+  {
+    question: "10. My total ......... includes my salary and bonuses.",
+    options: ["income", "overtime", "benefit", "wage"],
+    correctAnswer: 0,
+  },
+  {
+    question: "11. My manager is ......... work today because she is ill.",
+    options: ["out of", "off", "in", "on"],
+    correctAnswer: 1,
+  },
+  {
+    question: "12. Harry is very good ......... communicating with customers.",
+    options: ["with", "in", "on", "at"],
+    correctAnswer: 3,
+  },
+  {
+    question: "13. A ......... person works in a very organized and systematic way.",
+    options: ["motivated", "methodical", "talented", "numerate"],
+    correctAnswer: 1,
+  },
+  {
+    question: "14. Many people are ......... work due to the economic crisis.",
+    options: ["out of", "off", "in", "on"],
+    correctAnswer: 0,
+  },
+  {
+    question: "15. Computer programming is an example of ......... skill.",
+    options: ["digital", "hard", "difficult", "soft"],
+    correctAnswer: 1,
+  },
+  {
+    question: "16. Good communication is an example of ......... skill.",
+    options: ["financial", "technical", "legal", "soft"],
+    correctAnswer: 3,
+  },
+  {
+    question: "17. A polite way to start a letter when you don't know the name is 'Dear .........'",
+    options: ["Mr or Mrs", "All", "Sir or Madam", "Friend"],
+    correctAnswer: 2,
+  },
+  {
+    question: "18. We need someone who is a real ......... ; the job requires constant collaboration.",
+    options: ["team player", "hard worker", "lone worker", "social player"],
+    correctAnswer: 0,
+  },
+  {
+    question: "19. Kerstin is ......... of the design department at a European car company.",
+    options: ["in charge", "confident", "responsible", "the manager for"],
+    correctAnswer: 0,
+  },
+  {
+    question: "20. You usually end a cover letter with 'I look forward to ......... from you'.",
+    options: ["hear", "hears", "hearing", "heard"],
+    correctAnswer: 2,
+  },
+  {
+    question: "21. He works ......... the IT department of a large company.",
+    options: ["at", "in", "on", "for"],
+    correctAnswer: 1,
+  },
+  {
+    question: "22. I graduated ......... Oxford University ......... a degree ......... engineering.",
+    options: ["in /with/ of", "at/on/of", "on/in/with", "from / with / in"],
+    correctAnswer: 3,
+  },
+  {
+    question: "23. A CV usually includes your education, skills, and",
+    options: ["salary", "work experience", "address", "hobbies"],
+    correctAnswer: 1,
+  },
+  {
+    question: "24. A polite ending for a formal letter or email is 'Yours .........'",
+    options: ["happily", "faithfully", "kindly", "honestly"],
+    correctAnswer: 1,
+  },
+  {
+    question: "25. I leave ......... work at 7.30 every morning.",
+    options: ["for", "to", "in", "from"],
+    correctAnswer: 0,
+  },
+  {
+    question: "26. I have a ......... job, so I work from 9 to 5 every day.",
+    options: ["part-time", "temporary", "full-time", "shift"],
+    correctAnswer: 2,
+  },
+  {
+    question: "27. They live far from the city, so they ......... to work every day.",
+    options: ["shift", "clock", "commute", "telecommute"],
+    correctAnswer: 2,
+  },
+  {
+    question: "28. My colleague is very good ......... numbers and financial data.",
+    options: ["at", "in", "with", "on"],
+    correctAnswer: 0,
+  },
+  {
+    question: "29. Chris works only 15 hours per week. He has a ......... job.",
+    options: ["temporary", "half-time", "part-time", "full-time"],
+    correctAnswer: 2,
+  },
+  {
+    question: "30. Fringe ......... include things like gym memberships or free meals.",
+    options: ["wages", "salaries", "benefits", "responsibilities"],
+    correctAnswer: 2,
+  },
+];
 
 function shuffleArray<T>(array: T[]): T[] { const newArray = [...array]; for (let i = newArray.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArray[i], newArray[j]] = [newArray[j], newArray[i]] } return newArray }
 
