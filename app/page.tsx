@@ -15,6 +15,10 @@ const secondYearSubjects = [
       simulacroI: "/quiz/acceso-datos/simulacro-1",
       simulacroII: "/quiz/acceso-datos/simulacro-2",
     },
+    tests: {
+      testI: "/quiz/acceso-datos/test-1",
+      testII: "/quiz/acceso-datos/test-2",
+    },
   },
   {
     id: "desarrollo-interfaces",
@@ -26,6 +30,10 @@ const secondYearSubjects = [
     simulacros: {
       simulacroI: "/quiz/desarrollo-interfaces/simulacro-1",
       simulacroII: "/quiz/desarrollo-interfaces/simulacro-2",
+    },
+    tests: {
+      testI: "/quiz/desarrollo-interfaces/test-1",
+      testII: "/quiz/desarrollo-interfaces/test-2",
     },
   },
   {
@@ -39,6 +47,10 @@ const secondYearSubjects = [
       simulacroI: "/quiz/psp/simulacro-1",
       simulacroII: "/quiz/psp/simulacro-2",
     },
+    tests: {
+      testI: "/quiz/psp/test-1",
+      testII: "/quiz/psp/test-2",
+    },
   },
   {
     id: "pmdm",
@@ -50,6 +62,10 @@ const secondYearSubjects = [
     simulacros: {
       simulacroI: "/quiz/pmdm/simulacro-1",
       simulacroII: "/quiz/pmdm/simulacro-2",
+    },
+    tests: {
+      testI: "/quiz/pmdm/test-1",
+      testII: "/quiz/pmdm/test-2",
     },
   },
   {
@@ -63,6 +79,10 @@ const secondYearSubjects = [
       simulacroI: "/quiz/sistemas-gestion-empresarial/simulacro-1",
       simulacroII: "/quiz/sistemas-gestion-empresarial/simulacro-2",
     },
+    tests: {
+      testI: "/quiz/sistemas-gestion-empresarial/test-1",
+      testII: "/quiz/sistemas-gestion-empresarial/test-2",
+    },
   },
   {
     id: "digitalizacion",
@@ -74,6 +94,10 @@ const secondYearSubjects = [
     simulacros: {
       simulacroI: "/quiz/digitalizacion/simulacro-1",
       simulacroII: "/quiz/digitalizacion/simulacro-2",
+    },
+    tests: {
+      testI: "/quiz/digitalizacion/test-1",
+      testII: "/quiz/digitalizacion/test-2",
     },
   },
   {
@@ -87,6 +111,10 @@ const secondYearSubjects = [
       simulacroI: "/quiz/sostenibilidad/simulacro-1",
       simulacroII: "/quiz/sostenibilidad/simulacro-2",
     },
+    tests: {
+      testI: "/quiz/sostenibilidad/test-1",
+      testII: "/quiz/sostenibilidad/test-2",
+    },
   },
   {
     id: "ingles",
@@ -99,6 +127,10 @@ const secondYearSubjects = [
       simulacroI: "/quiz/ingles/simulacro-1",
       simulacroII: "/quiz/ingles/simulacro-2",
     },
+    tests: {
+      testI: "/quiz/ingles/test-1",
+      testII: "/quiz/ingles/test-2",
+    },
   },
   {
     id: "ipe-2",
@@ -110,6 +142,10 @@ const secondYearSubjects = [
     simulacros: {
       simulacroI: "/quiz/ipe-2/simulacro-1",
       simulacroII: "/quiz/ipe-2/simulacro-2",
+    },
+    tests: {
+      testI: "/quiz/ipe-2/test-1",
+      testII: "/quiz/ipe-2/test-2",
     },
   },
 ]
@@ -323,6 +359,34 @@ export default function HomePage() {
                       ) : (
                         <div className="text-sm text-muted-foreground/50">
                           → Simulacro II: Proximamente
+                        </div>
+                      )}
+
+                      {/* Test I */}
+                      {subject.tests.testI ? (
+                        <Link
+                          href={subject.tests.testI}
+                          className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                        >
+                          → Test I
+                        </Link>
+                      ) : (
+                        <div className="text-sm text-muted-foreground/50">
+                          → Test I: Proximamente
+                        </div>
+                      )}
+
+                      {/* Test II */}
+                      {subject.tests.testII ? (
+                        <Link
+                          href={subject.tests.testII}
+                          className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                        >
+                          → Test II
+                        </Link>
+                      ) : (
+                        <div className="text-sm text-muted-foreground/50">
+                          → Test II: Proximamente
                         </div>
                       )}
                     </div>
