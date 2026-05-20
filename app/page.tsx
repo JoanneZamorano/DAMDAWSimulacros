@@ -143,6 +143,10 @@ const secondYearSubjects = [
       simulacroI: "/quiz/ipe-2/simulacro-1",
       simulacroII: "/quiz/ipe-2/simulacro-2",
     },
+    customLabels: {          
+    simulacroI: "Kahoot 1",
+    simulacroII: "Kahoot 2",
+  },
     tests: {
       testI: "/quiz/ipe-2/test-1",
       testII: "/quiz/ipe-2/test-2",
@@ -340,25 +344,25 @@ export default function HomePage() {
                           href={subject.simulacros.simulacroI}
                           className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
                         >
-                          → Simulacro I
+                          → {subject.customLabels?.simulacroI || "Simulacro I"}
                         </Link>
                       ) : (
                         <div className="text-sm text-muted-foreground/50">
-                          → Simulacro I: Proximamente
+                          → {subject.customLabels?.simulacroI || "Simulacro I"}: Proximamente
                         </div>
                       )}
-
+                      
                       {/* Simulacro II */}
                       {subject.simulacros.simulacroII ? (
                         <Link
                           href={subject.simulacros.simulacroII}
                           className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
                         >
-                          → Simulacro II
+                          → {subject.customLabels?.simulacroII || "Simulacro II"}
                         </Link>
                       ) : (
                         <div className="text-sm text-muted-foreground/50">
-                          → Simulacro II: Proximamente
+                          → {subject.customLabels?.simulacroII || "Simulacro II"}: Proximamente
                         </div>
                       )}
 
