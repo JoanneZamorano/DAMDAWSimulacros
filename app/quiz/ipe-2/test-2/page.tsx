@@ -9,8 +9,306 @@ import Link from "next/link"
 interface Question { question: string; options: string[]; correctAnswer: number }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para IPE II - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para IPE II - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
+  {
+    question: "1. El currículum vitae es:",
+    options: [
+      "Un documento que resume la trayectoria profesional",
+      "Un contrato de trabajo",
+      "Un informe médico",
+      "Un documento legal obligatorio"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "2. El objetivo principal del currículum es:",
+    options: [
+      "Solicitar vacaciones",
+      "Conseguir un empleo",
+      "Pedir un ascenso",
+      "Firmar un contrato"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "3. ¿Qué información debe incluir un CV?",
+    options: [
+      "Solo experiencia",
+      "Solo formación",
+      "Experiencia, formación y datos personales",
+      "Solo datos personales"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "4. El perfil profesional en el CV sirve para:",
+    options: [
+      "Indicar el salario",
+      "Sustituir la experiencia",
+      "Decorar el documento",
+      "Resumir la trayectoria y objetivos"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "5. La carta de presentación acompaña a:",
+    options: [
+      "El contrato",
+      "EI DNI",
+      "El currículum",
+      "La nómina"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "6. La carta de presentación tiene como finalidad:",
+    options: [
+      "Calcular salario",
+      "Firmar contrato",
+      "Solicitar vacaciones",
+      "Presentar al candidato"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "7. En una entrevista de trabajo es importante:",
+    options: [
+      "Interrumpir",
+      "No hablar",
+      "Llegar tarde",
+      "Mostrar interés"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "8. La comunicación verbal incluye:",
+    options: [
+      "Gestos",
+      "Palabras",
+      "Postura",
+      "Mirada"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "9. La comunicación no verbal incluye:",
+    options: [
+      "Escritura",
+      "Tono de voz",
+      "Palabras",
+      "Gestos y postura"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "10. Una entrevista laboral sirve para:",
+    options: [
+      "Firmar contrato",
+      "Evaluar al candidato",
+      "Despedir",
+      "Pagar salario"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "11. La empleabilidad se refiere a:",
+    options: [
+      "Capacidad de conseguir y mantener empleo",
+      "Reducir jornada",
+      "Tener empleo fijo",
+      "Cobrar más salario"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "12. Las competencias profesionales son:",
+    options: [
+      "Vacaciones",
+      "Habilidades y conocimientos",
+      "Contratos",
+      "Salarios"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "13. La actitud en una entrevista debe ser:",
+    options: [
+      "Profesional",
+      "Pasiva",
+      "Indiferente",
+      "Negativa"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "14. El lenguaje corporal debe ser:",
+    options: [
+      "Nervioso",
+      "Cerrado",
+      "Seguro y natural",
+      "Exagerado"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "15. La escucha activa implica:",
+    options: [
+      "Ignorar",
+      "Interrumpir",
+      "No prestar atención",
+      "Prestar atención y responder adecuadamente"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "16. El mercado laboral está formado por:",
+    options: [
+      "Solo trabajadores",
+      "Empresas y trabajadores",
+      "Solo contratos",
+      "Solo empresas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "17. La búsqueda de empleo puede hacerse mediante:",
+    options: [
+      "Solo contactos",
+      "Solo empresas",
+      "Redes sociales profesionales",
+      "Solo prensa"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "18. LinkedIn es:",
+    options: [
+      "Una empresa",
+      "Una red social profesional",
+      "Una nómina",
+      "Un contrato"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "19. El networking consiste en:",
+    options: [
+      "Firmar documentos",
+      "Crear contactos profesionales",
+      "Pagar salarios",
+      "Hacer contratos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "20. Una oferta de empleo incluye:",
+    options: [
+      "Solo contrato",
+      "Solo salario",
+      "Solo horario",
+      "Requisitos y condiciones"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "21. El autoconocimiento permite:",
+    options: [
+      "Reducir salario",
+      "Firmar contratos",
+      "Conocer fortalezas y debilidades",
+      "Evitar empleo"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "22. La marca personal es:",
+    options: [
+      "La imagen profesional que proyectas",
+      "Un salario",
+      "Un contrato",
+      "Una empresa"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "23. Un objetivo profesional debe ser:",
+    options: [
+      "General",
+      "Imposible",
+      "Irreal",
+      "Claro y alcanzable"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "24. La formación continua permite:",
+    options: [
+      "Evitar trabajo",
+      "No aprender",
+      "Reducir salario",
+      "Mejorar competencias"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "25. La flexibilidad laboral implica:",
+    options: [
+      "Adaptación a cambios",
+      "Reducir jornada",
+      "No trabajar",
+      "Rigidez"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "26. El trabajo en equipo requiere:",
+    options: [
+      "Competencia",
+      "Aislamiento",
+      "Individualismo",
+      "Colaboración"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "27. La responsabilidad laboral implica:",
+    options: [
+      "No cumplir",
+      "Llegar tarde",
+      "Cumplir tareas",
+      "Evitar trabajo"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "28. La iniciativa es:",
+    options: [
+      "No hacer nada",
+      "Esperar órdenes",
+      "Evitar responsabilidades",
+      "Actuar de forma proactiva"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "29. La organización del tiempo permite:",
+    options: [
+      "Reducir trabajo",
+      "Evitar tareas",
+      "Perder tiempo",
+      "Ser más eficiente"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "30. La toma de decisiones implica:",
+    options: [
+      "Delegar siempre",
+      "No pensar",
+      "Evitar elegir",
+      "Analizar y elegir opciones"
+    ],
+    correctAnswer: 3
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] { const newArray = [...array]; for (let i = newArray.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArray[i], newArray[j]] = [newArray[j], newArray[i]] } return newArray }
