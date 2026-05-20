@@ -14,16 +14,156 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para PSP - Test I",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
-  },
-  {
-    question: "Pregunta de ejemplo 2 para PSP - Test I",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "1 ¿QUÉ ES UN HILO (THREAD)?",
+    options: ["Un programa independiente", "Una unidad de ejecución dentro de un proceso", "Un tipo de socket", "Un sistema operativo"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "2. ¿QUÉ MÉTODO INICIA UN HILO EN JAVA?",
+    options: ["run()", "execute()", "start()", "init()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "3. DIFERENCIA PRINCIPAL ENTRE PROCESO E HILO",
+    options: ["No hay diferencia", "El proceso comparte memoria con otros procesos", "El hilo comparte memoria con otros hilos del mismo proceso", "El hilo es más pesado que el proceso"],
+    correctAnswer: 2,
+  },
+  {
+    question: "4. ¿QUÉ OCURRE SI LLAMAS DIRECTAMENTE A RUN() EN LUGAR DE START()?",
+    options: ["Se crea un nuevo hilo", "Se ejecuta en paralelo", "Se ejecuta como método normal", "Da error"],
+    correctAnswer: 2,
+  },
+  {
+    question: "5. ¿QUÉ MÉTODO PAUSA UN HILO TEMPORALMENTE?",
+    options: ["wait()", "sleep()", "stop()", "pause()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "6. ¿QUÉ SIGNIFICA CONCURRENCIA?",
+    options: ["Ejecutar procesos en orden", "Ejecutar múltiples tareas aparentemente al mismo tiempo", "Ejecutar solo un hilo", "Ejecutar en red"],
+    correctAnswer: 1,
+  },
+  {
+    question: "7. ¿QUÉ HACE SYNCHRONIZED EN JAVA?",
+    options: ["Ejecuta más rápido", "Evita concurrencia", "Controla acceso exclusivo a un recurso", "Detiene hilos"],
+    correctAnswer: 2,
+  },
+  {
+    question: "8. ¿QUÉ MÉTODO SE USA PARA ESPERAR A OTRO HILO?",
+    options: ["wait()", "join()", "sleep()", "notify()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "9. ¿QUÉ ES UN DEADLOCK?",
+    options: ["Un hilo terminado", "Un error de compilación", "Bloqueo mutuo entre hilos", "Un socket cerrado"],
+    correctAnswer: 2,
+  },
+  {
+    question: "10. ¿QUÉ INTERFAZ PERMITE CREAR HILOS EN JAVA?",
+    options: ["Threadable", "Runnable", "Executable", "Callable Thread"],
+    correctAnswer: 1,
+  },
+  {
+    question: "11. UN PROCESO ES",
+    options: ["Un hilo", "Un programa en ejecución", "Un socket", "Un puerto"],
+    correctAnswer: 1,
+  },
+  {
+    question: "12. ¿QUÉ CLASE PERMITE EJECUTAR PROCESOS EXTERNOS EN JAVA?",
+    options: ["Thread", "Process Builder", "Runtime Thread", "Executor"],
+    correctAnswer: 1,
+  },
+  {
+    question: "13. ¿QUÉ MÉTODO EJECUTA UN COMANDO DEL SISTEMA?",
+    options: ["runCommand()", "exec()", "startProcess()", "execute()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "14. ¿QUÉ DEVUELVE UN PROCESO HIJO?",
+    options: ["Puerto", "Código de salida", "IP", "Socket"],
+    correctAnswer: 1,
+  },
+  {
+    question: "15. TCP ES",
+    options: ["No confiable", "Orientado a conexión", "Más rápido siempre", "Sin conexión"],
+    correctAnswer: 1,
+  },
+  {
+    question: "16. UDP ES",
+    options: ["Orientado a conexión", "Confiable", "No orientado a conexión", "Más seguro"],
+    correctAnswer: 2,
+  },
+  {
+    question: "17. ¿QUÉ CLASE SE USA PARA SERVIDOR TCP EN JAVA?",
+    options: ["Socket", "ServerSocket", "DatagramSocket", "TCPServer"],
+    correctAnswer: 1,
+  },
+  {
+    question: "18. ¿QUÉ CLASE SE USA PARA CLIENTE TCP?",
+    options: ["ServerSocket", "Socket", "DatagramPacket", "URL"],
+    correctAnswer: 1,
+  },
+  {
+    question: "19. ¿QUÉ PROTOCOLO GARANTIZA ENTREGA DE DATOS?",
+    options: ["UDP", "TCP", "IP", "HTTP"],
+    correctAnswer: 1,
+  },
+  {
+    question: "20. ¿QUÉ PROTOCOLO ES MÁS RÁPIDO PERO MENOS FIABLE?",
+    options: ["TCP", "UDP", "HTTP", "FTP"],
+    correctAnswer: 1,
+  },
+  {
+    question: "21. ¿QUÉ CLASE SE USA PARA UDP EN JAVA?",
+    options: ["Socket", "ServerSocket", "DatagramSocket", "TCPPacket"],
+    correctAnswer: 2,
+  },
+  {
+    question: "22. ¿QUÉ SE ENVÍA EN UDP?",
+    options: ["Streams", "DatagramPacket", "Files", "Threads"],
+    correctAnswer: 1,
+  },
+  {
+    question: "23. ¿QUÉ MÉTODO DESPIERTA UN HILO EN ESPERA?",
+    options: ["wake()", "notify()", "resume()", "interrupt()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "24. DIFERENCIA ENTRE NOTIFY() Y NOTIFYALL()",
+    options: ["No hay diferencia", "notify despierta todos", "notifyAll despierta todos", "notify bloquea"],
+    correctAnswer: 2,
+  },
+  {
+    question: "25. ¿DÓNDE DEBEN USARSE WAIT() Y NOTIFY()?",
+    options: ["En cualquier sitio", "Dentro de synchronized", "Solo en main", "En sockets"],
+    correctAnswer: 1,
+  },
+  {
+    question: "26. ¿QUÉ ES UN RACE CONDITION?",
+    options: ["Carrera de CPU", "Error de red", "Acceso concurrente incorrecto", "Bloqueo total"],
+    correctAnswer: 2,
+  },
+  {
+    question: "27. ¿QUÉ HACE YIELD()?",
+    options: ["Termina hilo", "Cede CPU", "Bloquea", "Duplica hilo"],
+    correctAnswer: 1,
+  },
+  {
+    question: "28. ¿QUÉ INDICA ISALIVE()?",
+    options: ["Si el hilo está en espera", "Si el hilo sigue ejecutándose", "Si está bloqueado", "Si terminó correctamente"],
+    correctAnswer: 1,
+  },
+  {
+    question: "29. ¿QUÉ ES UN PUERTO EN REDES?",
+    options: ["Dirección IP", "Canal lógico de comunicación", "Protocolo", "Socket físico"],
+    correctAnswer: 1,
+  },
+  {
+    question: "30. ¿QUÉ ES UN SOCKET?",
+    options: ["Un hilo", "Un puerto", "Punto de comunicación entre dos máquinas", "Un proceso"],
+    correctAnswer: 2,
+  },
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
