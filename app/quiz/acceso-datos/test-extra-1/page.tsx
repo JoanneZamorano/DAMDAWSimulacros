@@ -503,6 +503,46 @@ const questions: Question[] = [
     ],
     correctAnswer: 2,
   },
+  {
+    question: "51. ¿Para qué se utiliza la cláusula WHERE en una sentencia SQL?",
+    options: [
+      "Para ordenar los resultados en forma descendente",
+      "Para filtrar registros según condiciones específicas",
+      "Para limitar el número máximo de filas devueltas",
+      "Para eliminar duplicados en los resultados"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "52. ¿Qué función cumple la cláusula ORDER BY en SQL?",
+    options: [
+      "Agrupa registros por valores comunes",
+      "Ordena el conjunto de resultados según una o más columnas",
+      "Filtra registros que no cumplan las condiciones",
+      "Calcula sumas y promedios de datos numéricos"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "53. ¿Cuál es la función del operador DISTINCT en una consulta SQL?",
+    options: [
+      "Sumar todos los valores de una columna",
+      "Eliminar filas duplicadas del resultado",
+      "Crear una copia de seguridad de los datos",
+      "Contar el número total de registros"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "54. ¿Qué efecto tiene la cláusula LIMIT en una consulta SQL?",
+    options: [
+      "Restringe el número de filas devueltas",
+      "Define el máximo valor que puede tener una columna",
+      "Limita el acceso a ciertos usuarios de la base de datos",
+      "Establece un tamaño máximo para la base de datos"
+    ],
+    correctAnswer: 0,
+  },
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
