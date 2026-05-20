@@ -14,16 +14,156 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Acceso a Datos - Test II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "1. ¿Qué cláusula filtra filas antes del agrupamiento?",
+    options: ["HAVING", "WHERE", "ORDER BY", "LIMIT"],
+    correctAnswer: 1,
+  },
+  {
+    question: "2. ¿Qué cláusula filtra grupos tras GROUP BY?",
+    options: ["WHERE", "HAVING", "JOIN", "DISTINCT"],
+    correctAnswer: 1,
+  },
+  {
+    question: "3. ¿Qué hace DISTINCT?",
+    options: ["Ordena filas", "Agrupa datos", "Limita filas", "Elimina duplicados"],
+    correctAnswer: 3,
+  },
+  {
+    question: "4. ¿Qué cláusula ordena resultados?",
+    options: ["GROUP BY", "FROM", "ORDER BY", "COALESCE"],
+    correctAnswer: 2,
+  },
+  {
+    question: "5. ¿Qué función cuenta registros?",
+    options: ["COUNT()", "AVG()", "MAX()", "SUM()"],
     correctAnswer: 0,
   },
   {
-    question: "Pregunta de ejemplo 2 para Acceso a Datos - Test II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "6. ¿Qué función calcula promedio?",
+    options: ["AVG()", "COUNT()", "ROUND()", "SUM()"],
+    correctAnswer: 0,
+  },
+  {
+    question: "7. ¿Qué JOIN devuelve solo coincidencias?",
+    options: ["LEFT JOIN", "FULL JOIN", "RIGHT JOIN", "INNER JOIN"],
+    correctAnswer: 3,
+  },
+  {
+    question: "8. ¿Qué JOIN mantiene todos los registros izquierdos?",
+    options: ["INNER JOIN", "RIGHT JOIN", "CROSS JOIN", "LEFT JOIN"],
+    correctAnswer: 3,
+  },
+  {
+    question: "9. ¿Qué función reemplaza NULL?",
+    options: ["LIMIT", "ORDER BY", "COALESCE()", "COUNT()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "10. ¿Qué comando analiza rendimiento en PostgreSQL?",
+    options: ["GRANT", "EXPLAIN ANALYZE", "COMMIT", "INSERT"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "11. ¿Qué cláusula agrupa registros?",
+    options: ["GROUP BY", "ORDER BY", "DISTINCT", "JOIN"],
+    correctAnswer: 0,
+  },
+  {
+    question: "12. MySQL es una base de datos",
+    options: ["No relacional", "NoSQL", "Relacional", "Obsoleta"],
+    correctAnswer: 2,
+  },
+  {
+    question: "13. ¿Qué JOIN devuelve todo de ambas tablas?",
+    options: ["LEFT JOIN", "FULL JOIN", "RIGHT JOIN", "INNER JOIN"],
+    correctAnswer: 1,
+  },
+  {
+    question: "14. ¿Qué limita el número de filas devueltas?",
+    options: ["WHERE", "HAVING", "AVG", "LIMIT"],
+    correctAnswer: 3,
+  },
+  {
+    question: "15. ¿Qué mejora usar alias?",
+    options: ["Mayor legibilidad", "Más memoria", "Más CPU", "Más filas"],
+    correctAnswer: 0,
+  },
+  {
+    question: "16. ¿Qué tipo de BD es MongoDB?",
+    options: ["NoSQL documental", "Relacional pura", "Orientada a grafos", "Jerárquica"],
+    correctAnswer: 0,
+  },
+  {
+    question: "17. ¿Cómo almacena MongoDB los datos?",
+    options: ["Tablas y filas", "Solo XML", "Triggers", "Colecciones y documentos"],
+    correctAnswer: 3,
+  },
+  {
+    question: "18. ¿Qué formato usa MongoDB habitualmente?",
+    options: ["CSV", "JSON/BSON", "YAML", "TXT"],
+    correctAnswer: 1,
+  },
+  {
+    question: "19. ¿Qué operación CRUD lee datos?",
+    options: ["insert", "update", "find", "drop"],
+    correctAnswer: 2,
+  },
+  {
+    question: "20. ¿Qué operación CRUD actualiza?",
+    options: ["update", "delete", "find", "join"],
+    correctAnswer: 0,
+  },
+  {
+    question: "21. ¿Qué operación CRUD elimina?",
+    options: ["insert", "delete", "find", "group"],
+    correctAnswer: 1,
+  },
+  {
+    question: "22. ¿Qué ventaja clave tiene MongoDB?",
+    options: ["Esquema rígido", "Flexibilidad de esquema", "Solo vertical", "Sin índices"],
+    correctAnswer: 1,
+  },
+  {
+    question: "23. ¿Qué técnica reparte datos entre nodos?",
+    options: ["Sharding", "Backup", "JOIN", "Rollback"],
+    correctAnswer: 0,
+  },
+  {
+    question: "24. ¿Qué herramienta gráfica oficial tiene MongoDB?",
+    options: ["DBeaver", "Power BI", "Compass", "SQLZoo"],
+    correctAnswer: 2,
+  },
+  {
+    question: "25. ¿Qué consola interactiva usa MongoDB?",
+    options: ["bash", "psql", "mongosh", "cmd"],
+    correctAnswer: 2,
+  },
+  {
+    question: "26. ¿Qué servicio cloud oficial ofrece MongoDB?",
+    options: ["EC2", "Azure SQL", "Atlas", "Docker Hub"],
+    correctAnswer: 2,
+  },
+  {
+    question: "27. ¿Qué mejora crean los índices?",
+    options: ["Errores", "Duplicados", "Esquema", "Consultas"],
+    correctAnswer: 3,
+  },
+  {
+    question: "28. ¿Qué valida estructura de documentos?",
+    options: ["COALESCE", "GROUP BY", "LIMIT", "$jsonSchema"],
+    correctAnswer: 3,
+  },
+  {
+    question: "29. ¿Qué formato de fecha recomienda MongoDB?",
+    options: ["TEXTDATE", "ISODate", "NOW()", "VARCHAR"],
+    correctAnswer: 1,
+  },
+  {
+    question: "30. ¿Qué mito es falso sobre MongoDB?",
+    options: ["Usa documentos", "Escala horizontal", "No necesita diseño", "Tiene CRUD"],
+    correctAnswer: 2,
+  }
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
