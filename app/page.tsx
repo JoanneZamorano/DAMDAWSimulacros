@@ -57,8 +57,12 @@ const secondYearSubjects = [
     },
     tests: {
       testI: "/quiz/psp/test-1",
-      //testII: "/quiz/psp/test-2",
+      testII: "/quiz/psp/test-2",
     },
+    extraSimulacros: [
+    { label: "Test Extra 1", link: "/quiz/psp/test-extra-1" },
+    { label: "Test Extra 2", link: "/quiz/psp/test-extra-2" },
+  ],
   },
   {
     id: "pmdm",
