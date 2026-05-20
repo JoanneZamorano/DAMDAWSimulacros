@@ -9,10 +9,307 @@ import Link from "next/link"
 interface Question { question: string; options: string[]; correctAnswer: number }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para IPE II - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para IPE II - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
+  {
+    question: "1. Las competencias blandas son:",
+    options: [
+      "a) Habilidades técnicas",
+      "b) Habilidades personales, sociales y emocionales",
+      "c) Conocimientos teóricos",
+      "d) Certificaciones oficiales"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "2. La inteligencia emocional consiste en:",
+    options: [
+      "a) Resolver problemas matemáticos",
+      "b) Identificar y gestionar emociones",
+      "c) Memorizar datos",
+      "d) Liderar empresas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "3. La autoconciencia implica:",
+    options: [
+      "a) Ignorar emociones",
+      "b) Reconocer emociones propias",
+      "c) Controlar a otros",
+      "d) Tomar decisiones rápidas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "4. La autorregulación permite:",
+    options: [
+      "a) Actuar impulsivamente",
+      "b) Controlar reacciones",
+      "c) Evitar emociones",
+      "d) Ignorar problemas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "5. La motivación en IE es:",
+    options: [
+      "a) Evitar trabajar",
+      "b) Orientarse a objetivos",
+      "c) Descansar más",
+      "d) Reducir esfuerzo"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "6. La empatía consiste en:",
+    options: [
+      "a) Ignorar a los demás",
+      "b) Comprender emociones ajenas",
+      "c) Mandar sobre otros",
+      "d) Evitar conflictos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "7. La autogestión combina:",
+    options: [
+      "a) Comunicación y liderazgo",
+      "b) Autoconciencia, autorregulación y motivación",
+      "c) Experiencia y formación",
+      "d) Trabajo y salario"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "8. La comunicación efectiva permite:",
+    options: [
+      "a) Evitar hablar",
+      "b) Expresar ideas con claridad",
+      "c) Imponer opiniones",
+      "d) Ignorar al equipo"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "9. La colaboración implica:",
+    options: [
+      "a) Trabajar solo",
+      "b) Trabajar en equipo",
+      "c) Evitar responsabilidades",
+      "d) Delegar todo"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "10. Resolver conflictos implica:",
+    options: [
+      "a) Evitarlos",
+      "b) Afrontarlos constructivamente",
+      "c) Ignorarlos",
+      "d) Imponer decisiones"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "11. La comunicación interpersonal incluye:",
+    options: [
+      "a) Solo palabras",
+      "b) Nivel verbal, no verbal y paraverbal",
+      "c) Solo gestos",
+      "d) Solo tono"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "12. La asertividad es:",
+    options: [
+      "a) Imponer ideas",
+      "b) Expresar ideas con respeto",
+      "c) Callarse",
+      "d) Evitar conflictos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "13. La escucha activa consiste en:",
+    options: [
+      "a) Oír sin atención",
+      "b) Prestar atención completa",
+      "c) Interrumpir",
+      "d) Ignorar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "14. La matriz de Eisenhower sirve para:",
+    options: [
+      "a) Comunicar mejor",
+      "b) Priorizar tareas",
+      "c) Motivar equipos",
+      "d) Resolver conflictos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "15. Las tareas urgentes e importantes se deben:",
+    options: [
+      "a) Eliminar",
+      "b) Delegar",
+      "c) Hacer inmediatamente",
+      "d) Posponer"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "16. Un conflicto de tarea es:",
+    options: [
+      "a) Personal",
+      "b) Sobre el trabajo",
+      "c) Emocional",
+      "d) Familiar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "17. Negociar con enfoque ganar-ganar implica:",
+    options: [
+      "a) Ganar a toda costa",
+      "b) Beneficiar a ambas partes",
+      "c) Evitar negociar",
+      "d) Imponer decisiones"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "18. La seguridad psicológica es:",
+    options: [
+      "a) Seguridad física",
+      "b) Confianza para expresar ideas",
+      "c) Normas laborales",
+      "d) Salario alto"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "19. El networking consiste en:",
+    options: [
+      "a) Enviar CVS",
+      "b) Crear contactos profesionales",
+      "c) Hacer entrevistas",
+      "d) Estudiar"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "20. La marca personal es:",
+    options: [
+      "a) Tu ropa",
+      "b) Cómo te perciben los demás",
+      "c) Tu salario",
+      "d) Tu contrato"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "21. LinkedIn se utiliza para:",
+    options: [
+      "a) Juegos",
+      "b) Búsqueda de empleo",
+      "c) Compras",
+      "d) Estudio"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "22. El mercado oculto de empleo es:",
+    options: [
+      "a) Ofertas públicas",
+      "b) Ofertas no publicadas",
+      "c) Trabajos ilegales",
+      "d) Empresas ocultas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "23. El CV debe ser:",
+    options: [
+      "a) Largo",
+      "b) Claro y conciso",
+      "c) Confuso",
+      "d) Muy detallado"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "24. El impacto visual del CV implica:",
+    options: [
+      "a) Colores aleatorios",
+      "b) Diseño limpio y profesional",
+      "c) Muchas imágenes",
+      "d) Texto largo"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "25. Adaptar el CV significa:",
+    options: [
+      "a) Usar siempre el mismo",
+      "b) Ajustarlo a cada oferta",
+      "c) Cambiar el formato",
+      "d) Añadir fotos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "26. La carta de motivación sirve para:",
+    options: [
+      "a) Repetir el CV",
+      "b) Mostrar motivación y personalidad",
+      "c) Añadir datos personales",
+      "d) Explicar el salario"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "27. El CV puede presentarse como:",
+    options: [
+      "a) Solo papel",
+      "b) Documento, online o vide CV",
+      "c) Solo email",
+      "d) Solo vídeo"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "28. Una ventaja del CV online es:",
+    options: [
+      "a) Difícil acceso",
+      "b) Fácil actualización",
+      "c) Menor visibilidad",
+      "d) Más costes"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "29. La estructura del CV incluye:",
+    options: [
+      "a) Solo experiencia",
+      "b) Datos personales, formación y experiencia",
+      "c) Solo formación",
+      "d) Solo datos personales"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "30. El extracto del CV incluye:",
+    options: [
+      "a) Dirección",
+      "b) Perfil profesional",
+      "c) Salario",
+      "d) Empresa"
+    ],
+    correctAnswer: 1
+  }
 ]
-
 function shuffleArray<T>(array: T[]): T[] { const newArray = [...array]; for (let i = newArray.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArray[i], newArray[j]] = [newArray[j], newArray[i]] } return newArray }
 
 export default function IPE2Test1Quiz() {
