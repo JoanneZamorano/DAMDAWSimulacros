@@ -14,15 +14,245 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para IPE II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    question: "1. ¿Cuál es el objetivo principal de una marca personal sólida en la búsqueda de empleo?",
+    options: [
+      "Evitar usar portales de empleo",
+      "Construir una identidad profesional visible y auténtica que refleje experiencia",
+      "Conseguir entrevistas sin CV",
+      "Sustituir el networking por completo"
+    ],
+    correctAnswer: 1
   },
   {
-    question: "Pregunta de ejemplo 2 para IPE II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    question: "2. ¿Qué implica adaptar el CV a cada oferta?",
+    options: [
+      "Mantener el mismo CV para todas las vacantes",
+      "Personalizarlo destacando logros y palabras clave relevantes para la oferta",
+      "Cambiar solo la foto del perfil",
+      "Eliminar la experiencia previa para que sea más breve"
+    ],
+    correctAnswer: 1
   },
+  {
+    question: "3. ¿Qué se entiende por dominio de plataformas digitales en esta unidad?",
+    options: [
+      "Usar únicamente WhatsApp para buscar empleo",
+      "Crear CVs sin adaptarlos",
+      "Utilizar Linkedin y portales especializados para aumentar visibilidad",
+      "Evitar cualquier presencia online"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "4. El networking estratégico sirve principalmente para:",
+    options: [
+      "Acceder al mercado oculto de ofertas laborales mediante contactos",
+      "Reducir la visibilidad profesional en redes",
+      "Encontrar empleo solo a través de anuncios públicos",
+      "No depender de ninguna relación profesional"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "5. Según el esquema de estrategia activa y proactiva, ¿qué dos caminos conducen a oportunidades laborales?",
+    options: [
+      "Solo portales generalistas y sindicatos",
+      "Marca personal en plataformas digitales y networking",
+      "Enviar el mismo CV a todas las empresas y esperar respuesta",
+      "Hacer entrevistas sin preparación y repetirlas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "6. ¿Cuál es la función principal de la carta de motivación según la unidad?",
+    options: [
+      "Repetir exactamente el CV",
+      "Contar tu historia y motivación, mostrando personalidad y conexión",
+      "Sustituir la entrevista",
+      "Evitar hablar de motivación"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "7. En la preparación del CV, la concisión significa:",
+    options: [
+      "Incluir toda la vida laboral con máximo detalle",
+      "Sintetizar la propuesta de valor de forma clara",
+      "No incluir logros para no parecer presumido",
+      "Copiar el CV de internet para ahorrar tiempo"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "8. La asertividad se define como:",
+    options: [
+      "La capacidad de imponer las propias ideas al grupo",
+      "La capacidad de expresar ideas y necesidades respetando los derechos",
+      "La habilidad para evitar cualquier conversación incómoda",
+      "La costumbre de ceder siempre ante los demás"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "9. Según la unidad, la inteligencia emocional es la habilidad para:",
+    options: [
+      "Resolver operaciones matemáticas con rapidez",
+      "Mandar sobre otras personas en el trabajo",
+      "Identificar, comprender y regular las propias emociones y las de los demás",
+      "Evitar cualquier conflicto interpersonal"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "10. ¿Qué son las competencias blandas?",
+    options: [
+      "Conocimientos exclusivamente técnicos para el trabajo",
+      "Habilidades personales, sociales y emocionales",
+      "Capacidades centradas solo en el uso de herramientas digitales",
+      "Normas obligatorias de prevención laboral"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "11. La autorregulación implica principalmente:",
+    options: [
+      "Expresar siempre lo primero que se piensa",
+      "Gestionar impulsos y reacciones, eligiendo respuestas útiles",
+      "Evitar trabajar con otras personas",
+      "Centrarse solo en las emociones ajenas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "12. Según la matriz de Eisenhower, las tareas importantes, pero no urgentes deben:",
+    options: [
+      "Eliminarse",
+      "Hacerse inmediatamente sin planificación",
+      "Planificarse",
+      "Delegarse siempre"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "13. ¿Cuál de las siguientes opciones forma parte de la gestión de relaciones?",
+    options: [
+      "Comunicación efectiva",
+      "Cálculo financiero",
+      "Archivo documental",
+      "Archivo documental"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "14. La autoconciencia consiste en:",
+    options: [
+      "Reconocer qué emoción se siente, qué la provoca y cómo afecta a la conducta",
+      "Dirigir equipos de trabajo con autoridad",
+      "Delegar tareas complejas a otras personas",
+      "Ignorar las emociones para ser más eficiente"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "15. ¿Cuál es uno de los pilares de la comunicación interpersonal?",
+    options: [
+      "La autoridad",
+      "La escucha activa",
+      "La jerarquía",
+      "La competencia individual"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "16. ¿Qué caracteriza la escucha activa?",
+    options: [
+      "Interrumpir para opinar",
+      "Escuchar solo lo importante",
+      "Prestar atención completa y comprender el mensaje",
+      "Ignorar emociones"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "17. La autorregulación implica:",
+    options: [
+      "Reprimir emociones",
+      "Ignorar los problemas",
+      "Gestionar impulsos y reacciones de forma adecuada",
+      "Delegar tareas"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "18. La asertividad se define como:",
+    options: [
+      "Decir siempre lo que uno piensa sin filtros",
+      "Evitar conflictos a toda costa",
+      "Expresar ideas respetando los propios derechos y los de los demás",
+      "Imponer la opinión propia"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "19. En la resolución de conflictos, el enfoque ganar-ganar busca:",
+    options: [
+      "Que una parte gane siempre",
+      "Evitar el conflicto",
+      "Beneficiar a todas las partes implicadas",
+      "Imponer decisiones rápidas"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "20. La matriz de Eisenhower sirve para:",
+    options: [
+      "Evaluar emociones",
+      "Resolver conflictos",
+      "Clasificar tareas según urgencia e importancia",
+      "Mejorar la comunicación"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "21. ¿Qué permite la comunicación efectiva?",
+    options: [
+      "Evitar el trabajo en equipo",
+      "Expressar ideas con claridad y respeto",
+      "Imponer decisiones",
+      "Reducir la productividad"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "22. La autoconciencia consiste en:",
+    options: [
+      "Controlar a otras personas",
+      "Reconocer las emociones propias y su impacto",
+      "Evitar conflictos",
+      "Trabajar en equipo"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "23. ¿Qué son las competencias blandas?",
+    options: [
+      "Habilidades técnicas específicas",
+      "Conocimientos académicos",
+      "Habilidades personales, sociales y emocionales",
+      "Normas legales laborales"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "24. Según Daniel Goleman, la inteligencia emocional es:",
+    options: [
+      "La capacidad de memorizar información",
+      "La habilidad para identificar y gestionar emociones propias y ajenas",
+      "El conocimiento técnico aplicado",
+      "La capacidad de trabajar solo"
+    ],
+    correctAnswer: 1
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
