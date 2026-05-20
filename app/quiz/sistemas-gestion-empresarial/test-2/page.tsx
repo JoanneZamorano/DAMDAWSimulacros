@@ -9,9 +9,37 @@ import Link from "next/link"
 interface Question { question: string; options: string[]; correctAnswer: number }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para SGE - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para SGE - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
-]
+  { question: "¿Qué objetivo principal tiene un ERP?", options: ["Servir como entorno de programación", "Diseñar webs", "Integrar áreas de la empresa", "Editar vídeo"], correctAnswer: 2 },
+  { question: "¿Qué significa CRM?", options: ["Customer Relationship Management", "Control Resource Machine", "Central Report Module", "Client Router Manager"], correctAnswer: 0 },
+  { question: "¿Qué ventaja aporta un ERP frente a hojas Excel aisladas?", options: ["Información unificada", "Más duplicidad", "Más errores", "Menos trazabilidad"], correctAnswer: 0 },
+  { question: "¿Qué área suele cubrir un CRM?", options: ["BIOS", "Redes físicas", "Ventas y clientes", "Drivers"], correctAnswer: 2 },
+  { question: "¿Qué beneficio aporta automatizar procesos?", options: ["Más tareas manuales", "Menor eficiencia", "Ahorro de tiempo", "Más duplicados"], correctAnswer: 2 },
+  { question: "¿Qué empresa se beneficia especialmente de ERP?", options: ["Solo multinacionales", "Solo bancos", "Solo startups", "Pymes y grandes empresas"], correctAnswer: 3 },
+  { question: "¿Qué problema resuelve un ERP al integrar departamentos?", options: ["Aumenta silos", "Elimina usuarios", "Mejora coordinación", "Reduce backups"], correctAnswer: 2 },
+  { question: "¿Qué indicador ayuda a medir éxito de implantación?", options: ["FPS", "GHz", "USB", "ROI"], correctAnswer: 3 },
+  { question: "¿Qué riesgo común existe sin gestión del cambio?", options: ["Más adopción", "Más ventas directas", "Más licencias", "Rechazo de usuarios"], correctAnswer: 3 },
+  { question: "¿Qué enfoque suele ser mejor al implantar ERP?", options: ["Todo de golpe", "Sin formación", "Por fases", "Sin análisis"], correctAnswer: 2 },
+  { question: "¿Qué ERP open source aparece en el temario?", options: ["SAP", "Odoo", "Oracle EBS", "Dynamics"], correctAnswer: 1 },
+  { question: "¿Qué módulo Odoo ayuda a ventas comerciales?", options: ["Kernel", "Firewall", "BIOS", "CRM/Ventas"], correctAnswer: 3 },
+  { question: "¿Qué módulo controla stock y almacén?", options: ["Calendario", "Chat", "Notas", "Inventario"], correctAnswer: 3 },
+  { question: "¿Qué módulo registra facturas y contabilidad?", options: ["Contabilidad", "Editor", "Navegador", "Backup"], correctAnswer: 0 },
+  { question: "¿Qué herramienta no-code permite personalizar Odoo?", options: ["Power BI", "Odoo Studio", "Photoshop", "pgAdmin"], correctAnswer: 1 },
+  { question: "¿Qué vista muestra tareas por etapas?", options: ["BIOS", "Kanban", "RAW", "CLI"], correctAnswer: 1 },
+  { question: "¿Qué vista muestra una ficha individual?", options: ["Mapa", "Formulario", "Pivot físico", "Socket"], correctAnswer: 1 },
+  { question: "¿Qué vista muestra múltiples registros en tabla?", options: ["Canvas", "Kernel", "Lista", "Audio"], correctAnswer: 2 },
+  { question: "¿Qué fase importa clientes y productos antiguos?", options: ["Marketing", "Migración de datos", "Rollback", "Licenciamiento"], correctAnswer: 1 },
+  { question: "¿Qué significa Go-Live?", options: ["Borrar servidor", "Puesta en producción", "Crear backup", "Cambiar logo"], correctAnswer: 1 },
+  { question: "¿Qué conviene hacer antes de personalizar en producción?", options: ["Probar en sandbox", "Cambiar todo directo", "Eliminar usuarios", "Ignorar copias"], correctAnswer: 0 },
+  { question: "¿Qué práctica mejora mantenimiento futuro?", options: ["Sobrecustomizar", "Ocultar ajustes", "Documentar cambios", "Duplicar menús"], correctAnswer: 2 },
+  { question: "¿Qué error común ocurre al crear demasiados campos?", options: ["Interfaz confusa", "Mejor UX", "Más velocidad", "Menos errores"], correctAnswer: 0 },
+  { question: "¿Qué criterio debe seguir un menú ERP?", options: ["Decoración", "Orden aleatorio", "Nombres técnicos", "Lógica funcional"], correctAnswer: 3 },
+  { question: "¿Qué ventaja tienen dashboards?", options: ["Indicadores rápidos", "Más clics", "Menos datos", "Sin filtros"], correctAnswer: 0 },
+  { question: "¿Qué módulo suele usar RRHH?", options: ["GPU", "DNS", "XML", "Human Resources"], correctAnswer: 3 },
+  { question: "¿Qué significa parametrizar Odoo?", options: ["Programar desde cero", "Borrar módulos", "Formatear servidor", "Configurar opciones del sistema"], correctAnswer: 3 },
+  { question: "¿Qué suele requerir un upgrade mayor?", options: ["Nada", "Pruebas y compatibilidad", "Solo cambiar color", "Apagar ratón"], correctAnswer: 1 },
+  { question: "¿Qué beneficio aporta trazabilidad en ERP?", options: ["Menos control", "Seguir operaciones y cambios", "Más caos", "Menos información"], correctAnswer: 1 },
+  { question: "¿Qué define mejor un proyecto ERP exitoso?", options: ["Tecnología + procesos + personas", "Solo tecnología", "Solo hardware", "Solo licencias"], correctAnswer: 0 }
+];
 
 function shuffleArray<T>(array: T[]): T[] { const newArray = [...array]; for (let i = newArray.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArray[i], newArray[j]] = [newArray[j], newArray[i]] } return newArray }
 
