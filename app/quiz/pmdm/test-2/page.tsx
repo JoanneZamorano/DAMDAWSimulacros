@@ -13,9 +13,157 @@ interface Question {
 }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para PMDM - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para PMDM - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
-]
+  {
+    question: "1. ¿Qué ventaja principal ofrece React Native?",
+    options: ["Dos bases de código", "Una base para Android e iOS", "Solo apps web", "Mayor uso de RAM"],
+    correctAnswer: 1,
+  },
+  {
+    question: "2. ¿Qué capa traduce JavaScript a código nativo?",
+    options: ["Native Layer", "UI Layer", "SDK Layer", "Bridge Layer"],
+    correctAnswer: 3,
+  },
+  {
+    question: "3. ¿Qué archivo suele ser el punto de entrada?",
+    options: ["index.sql", "App.js", "Main.xml", "config.kt"],
+    correctAnswer: 1,
+  },
+  {
+    question: "4. ¿Qué componente actúa como contenedor visual?",
+    options: ["<Text>", "<Image>", "<View>", "<Button>"],
+    correctAnswer: 2,
+  },
+  {
+    question: "5. ¿Qué librería gestiona navegación en React Native?",
+    options: ["React Navigation", "Axios", "Unity Hub", "Redux SQL"],
+    correctAnswer: 0,
+  },
+  {
+    question: "6. ¿Qué navigator es mejor para flujo lineal?",
+    options: ["Tab Navigator", "Drawer Navigator", "Grid Navigator", "Stack Navigator"],
+    correctAnswer: 3,
+  },
+  {
+    question: "7. ¿Qué navigator usa pestañas principales?",
+    options: ["Stack", "Drawer", "Tab Navigator", "Modal"],
+    correctAnswer: 2,
+  },
+  {
+    question: "8. ¿Qué función nativa consume APIs simples?",
+    options: ["print()", "fetch()", "render()", "npm()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "9. ¿Qué librería suele usarse para APIs avanzadas?",
+    options: ["SQLite", "Xcode", "Axios", "Flipper UI"],
+    correctAnswer: 2,
+  },
+  {
+    question: "10. ¿Cómo se definen estilos base?",
+    options: ["CSS file", "styles.xml", "Bootstrap", "StyleSheet.create()"],
+    correctAnswer: 3,
+  },
+  {
+    question: "11. ¿Qué hook gestiona estado local?",
+    options: ["useState", "useFetch", "useRouter", "useFile"],
+    correctAnswer: 0,
+  },
+  {
+    question: "12. ¿Qué hook ejecuta efectos secundarios?",
+    options: ["useEffect", "use Text", "useImage", "useBuild"],
+    correctAnswer: 0,
+  },
+  {
+    question: "13. ¿Qué herramienta simplifica empezar proyectos?",
+    options: ["AWR", "Unity XR", "Expo CLI", "Gradle SQL"],
+    correctAnswer: 2,
+  },
+  {
+    question: "14. ¿Qué componente es más eficiente para listas grandes?",
+    options: ["ScrollView", "FlatList", "Image", "Modal"],
+    correctAnswer: 1,
+  },
+  {
+    question: "15. ¿Qué mito es falso sobre React Native?",
+    options: ["No consume APIs reales", "Usa JS", "Es multiplataforma", "Tiene componentes"],
+    correctAnswer: 0,
+  },
+  {
+    question: "16. ¿Qué aplicación gestiona versiones y proyectos Unity?",
+    options: ["Xcode", "Unity Hub", "npm", "Android SDK"],
+    correctAnswer: 1,
+  },
+  {
+    question: "17. ¿Qué panel muestra objetos de la escena?",
+    options: ["Hierarchy", "Inspector", "Console", "Package"],
+    correctAnswer: 0,
+  },
+  {
+    question: "18. ¿Qué panel edita propiedades del objeto?",
+    options: ["Scene", "Game", "Assets", "Inspector"],
+    correctAnswer: 3,
+  },
+  {
+    question: "19. ¿Qué define posición, rotación y escala?",
+    options: ["Renderer", "Collider", "Transform", "Animator"],
+    correctAnswer: 2,
+  },
+  {
+    question: "20. ¿Qué componente detecta colisiones?",
+    options: ["Shader", "Prefab", "Canvas", "Collider"],
+    correctAnswer: 3,
+  },
+  {
+    question: "21. ¿Qué clase base heredan muchos scripts?",
+    options: ["GameLoop", "JavaObject", "RendererBase", "MonoBehaviour"],
+    correctAnswer: 3,
+  },
+  {
+    question: "22. ¿Qué método se ejecuta una vez al iniciar?",
+    options: ["Update()", "Start()", "Late()", "Tick()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "23. ¿Qué método corre cada frame?",
+    options: ["Build()", "RenderNow()", "Update()", "OnCreate()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "24. ¿Qué método es ideal para físicas constantes?",
+    options: ["Start", "LateUpdate", "AwakeOnly", "FixedUpdate()"],
+    correctAnswer: 3,
+  },
+  {
+    question: "25. ¿Qué componente da masa y gravedad en 2D?",
+    options: ["Rigidbody2D", "Transform2D", "SpriteMask", "Tilemap"],
+    correctAnswer: 0,
+  },
+  {
+    question: "26. ¿Qué evento detecta entrada trigger 2D?",
+    options: ["OnStart2D()", "OnRender2D()", "OnJump2D()", "OnTriggerEnter2D()"],
+    correctAnswer: 3,
+  },
+  {
+    question: "27. ¿Qué sistema controla estados Idle/Run/Jump?",
+    options: ["Console", "Animator", "Profiler", "Package"],
+    correctAnswer: 1,
+  },
+  {
+    question: "28. ¿Qué objeto reutilizable actúa como plantilla?",
+    options: ["Prefab", "Shader", "Layer", "Axis"],
+    correctAnswer: 0,
+  },
+  {
+    question: "29. ¿Qué luz simula el sol globalmente?",
+    options: ["Point Light", "Spot Light", "Directional Light", "Area Camera"],
+    correctAnswer: 2,
+  },
+  {
+    question: "30. ¿Qué módulo activa VR/AR/MR fácilmente?",
+    options: ["Node XR", "XR Plugin Management", "Bridge XR", "ADB XR"],
+    correctAnswer: 1,
+  },
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
