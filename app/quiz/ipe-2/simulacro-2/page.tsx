@@ -14,15 +14,245 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para IPE II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    question: "1. ¿Cuál es uno de los beneficios de trabajar la marca personal?",
+    options: [
+      "Reducir el número de entrevistas",
+      "Diferenciarse de la competencia",
+      "Evitar el uso de redes sociales",
+      "No necesitar CV"
+    ],
+    correctAnswer: 1
   },
   {
-    question: "Pregunta de ejemplo 2 para IPE II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    question: "2. ¿Qué incluye la experiencia profesional en el CV?",
+    options: [
+      "Solo el nombre de la empresa",
+      "Puesto, empresa, funciones y fechas",
+      "Puesto, empresa, funciones y fechas",
+      "Solo el cargo"
+    ],
+    correctAnswer: 1
   },
+  {
+    question: "3. ¿Qué es la marca personal?",
+    options: [
+      "El currículum en papel",
+      "La forma en que te perciben los demás",
+      "Tu experiencia laboral únicamente",
+      "Tu formación académica"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "4. ¿Cuál es la misión principal del CV?",
+    options: [
+      "Enumerar cursos",
+      "Definir tu personalidad",
+      "Defender tu candidatura",
+      "Conseguir seguidores"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "5. ¿Cuál es una desventaja del CV online?",
+    options: [
+      "Difícil acceso",
+      "No se puede actualizar",
+      "Pérdida de privacidad",
+      "No lo ven las empresas"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "6. ¿Qué elemento forma parte de la estructura de un CV?",
+    options: [
+      "Opiniones personales",
+      "Datos personales",
+      "Redes sociales obligatorias",
+      "Fotografías familiares"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "7. ¿Cuál es una ventaja del CV vía email?",
+    options: [
+      "Mayor impacto visual",
+      "Permite envío masivo y a distancia",
+      "Se actualiza automáticamente",
+      "Tiene más privacidad"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "8. ¿Qué debe incluir el extracto del CV?",
+    options: [
+      "Solo datos personales",
+      "Perfil profesional y objetivo",
+      "Solo experiencia",
+      "Solo formación"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "9. ¿Cuánto tiempo tardan los reclutadores en una primera revisión de un CV?",
+    options: [
+      "1 minuto",
+      "30 segundos",
+      "6 segundos",
+      "10 minutos"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "10. ¿Cuál es un formato posible de CV?",
+    options: [
+      "Solo en papel",
+      "Solo online",
+      "Documento, online o videocurrículum",
+      "Solo en redes sociales"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "11. ¿Cuál era el objetivo principal de las entrevistas de problema?",
+    options: [
+      "Vender directamente el producto",
+      "Conseguir financiación",
+      "Confirmar que el problema es relevante",
+      "Diseñar el logotipo de la empresa"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "12. ¿Cuál es el primer paso para generar una idea emprendedora útil?",
+    options: [
+      "Crear una página web",
+      "Detectar un problema real",
+      "Buscar financiación",
+      "Contratar empleados"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "13. Según la unidad, una queja cotidiana puede convertirse en:",
+    options: [
+      "Un gasto innecesario",
+      "Una estrategia publicitaria",
+      "Una oportunidad de negocio",
+      "Un problema legal"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "14. ¿Qué hizo Dropbox para validar su idea antes de desarrollar el producto completo?",
+    options: [
+      "Abrir tiendas físicas",
+      "Crear una aplicación completa",
+      "Lanzar un vídeo explicativo",
+      "Contratar inversores"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "15. ¿Qué permiten hacer los Objetivos de Desarrollo Sostenible (ODS)?",
+    options: [
+      "Eliminar la competencia",
+      "Detectar oportunidades con impacto social y ambiental",
+      "Reducir impuestos empresariales",
+      "Crear productos tecnológicos automáticamente"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "16. ¿Qué demuestra normalmente la existencia de competencia?",
+    options: [
+      "Que la idea no vale",
+      "Que existe demanda real",
+      "Que el negocio fracasará",
+      "Que el mercado está cerrado"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "17. ¿Qué herramienta ayuda a observar tendencias y necesidades emergentes?",
+    options: [
+      "Excel",
+      "Photoshop",
+      "Google Trends",
+      "PowerPoint"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "18. ¿Qué combina el Design Thinking para entender necesidades reales?",
+    options: [
+      "Publicidad y ventas",
+      "Empatía, creatividad y experimentación",
+      "Finanzas y contabilidad",
+      "Tecnología y logística"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "19. ¿Qué se hace en la fase de prototipar?",
+    options: [
+      "Analizar balances financieros",
+      "Crear versiones mínimas de la idea para aprender",
+      "Contratar empleados",
+      "Registrar la marca"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "20. ¿Qué organización utilizó Design Thinking para combatir la contaminación plástica?",
+    options: [
+      "Glovo",
+      "Dropbox",
+      "Heura Foods",
+      "The Ocean Cleanup"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "21. ¿Qué tipo de financiación utiliza recursos propios?",
+    options: [
+      "Venture Capital",
+      "Crowdfunding",
+      "Bootstrapping",
+      "Business Angels"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "22. ¿Cuál es la primera fase del proceso de Design Thinking?",
+    options: [
+      "Idear",
+      "Prototipar",
+      "Empatizar",
+      "Testear"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "23. Según la unidad, el impacto social y ambiental:",
+    options: [
+      "Solo se mide al final del proyecto",
+      "Es menos importante que el beneficio económico",
+      "Debe incorporarse desde el inicio del proyecto",
+      "Solo depende de las ONG"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "24. ¿Cuándo una idea se convierte realmente en negocio?",
+    options: [
+      "Cuando tiene muchos seguidores en redes sociales",
+      "Cuando los ingresos superan los costes",
+      "Cuando consigue financiación bancaria",
+      "Cuando se registra legalmente"
+    ],
+    correctAnswer: 1
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
