@@ -155,8 +155,8 @@ const questions: Question[] = [
   },
   {
     question: "29. ¿Qué representa el flujo correcto?",
-    options: ["CSS UI", "Herencia extensión", "Encapsulación reutilización", "Eventos CSS UI DB"],
-    correctAnswer: 2,
+    options: ["CSS→UI", "Herencia→extensión→encapsulación→reutilización", "Eventos→CSS", "UI→DB"],
+    correctAnswer: 1,
   },
   {
     question: "30. ¿Qué hace el botón Like al pulsar?",
