@@ -513,6 +513,56 @@ const questions: Question[] = [
     ],
     correctAnswer: 1,
   },
+  {
+    question: "51. ¿Cuál es la naturaleza del Pilar Europeo de Derechos Sociales?",
+    options: [
+      "Un tratado comercial bilateral entre estados europeos",
+      "Un marco estratégico de políticas sociales de la Unión Europea",
+      "Una ley tributaria que armoniza impuestos entre países",
+      "Una norma técnica para seguridad industrial"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "52. ¿Cuál es el propósito final de la sostenibilidad empresarial contemporánea?",
+    options: [
+      "Maximizar únicamente los dividendos para accionistas",
+      "Minimizar gastos de operación sin cambios estratégicos",
+      "Generar valor económico, social y ambiental para todos los stakeholders",
+      "Aumentar volúmenes de producción sin restricciones"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "53. ¿Cuál es el objetivo fundamental del desarrollo sostenible en la gestión de recursos?",
+    options: [
+      "Maximizar la explotación de recursos naturales para obtener mayor rentabilidad económica inmediata",
+      "Satisfacer las necesidades presentes sin comprometer la capacidad de las generaciones futuras para satisfacer las suyas",
+      "Eliminar completamente la actividad industrial en todas las regiones del planeta",
+      "Priorizar exclusivamente el crecimiento económico sobre cualquier otra consideración"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "54. ¿En qué unidad de medida se expresa la huella ecológica?",
+    options: [
+      "Kilogramos de CO2 equivalente por año",
+      "Hectáreas globales (hag) por persona",
+      "Toneladas de residuo por kilómetro cuadrado",
+      "Megajulios de energía consumida mensualmente"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "55. ¿Qué representa el Día de la Sobrecapacidad de la Tierra?",
+    options: [
+      "La fecha en la que la humanidad ha consumido todos los recursos disponibles anualmente que el planeta puede regenerar",
+      "El aniversario del primer acuerdo ambiental internacional firmado por la ONU",
+      "El día designado para celebrar los logros en reducción de emisiones de carbono",
+      "La fecha en que se detectó por primera vez el cambio climático global"
+    ],
+    correctAnswer: 0,
+  },
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
