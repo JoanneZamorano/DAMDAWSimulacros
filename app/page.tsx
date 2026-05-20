@@ -140,7 +140,7 @@ const secondYearSubjects = [
     color: "bg-teal-500",
     hoverBorder: "hover:border-teal-500/50",
     simulacros: {
-      kahootI: "/quiz/ipe-2/simulacro-1",
+      simulacroI: "/quiz/ipe-2/simulacro-1",
       simulacroII: "/quiz/ipe-2/simulacro-2",
     },
     tests: {
