@@ -9,9 +9,37 @@ import Link from "next/link"
 interface Question { question: string; options: string[]; correctAnswer: number }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para Sostenibilidad - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para Sostenibilidad - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
-]
+  { question: "¿Qué busca el desarrollo sostenible?", options: ["Aumentar solo el crecimiento económico", "Proteger únicamente el medio ambiente", "Equilibrar economía, sociedad y medio ambiente", "Reducir la producción industrial"], correctAnswer: 2 },
+  { question: "¿En qué año se formalizó el concepto de desarrollo sostenible?", options: ["1972", "1987", "1992", "2000"], correctAnswer: 1 },
+  { question: "¿Qué documento definió el desarrollo sostenible?", options: ["Agenda 2030", "Protocolo de Kioto", "Informe Brundtland", "Tratado de París"], correctAnswer: 2 },
+  { question: "¿Cuántos Objetivos de Desarrollo Sostenible existen?", options: ["10", "12", "15", "17"], correctAnswer: 3 },
+  { question: "¿Qué caracteriza a los ODS?", options: ["Son solo para países pobres", "Se aplican solo a empresas", "Son independientes entre sí", "Son universales e interconectados"], correctAnswer: 3 },
+  { question: "¿Qué mide la huella ecológica?", options: ["El crecimiento económico", "El impacto del consumo de recursos humanos", "La calidad de vida", "La biodiversidad"], correctAnswer: 1 },
+  { question: "¿En qué unidad se mide la huella ecológica?", options: ["Toneladas", "Kilómetros", "Hectáreas globales (gha)", "Grados"], correctAnswer: 2 },
+  { question: "Actualmente, ¿cuántos planetas consume la humanidad aproximadamente?", options: ["1", "1.2", "1.7", "2.5"], correctAnswer: 2 },
+  { question: "¿Qué es el Día de la Sobrecapacidad de la Tierra?", options: ["El día más caluroso del año", "El día con más emisiones", "El día de mayor consumo energético", "El momento en que se agotan los recursos anuales del planeta"], correctAnswer: 3 },
+  { question: "¿Qué problema global está relacionado con la huella ecológica?", options: ["Solo el desempleo", "La sobreexplotación de recursos", "El turismo", "La digitalización"], correctAnswer: 1 },
+  { question: "¿Cuál es una de las “5 R”?", options: ["Rentabilizar", "Reprogramar", "Rechazar", "Reinvertir"], correctAnswer: 2 },
+  { question: "Cuál es el principal gas de efecto invernadero?", options: ["Oxígeno", "Nitrógeno", "Hidrógeno", "Dióxido de carbono (CO2)"], correctAnswer: 3 },
+  { question: "¿Cuál es la causa principal del cambio climático actual?", options: ["Actividad volcánica", "Ciclos solares", "Actividad humana", "Corrientes marinas"], correctAnswer: 2 },
+  { question: "¿Qué efecto provoca el calentamiento global?", options: ["Disminución del nivel del mar", "Menos fenómenos extremos", "Derretimiento de glaciares", "Menos lluvias"], correctAnswer: 2 },
+  { question: "¿Qué ocurre con los fenómenos meteorológicos?", options: ["Disminuyen", "Desaparecen", "Se estabilizan", "Aumentan en frecuencia e intensidad"], correctAnswer: 3 },
+  { question: "Cuál es una estrategia clave de descarbonización?", options: ["Uso de carbón", "Energías renovables", "Aumento del petróleo", "Reducción de tecnología"], correctAnswer: 1 },
+  { question: "¿Qué significa neutralidad climática?", options: ["No emitir gases", "Emitir más gases", "Equilibrar emisiones y absorción", "Usar solo energía nuclear"], correctAnswer: 2 },
+  { question: "¿Qué mejora la eficiencia energética?", options: ["Consumir más energía", "Usar energía fósil", "Usar menos energía para el mismo resultado", "Reducir población"], correctAnswer: 2 },
+  { question: "¿Qué caracteriza al transporte sostenible?", options: ["Más coches privados", "Uso exclusivo de gasolina", "Fomento del transporte público y bicicleta", "Eliminación de transporte"], correctAnswer: 2 },
+  { question: "¿Qué es la economía lineal?", options: ["Reciclar continuamente", "Reutilizar materiales", "Extraer, producir, usar y tirar", "Compartir productos"], correctAnswer: 2 },
+  { question: "¿Qué propone la economía circular?", options: ["Aumentar residuos", "Reducir calidad", "Producir más rápido", "Mantener el valor de los productos"], correctAnswer: 3 },
+  { question: "¿Cuál es el orden correcto de prioridades en la economía circular?", options: ["Reciclar → reducir → reutilizar", "Reducir → reutilizar → reparar → reciclar", "Reparar → tirar → reciclar", "Reutilizar → desechar"], correctAnswer: 1 },
+  { question: "¿Qué es el ecodiseño?", options: ["Diseñar rápido", "Diseñar barato", "Diseñar productos duraderos y reparables", "Diseñar con plástico"], correctAnswer: 2 },
+  { question: "¿Qué analiza el ciclo de vida de un producto?", options: ["Solo su venta", "Solo su uso", "Solo su reciclaje", "Todas sus fases desde producción hasta fin de vida"], correctAnswer: 3 },
+  { question: "Qué hace Back Market?", options: ["Vende productos nuevos", "Produce energía", "Reacondiciona dispositivos electrónicos", "Fabrica ropa"], correctAnswer: 2 },
+  { question: "¿Qué sector genera más residuos electrónicos?", options: ["Alimentación", "Moda", "Tecnología", "Turismo"], correctAnswer: 2 },
+  { question: "¿Qué es la biodiversidad?", options: ["Solo plantas", "Solo animales", "Ecosistemas urbanos", "Variedad de vida en el planeta incluyendo todo tipo de especies"], correctAnswer: 3 },
+  { question: "¿Qué son los servicios ecosistémicos?", options: ["Servicios turísticos", "Beneficios que obtenemos de la naturaleza", "Servicios digitales", "Recursos económicos"], correctAnswer: 1 },
+  { question: "¿Cuál es una threat para la biodiversidad?", options: ["Agricultura sostenible", "Energías renovables", "Destrucción de hábitats", "Reciclaje"], correctAnswer: 2 },
+  { question: "¿Qué objetivo tiene el marco Kunming-Montreal?", options: ["Aumentar emisiones", "Reducir población", "Mejorar turismo", "Proteger al menos el 30% del planeta"], correctAnswer: 3 }
+];
 
 function shuffleArray<T>(array: T[]): T[] { const newArray = [...array]; for (let i = newArray.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArray[i], newArray[j]] = [newArray[j], newArray[i]] } return newArray }
 
