@@ -75,6 +75,10 @@ const secondYearSubjects = [
       testI: "/quiz/pmdm/test-1",
       testII: "/quiz/pmdm/test-2",
     },
+     extraSimulacros: [
+    { label: "Test Extra 1", link: "/quiz/pmdm/test-extra-1" },
+    { label: "Test Extra 2", link: "/quiz/pmdm/test-extra-2" },
+  ],
   },
   {
     id: "sistemas-gestion-empresarial",
