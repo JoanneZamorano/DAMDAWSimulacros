@@ -332,7 +332,7 @@ export default function IPE2Simulacro2Quiz() {
             <h1 className="text-4xl font-bold">
               <span className="text-foreground">IPE II</span>
             </h1>
-            <h2 className="text-xl text-muted-foreground">Simulacro II</h2>
+            <h2 className="text-xl text-muted-foreground">Kahoot II</h2>
             <p className="text-muted-foreground text-lg">Itinerario para la empleabilidad II</p>
 
             <div className="space-y-4 text-left py-6">
