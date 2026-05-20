@@ -39,6 +39,10 @@ const secondYearSubjects = [
       testI: "/quiz/desarrollo-interfaces/test-1",
       testII: "/quiz/desarrollo-interfaces/test-2",
     },
+    extraSimulacros: [
+    { label: "Test Extra 1", link: "/quiz/desarrollo-interfaces/test-extra-1" },
+    { label: "Test Extra 2", link: "/quiz/desarrollo-interfaces/test-extra-2" },
+  ],
   },
   {
     id: "psp",
