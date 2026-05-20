@@ -14,16 +14,156 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Desarrollo de Interfaces - Test II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "1) ¿Qué NO forma parte de la usabilidad?",
+    options: ["Eficiencia", "Satisfacción", "Rendimiento técnico", "Efectividad"],
+    correctAnswer: 2,
+  },
+  {
+    question: "2) ¿Qué indica la visibilidad del estado del sistema?",
+    options: ["El diseño debe ser bonito", "El usuario debe saber qué está pasando", "Evitar errores", "Usar colores"],
+    correctAnswer: 1,
+  },
+  {
+    question: "3) ¿Qué principio permite deshacer acciones?",
+    options: ["Consistencia", "Control y libertad", "Prevención de errores", "Minimalismo"],
+    correctAnswer: 1,
+  },
+  {
+    question: "4) ¿Qué implica diseño minimalista?",
+    options: ["Más información", "Menos elementos innecesarios", "Más colores", "Más botones"],
+    correctAnswer: 1,
+  },
+  {
+    question: "5) ¿Qué demuestra el caso Duolingo?",
+    options: ["Marketing es clave", "UX mejora retención", "Código es lo importante", "Diseño no importa"],
+    correctAnswer: 1,
+  },
+  {
+    question: "6) ¿Qué es la accesibilidad?",
+    options: ["Diseño bonito", "Uso por cualquier persona", "Velocidad web", "Animaciones"],
+    correctAnswer: 1,
+  },
+  {
+    question: "7) ¿Qué significa Perceptible?",
+    options: ["Fácil de programar", "Visible y audible", "Rápido", "Seguro"],
+    correctAnswer: 1,
+  },
+  {
+    question: "8) ¿Qué significa Understandable?",
+    options: ["Rápido", "Comprensible", "Seguro", "Estético"],
+    correctAnswer: 1,
+  },
+  {
+    question: "9) ¿Cuál es el objetivo de la simplicidad?",
+    options: ["Añadir elementos", "Reducir carga cognitiva", "Usar más colores", "Aumentar opciones"],
+    correctAnswer: 1,
+  },
+  {
+    question: "10) ¿Qué ocurre si hay demasiados elementos?",
+    options: ["Mejora UX", "Aumenta velocidad", "Aumenta confusión", "Reduce carga"],
+    correctAnswer: 2,
+  },
+  {
+    question: "11) ¿Qué ocurre sin consistencia?",
+    options: ["Mejora UX", "El usuario reaprende", "Aumenta claridad", "Reduce errores"],
+    correctAnswer: 1,
+  },
+  {
+    question: "12) ¿Qué es jerarquía visual?",
+    options: ["Tamaño de texto", "Organizar información", "Color", "Código"],
+    correctAnswer: 1,
+  },
+  {
+    question: "13) ¿Qué elementos usa la jerarquía?",
+    options: ["CPU", "Color, tamaño y espacio", "RAM", "API"],
+    correctAnswer: 1,
+  },
+  {
+    question: "14) ¿Qué hay en la home de Google?",
+    options: ["Muchos elementos", "Solo búsqueda", "Publicidad", "Noticias"],
+    correctAnswer: 1,
+  },
+  {
+    question: "15) ¿Qué mejora la consistencia?",
+    options: ["Errores", "Aprendizaje", "Latencia", "CPU"],
+    correctAnswer: 1,
+  },
+  {
+    question: "16) ¿Qué herramienta destaca en Java?",
+    options: ["Hibernate", "JasperReports", "Spring", "Docker"],
+    correctAnswer: 1,
+  },
+  {
+    question: "17) ¿Qué separa JasperReports?",
+    options: ["Código y datos", "Diseño y datos", "UI y backend", "SQL y Java"],
+    correctAnswer: 1,
+  },
+  {
+    question: "18) ¿Qué es DataSource?",
+    options: ["UI", "Fuente de datos", "CSS", "Controlador"],
+    correctAnswer: 1,
+  },
+  {
+    question: "19) ¿Qué es jasper?",
+    options: ["Archivo XML", "Archivo compilado", "Base de datos", "Script"],
+    correctAnswer: 1,
+  },
+  {
+    question: "20) ¿Qué banda se repite por registro?",
+    options: ["Title", "Header", "Detail", "Footer"],
+    correctAnswer: 2,
+  },
+  {
+    question: "21) ¿Qué problema evita Jasper?",
+    options: ["Errores visuales", "Código", "Memoria", "CPU"],
     correctAnswer: 0,
   },
   {
-    question: "Pregunta de ejemplo 2 para Desarrollo de Interfaces - Test II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "22) ¿Qué hace el backend?",
+    options: ["Diseña UI", "Llama a Jasper", "Gestiona CSS", "Optimiza CPU"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "23) ¿Qué herramienta visual se usa?",
+    options: ["Figma", "Jaspersoft Studio", "Photoshop", "Excel"],
+    correctAnswer: 1,
+  },
+  {
+    question: "24) ¿Para quién es la documentación de usuario?",
+    options: ["Desarrolladores", "Usuarios finales", "Admins", "Sistemas"],
+    correctAnswer: 1,
+  },
+  {
+    question: "25) ¿Qué es ayuda contextual?",
+    options: ["Manual externo", "Ayuda integrada", "API", "Código"],
+    correctAnswer: 1,
+  },
+  {
+    question: "26) ¿Qué reduce la ayuda contextual?",
+    options: ["CPU", "Curva de aprendizaje", "Memoria", "Errores código"],
+    correctAnswer: 1,
+  },
+  {
+    question: "27) ¿Para quién es la ayuda contextual?",
+    options: ["Usuarios", "Clientes", "Desarrolladores", "Admins"],
+    correctAnswer: 0,
+  },
+  {
+    question: "28) ¿Qué explica la documentación?",
+    options: ["Cómo y por qué", "Solo cómo", "Solo qué", "Nada"],
+    correctAnswer: 0,
+  },
+  {
+    question: "29) ¿Qué incluye un README?",
+    options: ["Solo código", "Instalación y uso", "CSS", "API"],
+    correctAnswer: 1,
+  },
+  {
+    question: "30) ¿Qué genera jpackage?",
+    options: ["Código", "Instaladores", "CSS", "APIs"],
+    correctAnswer: 1,
+  },
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
