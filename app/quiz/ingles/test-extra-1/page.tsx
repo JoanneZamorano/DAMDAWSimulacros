@@ -185,7 +185,7 @@ export default function InglesTest1Quiz() {
           <Link href="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-6 transition-colors"><ArrowLeft className="w-4 h-4" />Volver al inicio</Link>
           <div className="text-center space-y-6">
             <h1 className="text-4xl font-bold"><span className="text-foreground">Ingles</span></h1>
-            <h2 className="text-xl text-muted-foreground">Test I</h2>
+            <h2 className="text-xl text-muted-foreground">Test Extra I</h2>
             <p className="text-muted-foreground text-lg">Ingles tecnico profesional</p>
             <div className="space-y-4 text-left py-6">
               <div className="flex items-start gap-3"><Check className="w-5 h-5 text-rose-500 mt-0.5 shrink-0" /><div><p className="font-semibold text-foreground">{questions.length} Preguntas</p><p className="text-sm text-muted-foreground">Todos los conceptos clave</p></div></div>
