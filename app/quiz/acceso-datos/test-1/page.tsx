@@ -14,16 +14,158 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Acceso a Datos - Test I",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "1. ¿Qué hace SELECT en SQL?",
+    options: ["Obtiene datos", "Actualiza datos", "Elimina datos", "Filtra datos"],
     correctAnswer: 0,
   },
   {
-    question: "Pregunta de ejemplo 2 para Acceso a Datos - Test I",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "2. ¿Qué cláusula filtra filas?",
+    options: ["WHERE", "GROUP BY", "ORDER BY", "JOIN"],
+    correctAnswer: 0,
+  },
+  {
+    question: "3. ¿Qué hace ORDER BY?",
+    options: ["Filtra datos", "Elimina duplicados", "Ordena resultados", "Agrupa datos"],
+    correctAnswer: 2,
+  },
+  {
+    question: "4. ¿Qué hace DISTINCT?",
+    options: ["Agrupa datos", "Filtra datos", "Ordena datos", "Elimina duplicados"],
+    correctAnswer: 3,
+  },
+  {
+    question: "5. ¿Qué hace LIMIT?",
+    options: ["Limita filas", "Ordena", "Agrupa", "Filtra datos"],
+    correctAnswer: 0,
+  },
+  {
+    question: "6. ¿Qué hace INNER JOIN?",
+    options: ["Incluye nulos", "Duplica datos", "Devuelve todo", "Solo coincidencias"],
+    correctAnswer: 3,
+  },
+  {
+    question: "7. ¿Qué hace LEFT JOIN?",
+    options: ["Todos izquierda", "Solo coincidencias", "Solo derecha", "Duplica"],
+    correctAnswer: 0,
+  },
+  {
+    question: "8. ¿Qué hace FULL JOIN?",
+    options: ["Nada", "Solo izquierda", "Solo coincidencias", "Todo de ambas"],
+    correctAnswer: 3,
+  },
+  {
+    question: "9. ¿Qué hace GROUP BY?",
+    options: ["Ordena", "Elimina", "Agrupa datos", "Filtra"],
+    correctAnswer: 2,
+  },
+  {
+    question: "10. ¿Qué hace HAVING?",
+    options: ["Filtra filas", "Ordena", "Une tablas", "Filtra grupos"],
+    correctAnswer: 3,
+  },
+  {
+    question: "11. ¿Qué hace COUNT()?",
+    options: ["Máximo", "Cuenta", "Media", "Suma"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "12. ¿Qué es una PK?",
+    options: ["Clave duplicada", "Índice", "Clave única", "Relación"],
+    correctAnswer: 2,
+  },
+  {
+    question: "13. ¿Qué es una FK?",
+    options: ["Duplicado", "Índice", "Clave única", "Referencia otra tabla"],
+    correctAnswer: 3,
+  },
+  {
+    question: "14. ¿Relación 1:N?",
+    options: ["Uno a uno", "Sin relación", "Muchos a muchos", "Uno a muchos"],
+    correctAnswer: 3,
+  },
+  {
+    question: "15. ¿Relación N:M?",
+    options: ["Con tabla intermedia", "Sin relación", "Directa", "Duplicada"],
+    correctAnswer: 0,
+  },
+  {
+    question: "16. ¿Qué es JDBC?",
+    options: ["Lenguaje", "IDE", "Base datos", "API Java"],
+    correctAnswer: 3,
+  },
+  {
+    question: "17. ¿Qué es ResultSet?",
+    options: ["Conexión", "Driver", "Tabla física", "Resultado consulta"],
+    correctAnswer: 3,
+  },
+  {
+    question: "18. ¿Qué es Connection?",
+    options: ["Driver", "Conexión BD", "Resultado", "Consulta"],
+    correctAnswer: 1,
+  },
+  {
+    question: "19. ¿Qué es Statement?",
+    options: ["Ejecuta SQL", "Conexión", "Driver", "Resultado consulta"],
+    correctAnswer: 0,
+  },
+  {
+    question: "20. ¿Qué es pgAdmin?",
+    options: ["Driver", "Base datos", "Herramienta gestión", "Lenguaje"],
+    correctAnswer: 2,
+  },
+  {
+    question: "21. ¿Qué hace dbForge?",
+    options: ["Sistema", "Driver", "Herramienta visual", "Lenguaje"],
+    correctAnswer: 2,
+  },
+  {
+    question: "22. ¿Qué son roles?",
+    options: ["Datos", "Usuarios permisos", "Tablas", "Consultas"],
+    correctAnswer: 1,
+  },
+  {
+    question: "23. ¿Qué hace backup?",
+    options: ["Elimina", "Ordena", "Copia datos", "Filtra"],
+    correctAnswer: 2,
+  },
+  {
+    question: "24. ¿Qué es CSV?",
+    options: ["BD", "Archivo texto", "API", "Lenguaje"],
+    correctAnswer: 1,
+  },
+  {
+    question: "25. ¿Qué hace BufferedReader?",
+    options: ["Ordena", "Lee texto", "Conecta BD", "Escribe"],
+    correctAnswer: 1,
+  },
+  {
+    question: "26. ¿Qué es JSON?",
+    options: ["Lenguaje", "Driver", "BD", "Formato ligero"],
+    correctAnswer: 3,
+  },
+  {
+    question: "27. ¿Qué es XML?",
+    options: ["Driver", "BD", "Formato jerárquico", "Lenguaje"],
+    correctAnswer: 2,
+  },
+  {
+    question: "28. ¿Qué es try-with-resources?",
+    options: ["Filtro", "Cierre automático", "Error", "Orden"],
+    correctAnswer: 1,
+  },
+  {
+    question: "29. ¿Qué evita SELECT *?",
+    options: ["NULL", "Carga innecesaria", "Errores", "JOIN"],
+    correctAnswer: 1,
+  },
+  {
+    question: "30. ¿Qué hace COALESCE()?",
+    options: ["Une", "Filtra", "Reemplaza NULL", "Ordena"],
+    correctAnswer: 2,
+  }
+];
+
+```
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
