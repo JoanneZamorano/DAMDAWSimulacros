@@ -102,9 +102,6 @@ const secondYearSubjects = [
       extraSimulacros: [                                          
     { label: "Test Extra 1", link: "/quiz/digitalizacion/test-extra-1" },
     { label: "Test Extra 2", link: "/quiz/digitalizacion/test-extra-2" },
-    { label: "Test Extra 3", link: "/quiz/digitalizacion/test-extra-3" },
-    { label: "Test Extra 4", link: "/quiz/digitalizacion/test-extra-4" },
-    { label: "Test Extra 5", link: "/quiz/digitalizacion/test-extra-5" },
   ],
   },
   {
