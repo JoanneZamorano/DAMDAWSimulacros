@@ -14,16 +14,156 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Desarrollo de Interfaces - Test I",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "1. ¿Qué es una GUI?",
+    options: ["Un lenguaje de programación", "Una base de datos", "La capa visual de interacción con el usuario", "Un sistema operativo"],
+    correctAnswer: 2,
+  },
+  {
+    question: "2. ¿Qué elemento NO forma parte de una GUI?",
+    options: ["Botones", "Menús", "Cuadros de texto", "Algoritmos de ordenación"],
+    correctAnswer: 3,
+  },
+  {
+    question: "3. ¿Qué pilar define qué espera el usuario?",
+    options: ["Rendimiento", "Modelo mental", "Consistencia", "Backend"],
+    correctAnswer: 1,
+  },
+  {
+    question: "4. ¿Qué pilar se refiere a respuesta rápida?",
+    options: ["Feedback", "Modelo", "Consistencia", "Backend"],
     correctAnswer: 0,
   },
   {
-    question: "Pregunta de ejemplo 2 para Desarrollo de Interfaces - Test I",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "5. ¿Qué tecnología usa C#?",
+    options: ["JavaFX", ".NET MAUI", "Flutter", "React"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "6. ¿Qué tecnología usa JS/TS?",
+    options: ["Flutter", "React Native", "JavaFX", "MAUI"],
+    correctAnswer: 1,
+  },
+  {
+    question: "7. ¿Dónde está la lógica de negocio?",
+    options: ["GUI", "Usuario", "BL", "CSS"],
+    correctAnswer: 2,
+  },
+  {
+    question: "8. ¿Qué empresa popularizó el caso de estudio?",
+    options: ["Microsoft", "Slack", "Google", "Apple"],
+    correctAnswer: 1,
+  },
+  {
+    question: "9. ¿Qué problema tiene crear interfaces \"a pelo\"?",
+    options: ["Más velocidad", "Mayor control sin inconvenientes", "Mucha fricción", "Menos errores"],
+    correctAnswer: 2,
+  },
+  {
+    question: "10. ¿Qué archivo genera JavaFX?",
+    options: ["HTML", "FXML", "JSON", "CSS"],
+    correctAnswer: 1,
+  },
+  {
+    question: "11. ¿Qué ventaja aporta separar diseño y lógica?",
+    options: ["Más errores", "Mejor mantenimiento", "Más código", "Menos claridad"],
+    correctAnswer: 1,
+  },
+  {
+    question: "12. ¿Qué contenedor es de Android?",
+    options: ["VBox", "HBox", "ConstraintLayout", "GridPane"],
+    correctAnswer: 2,
+  },
+  {
+    question: "13. ¿Qué permite el drag&drop?",
+    options: ["Más errores", "Construcción rápida", "Menos control", "Menos claridad"],
+    correctAnswer: 1,
+  },
+  {
+    question: "14. ¿Qué hace el controlador?",
+    options: ["Dibuja UI", "Gestiona eventos", "Guarda datos", "Define CSS"],
+    correctAnswer: 1,
+  },
+  {
+    question: "15. ¿Qué democratizan los editores?",
+    options: ["Backend", "Trabajo visual", "Redes", "Seguridad"],
+    correctAnswer: 1,
+  },
+  {
+    question: "16. ¿Qué define una interfaz declarativa?",
+    options: ["Cómo se ejecuta el código", "Qué debe mostrarse", "Cómo optimizar memoria", "Cómo compilar"],
+    correctAnswer: 1,
+  },
+  {
+    question: "17. ¿Qué diferencia principal hay con el enfoque imperativo?",
+    options: ["Usa más código", "Define estructura en lugar de instrucciones", "Es más lento", "No usa eventos"],
+    correctAnswer: 1,
+  },
+  {
+    question: "18. ¿Qué archivo usa Android para layouts?",
+    options: ["FXML", "XML", "HTML", "YAML"],
+    correctAnswer: 1,
+  },
+  {
+    question: "19. ¿Qué gestiona el código Java/Kotlin?",
+    options: ["Diseño", "Eventos y lógica", "Estilos", "Layout"],
+    correctAnswer: 1,
+  },
+  {
+    question: "20. ¿Qué permite la reutilización de layouts?",
+    options: ["Reducir CPU", "Evitar duplicidad", "Aumentar memoria", "Reducir red"],
+    correctAnswer: 1,
+  },
+  {
+    question: "21. ¿Qué hace FXMLLoader en JavaFX?",
+    options: ["Compila código", "Carga el FXML", "Ejecuta eventos", "Aplica estilos"],
+    correctAnswer: 1,
+  },
+  {
+    question: "22. ¿Qué permite la previsualización?",
+    options: ["Ejecutar lógica", "Ver la interfaz sin compilar", "Debuggear", "Compilar más rápido"],
+    correctAnswer: 1,
+  },
+  {
+    question: "23. En el caso Netflix, ¿qué representa el XML?",
+    options: ["Base de datos", "Lógica", "Estructura de carruseles", "Seguridad"],
+    correctAnswer: 2,
+  },
+  {
+    question: "24. ¿Qué es un componente visual?",
+    options: ["Solo apariencia", "Unidad que combina apariencia y comportamiento", "Solo lógica", "Solo eventos"],
+    correctAnswer: 1,
+  },
+  {
+    question: "25. ¿Qué permite extender un Button?",
+    options: ["Eliminar código", "Añadir comportamiento", "Cambiar lenguaje", "Reducir memoria"],
+    correctAnswer: 1,
+  },
+  {
+    question: "26. ¿Qué permite componer controles?",
+    options: ["Eliminar UI", "Crear componentes complejos", "Reducir código", "Evitar eventos"],
+    correctAnswer: 1,
+  },
+  {
+    question: "27. ¿Qué permiten las propiedades observables?",
+    options: ["CSS", "Eventos", "Data binding", "Debug"],
+    correctAnswer: 2,
+  },
+  {
+    question: "28. ¿Qué es la Skin?",
+    options: ["Evento", "Estilo visual del componente", "Base de datos", "Controlador"],
+    correctAnswer: 1,
+  },
+  {
+    question: "29. ¿Qué representa el flujo correcto?",
+    options: ["CSS UI", "Herencia extensión", "Encapsulación reutilización", "Eventos CSS UI DB"],
+    correctAnswer: 2,
+  },
+  {
+    question: "30. ¿Qué hace el botón Like al pulsar?",
+    options: ["Nada", "Cambia estado y lanza evento", "Solo cambia color", "Reinicia app"],
+    correctAnswer: 1,
+  },
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
