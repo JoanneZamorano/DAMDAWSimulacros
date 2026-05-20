@@ -9,9 +9,37 @@ import Link from "next/link"
 interface Question { question: string; options: string[]; correctAnswer: number }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para Sostenibilidad - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para Sostenibilidad - Test II", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
-]
+  { question: "Una empresa con alto índice de Gini en su plantilla indica:", options: ["Alta productividad", "Baja rotación", "Desigualdad salarial interna elevada", "Alta formación"], correctAnswer: 2 },
+  { question: "¿Qué combinación define mejor la tasa AROPE?", options: ["Ingresos y educación", "Pobreza, carencia material y empleo", "Salud y vivienda", "Producción y consumo"], correctAnswer: 1 },
+  { question: "¿Qué pilar NO forma parte de la sostenibilidad social?", options: ["Equidad", "Bienestar", "Producción industrial", "Justicia social"], correctAnswer: 2 },
+  { question: "Una empresa que externaliza producción sin controlar condiciones laborales:", options: ["Mejora eficiencia", "Reduce costes", "Asume riesgos extra-financieros", "Mejora reputación"], correctAnswer: 2 },
+  { question: "¿Qué organización impulsa el trabajo digno?", options: ["OIT", "FMI", "ONU Mujeres", "Banco Mundial"], correctAnswer: 0 },
+  { question: "¿Qué incluye el trabajo digno?", options: ["Solo salario", "Salarios, seguridad y derechos laborales", "Solo empleo", "Solo formación"], correctAnswer: 1 },
+  { question: "¿Qué es la equidad salarial?", options: ["Subir salarios", "Igualar beneficios", "Pagar igual por trabajo de igual valor", "Reducir sueldos"], correctAnswer: 2 },
+  { question: "¿Qué es la transición justa?", options: ["Cambio tecnológico", "Cambio económico", "Cambio político", "Adaptación laboral en transición ecológica"], correctAnswer: 3 },
+  { question: "¿Qué caracteriza la Industria 4.0?", options: ["Digitalización y automatización", "Agricultura", "Comercio", "Turismo"], correctAnswer: 0 },
+  { question: "¿Qué es un riesgo extra-financiero?", options: ["Riesgo económico", "Riesgo ambiental o social que afecta a la empresa", "Riesgo bancario", "Riesgo fiscal"], correctAnswer: 1 },
+  { question: "¿Qué factor hace fiable una certificación?", options: ["Precio", "Diseño", "Marca", "Verificación independiente"], correctAnswer: 3 },
+  { question: "¿Qué significa reporting no financiero?", options: ["Informes contables", "Informes fiscales", "Informes laborales", "Informes sobre impacto social y ambiental"], correctAnswer: 3 },
+  { question: "¿Qué estándar es global para informes de sostenibilidad?", options: ["GRI", "ISO 9001", "OIT", "FMI"], correctAnswer: 0 },
+  { question: "¿Qué son los ESRS?", options: ["Normas laborales", "Estándares europeos de sostenibilidad", "Normas fiscales", "Normas de calidad"], correctAnswer: 1 },
+  { question: "¿Qué evalúa EcoVadis?", options: ["Beneficios", "Producción", "Sostenibilidad de empresas", "Ventas"], correctAnswer: 2 },
+  { question: "¿Qué ventaja tiene el etiquetado energético?", options: ["Permite comparar eficiencia de productos", "Reduce precio", "Aumenta consumo", "Mejora publicidad"], correctAnswer: 0 },
+  { question: "¿Qué es una certificación?", options: ["Verificación externa de cumplimiento de criterios", "Publicidad", "Etiqueta interna", "Precio"], correctAnswer: 0 },
+  { question: "¿Qué certifica ISO 14001?", options: ["Calidad", "Gestión ambiental", "Seguridad", "Finanzas"], correctAnswer: 1 },
+  { question: "¿Qué es ISO 26000?", options: ["Normas de calidad", "Certificación ambiental", "Guía de responsabilidad social", "Normas fiscales"], correctAnswer: 2 },
+  { question: "¿Qué indicador mide mejor desigualdad estructural?", options: ["PIB", "Inflación", "Índice de Gini", "Exportaciones"], correctAnswer: 2 },
+  { question: "¿Qué garantiza Fair Trade?", options: ["Condiciones justas para productores", "Bajo precio", "Alta producción", "Tecnología"], correctAnswer: 0 },
+  { question: "¿Qué es el Ecolabel?", options: ["Marca privada", "Etiqueta ecológica europea", "Certificación social", "Norma ISO"], correctAnswer: 1 },
+  { question: "¿Qué aporta la Ley Europea de Accesibilidad?", options: ["Mejora producción", "Reduce costes", "Aumenta exportaciones", "Diseño inclusivo de productos y servicios"], correctAnswer: 3 },
+  { question: "¿Qué es el greenwashing?", options: ["Producción ecológica", "Reciclaje", "Publicidad engañosa sobre sostenibilidad", "Energía limpia"], correctAnswer: 2 },
+  { question: "¿Qué es la compra verde?", options: ["Comprar barato", "Comprar rápido", "Comprar local", "Comprar productos sostenibles"], correctAnswer: 3 },
+  { question: "¿Qué es la RSC?", options: ["Integración de compromisos sociales y ambientales", "Marketing", "Producción", "Finanzas"], correctAnswer: 0 },
+  { question: "¿Qué riesgo tiene ignorar la salud mental laboral?", options: ["Reducir crecimiento de la empresa", "Reduce costes", "Disminuye rendimiento y retención", "Aumenta beneficios"], correctAnswer: 2 },
+  { question: "¿Qué es el Pilar Europeo de Derechos Sociales?", options: ["Ley económica", "Marco de políticas sociales de la UE", "Norma fiscal", "Tratado comercial"], correctAnswer: 1 },
+  { question: "¿Qué promueve la Ley Europea de Accesibilidad?", options: ["Producción de medios accesibles", "Control de las Exportaciones", "Acceso universal a la Tecnología", "Acceso universal a productos y servicios"], correctAnswer: 3 },
+  { question: "¿Qué define la sostenibilidad empresarial avanzada?", options: ["Solo beneficios", "Solo medio ambiente", "Solo innovación", "Integración ambiental, social y gobernanza"], correctAnswer: 3 }
+];
 
 function shuffleArray<T>(array: T[]): T[] { const newArray = [...array]; for (let i = newArray.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArray[i], newArray[j]] = [newArray[j], newArray[i]] } return newArray }
 
