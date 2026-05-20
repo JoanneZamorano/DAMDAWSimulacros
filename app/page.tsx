@@ -119,6 +119,10 @@ const secondYearSubjects = [
       testI: "/quiz/sostenibilidad/test-1",
       testII: "/quiz/sostenibilidad/test-2",
     },
+    extraSimulacros: [ 
+    { label: "Test Extra 1", link: "/quiz/sostenibilidad/test-extra-1" },
+    { label: "Test Extra 2", link: "/quiz/sostenibilidad/test-extra-2" },
+  ],
   },
   {
     id: "ingles",
