@@ -14,16 +14,156 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para PSP - Test II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "1. ¿Qué capa del modelo TCP/IP gestiona cómo se mueve la información entre procesos finales?",
+    options: ["La capa de Enlace", "La capa de Transporte", "La capa de Aplicación", "La capa de sesión"],
+    correctAnswer: 1,
+  },
+  {
+    question: "2. ¿Qué protocolo ofrece comunicación fiable y orientada a conexión?",
+    options: ["UDP", "IP", "TCP", "ICMP"],
+    correctAnswer: 2,
+  },
+  {
+    question: "3. En la arquitectura cliente-servidor, ¿qué caracteriza al servidor?",
+    options: ["Es un proceso pasivo que escucha en un puerto", "Es un proceso pasivo que escucha en un puerto", "Se encarga de traducir nombres DNS", "Solo funciona con HTTP"],
     correctAnswer: 0,
   },
   {
-    question: "Pregunta de ejemplo 2 para PSP - Test II",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "4. Según el caso de WhatsApp, ¿qué hace el servidor si el destinatario está offline?",
+    options: ["Descarta el mensaje", "Lo cifra por segunda vez", "Lo almacena temporalmente", "Lo envía por UDP"],
+    correctAnswer: 2,
+  },
+  {
+    question: "5. ¿Qué herramienta se recomienda para comprobar alcanzabilidad y latencia (RTT)?",
+    options: ["Wireshark", "ping", "curl", "netstat"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "6. ¿Qué herramienta permite capturar y analizar tráfico paquete a paquete?",
+    options: ["traceroute", "ping", "Wireshark", "ss"],
+    correctAnswer: 2,
+  },
+  {
+    question: "7. En Java, ¿qué clase usa normalmente el lado servidor TCP para escuchar en un puerto?",
+    options: ["Socket", "DatagramPacket", "ServerSocket", "SSLSocketFactory"],
+    correctAnswer: 2,
+  },
+  {
+    question: "8. ¿Qué protocolo envía datagramas sin establecer conexión ni comprobar la recepción?",
+    options: ["TCP", "UDP", "TLS", "HTTP"],
+    correctAnswer: 1,
+  },
+  {
+    question: "9. Antes de enviar datos con TCP, ¿qué se establece entre cliente y servidor?",
+    options: ["Un registro MX", "Un handshake", "Un balanceador de carga", "Un túnel SSH obligatorio"],
+    correctAnswer: 1,
+  },
+  {
+    question: "10. En videojuegos online, ¿qué tipo de información se envía normalmente por UDP?",
+    options: ["Pagos y compras de ítems", "Posiciones, rotaciones e inputs en tiempo real", "Certificados digitales", "Archivos persistentes del usuario"],
+    correctAnswer: 1,
+  },
+  {
+    question: "11. Cuando se trabaja con UDP, ¿qué debe vigilar la aplicación para evitar fragmentación?",
+    options: ["El tamaño de cada datagrama", "El número de hilos del sistema operativo", "La versión de Java del cliente", "La memoria caché del navegador"],
+    correctAnswer: 0,
+  },
+  {
+    question: "12. En un servidor multicliente clásico, ¿qué suele hacerse cuando un cliente se conecta?",
+    options: ["Se cierra el ServerSocket", "Se crea un hilo trabajador para atenderlo", "Se cambia automáticamente a UDP", "Se reinicia el servicio"],
+    correctAnswer: 1,
+  },
+  {
+    question: "13. ¿Qué se usa para evitar que los datos viajen en texto claro por la red?",
+    options: ["ARP", "SSL/TLS", "FTP", "ICMP"],
+    correctAnswer: 1,
+  },
+  {
+    question: "14. ¿Qué clases de Java añaden una capa de cifrado transparente sobre los sockets tradicionales?",
+    options: ["Socket y ServerSocket", "DatagramSocket y DatagramPacket", "SSLSocket y SSLServerSocket", "BufferedReader y PrintWriter"],
+    correctAnswer: 2,
+  },
+  {
+    question: "15. En Apache Tomcat, ¿en qué archivo se muestra el ejemplo de configuración de un conector seguro?",
+    options: ["web.xml", "pom.xml", "server.xml", "hosts"],
+    correctAnswer: 2,
+  },
+  {
+    question: "16. ¿Qué protocolo se utiliza para transferir archivos entre equipos?",
+    options: ["SMTP", "DNS", "FTP", "HTTP"],
+    correctAnswer: 2,
+  },
+  {
+    question: "17. ¿Qué librería Java se propone para conectarse a un servidor FTP y subir archivos?",
+    options: ["JavaMail API", "Apache Commons Net", "JAX-WS", "Spring Boot"],
+    correctAnswer: 1,
+  },
+  {
+    question: "18. ¿Qué API se menciona para enviar correos desde una aplicación Java?",
+    options: ["JavaMail API", "HttpClient", "VisualVM", "Kubernetes"],
+    correctAnswer: 0,
+  },
+  {
+    question: "19. En el caso de Gmail, ¿qué comando SMTP indica el destinatario del correo?",
+    options: ["DATA", "HELO", "RCPT TO", "QUIT"],
+    correctAnswer: 2,
+  },
+  {
+    question: "20. ¿Qué tipo de registro DNS se usa para localizar el servidor de correo del dominio destinatario?",
+    options: ["A", "CNAME", "PTR", "MX"],
+    correctAnswer: 3,
+  },
+  {
+    question: "21. ¿Qué protocolo sincroniza los mensajes entre dispositivos manteniéndolos almacenados online?",
+    options: ["POP3", "IMAP", "TP", "SMTP"],
+    correctAnswer: 1,
+  },
+  {
+    question: "22. ¿Qué herramienta gráfica se recomienda para crear y probar peticiones HTTP sin escribir código?",
+    options: ["Apache Commons Net", "Postman", "JavaMail API", "Whois"],
+    correctAnswer: 1,
+  },
+  {
+    question: "23. En un servidor iterativo, ¿qué ocurre mientras se atiende a un cliente?",
+    options: ["Los demás clientes deben esperar", "Se crean automáticamente varios hilos", "Se distribuye la carga entre servidores", "El servicio cambia a modo asíncrono"],
+    correctAnswer: 0,
+  },
+  {
+    question: "24. ¿Qué modelo utiliza Nginx para manejar miles de conexiones con pocos hilos?",
+    options: ["Un hilo por conexión", "Arquitectura asíncrona basada en eventos", "Procesamiento secuencial estricto", "Bloqueo permanente por socket"],
+    correctAnswer: 1,
+  },
+  {
+    question: "25. ¿Qué API de Java permite manejar múltiples conexiones con un solo hilo mediante un Selector?",
+    options: ["java.sql", "java.io", "java.nio", "java.rmi"],
+    correctAnswer: 2,
+  },
+  {
+    question: "26. ¿Qué permite RMI en Java?",
+    options: ["Convertir automáticamente XML en JSON", "Invocar métodos de un objeto en otra JVM como si fuera locales", "Crear sockets UDP sin puertos", "Sustituir HTTP por FTP"],
+    correctAnswer: 1,
+  },
+  {
+    question: "27. ¿Qué tecnología de servicios web está basada en XML y requiere un contrato formal WSDL?",
+    options: ["REST", "SOAP", "NIO", "SMTP"],
+    correctAnswer: 1,
+  },
+  {
+    question: "28. En un entorno de alta disponibilidad, ¿qué ocurre si un servidor falla?",
+    options: ["El servicio se detine hasta reiniciar manualmente", "Otro servidor toma el relevo automáticamente", "Se eliminan las réplicas restantes", "Se cambia el protocolo a RPC"],
+    correctAnswer: 1,
+  },
+  {
+    question: "29. ¿Qué herramienta interna de Netflix apaga servidores aleatoriamente para probar la resiliencia?",
+    options: ["VisualVM", "Chaos Monkey", "Postman Runner", "Swagger"],
+    correctAnswer: 1,
+  },
+  {
+    question: "30. ¿Qué conjunto de herramientas se menciona para recopilar métricas y visualizarlas en dashboards interactivos?",
+    options: ["Nagios y Datadog", "Nginx y HAProxy", "Spring Boot y JAX-WS", "Prometheus y Grafana"],
+    correctAnswer: 3,
+  }
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
