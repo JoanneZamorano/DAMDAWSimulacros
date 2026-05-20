@@ -146,7 +146,7 @@ const questions: Question[] = [
   {
     question: "27) ¿Para quién es la ayuda contextual?",
     options: ["Usuarios", "Clientes", "Desarrolladores", "Admins"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question: "28) ¿Qué explica la documentación?",
