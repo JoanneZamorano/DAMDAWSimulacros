@@ -13,9 +13,157 @@ interface Question {
 }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para PMDM - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para PMDM - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
-]
+  {
+    question: "1. ¿Qué representa la capa UI en arquitectura Android?",
+    options: ["Representa el estado", "Gestiona datos", "Define reglas", "Accede a BD"],
+    correctAnswer: 0,
+  },
+  {
+    question: "2. ¿Qué contiene la capa de dominio?",
+    options: ["Interfaces gráficas", "Reglas de negocio", "Datos crudos", "Layouts"],
+    correctAnswer: 1,
+  },
+  {
+    question: "3. ¿Qué hace la capa de datos?",
+    options: ["Mostrar UI", "Gestionar eventos", "Proveer datos", "Diseñar layouts"],
+    correctAnswer: 2,
+  },
+  {
+    question: "4. ¿Qué evita el flujo unidireccional?",
+    options: ["Errores de compilación", "Falta de memoria", "Errores de sintaxis", "Bucles e inconsistencias"],
+    correctAnswer: 3,
+  },
+  {
+    question: "5. ¿Qué expone el ViewModel?",
+    options: ["Estado observable", "Layouts", "Base de datos", "Interfaces"],
+    correctAnswer: 0,
+  },
+  {
+    question: "6. ¿Qué patrón se usa habitualmente?",
+    options: ["MVC", "MVVM", "Singleton", "Factory"],
+    correctAnswer: 1,
+  },
+  {
+    question: "7. ¿Qué son los repositorios?",
+    options: ["UI", "Controladores", "Acceso a datos", "Layouts"],
+    correctAnswer: 2,
+  },
+  {
+    question: "8. ¿Qué mejora separar capas?",
+    options: ["Velocidad siempre", "Memoria", "Errores", "Mantenimiento"],
+    correctAnswer: 3,
+  },
+  {
+    question: "9. ¿Qué define la usabilidad?",
+    options: ["Facilidad de uso", "Color", "Código", "Base de datos"],
+    correctAnswer: 0,
+  },
+  {
+    question: "10. ¿Qué implica accesibilidad?",
+    options: ["Más código", "Diseñar para todos", "Más velocidad", "Menos UI"],
+    correctAnswer: 1,
+  },
+  {
+    question: "11. ¿Qué es UX?",
+    options: ["Código", "Servidor", "Experiencia de usuario", "API"],
+    correctAnswer: 2,
+  },
+  {
+    question: "12. ¿Qué es UI?",
+    options: ["Base de datos", "Servidor", "API", "Presentación visual"],
+    correctAnswer: 3,
+  },
+  {
+    question: "13. ¿Qué herramienta es nativa?",
+    options: ["Android Studio", "React Native", "Unity", "Expo"],
+    correctAnswer: 0,
+  },
+  {
+    question: "14. ¿Qué permite React Native?",
+    options: ["Dos códigos", "Un solo código", "Sin código", "Solo Android"],
+    correctAnswer: 1,
+  },
+  {
+    question: "15. ¿Qué lenguaje usa React Native?",
+    options: ["Java", "Kotlin", "JavaScript", "C++"],
+    correctAnswer: 2,
+  },
+  {
+    question: "16. ¿Qué es el bridge?",
+    options: ["UI", "Base de datos", "Servidor", "Puente JS-nativo"],
+    correctAnswer: 3,
+  },
+  {
+    question: "17. ¿Qué contiene la capa nativa?",
+    options: ["Módulos nativos", "JS", "Componentes web", "CSS"],
+    correctAnswer: 0,
+  },
+  {
+    question: "18. ¿Qué es App.js?",
+    options: ["Base de datos", "Archivo raíz", "API", "Servidor"],
+    correctAnswer: 1,
+  },
+  {
+    question: "19. ¿Qué es <View>?",
+    options: ["Texto", "Imagen", "Contenedor", "Botón"],
+    correctAnswer: 2,
+  },
+  {
+    question: "20. ¿Qué es <Text>?",
+    options: ["Contenedor", "Imagen", "Botón", "Texto"],
+    correctAnswer: 3,
+  },
+  {
+    question: "21. ¿Qué hace fetch()?",
+    options: ["Consume APIs", "Diseña UI", "Crea layouts", "Gestiona memoria"],
+    correctAnswer: 0,
+  },
+  {
+    question: "22. ¿Qué es Stack Navigator?",
+    options: ["Lista", "Pila de pantallas", "BD", "API"],
+    correctAnswer: 1,
+  },
+  {
+    question: "23. ¿Qué es Tab Navigator?",
+    options: ["Base de datos", "Servidor", "Pestañas", "API"],
+    correctAnswer: 2,
+  },
+  {
+    question: "24. ¿Qué es Drawer Navigator?",
+    options: ["Lista", "API", "BD", "Menú lateral"],
+    correctAnswer: 3,
+  },
+  {
+    question: "25. ¿Qué es StyleSheet?",
+    options: ["Estilos", "BD", "API", "Servidor"],
+    correctAnswer: 0,
+  },
+  {
+    question: "26. ¿Qué mejora modularización?",
+    options: ["Errores", "Acoplamiento bajo", "Más código", "Menos control"],
+    correctAnswer: 1,
+  },
+  {
+    question: "27. ¿Qué es cohesión?",
+    options: ["Dependencia", "UI", "Relación fuerte interna", "API"],
+    correctAnswer: 2,
+  },
+  {
+    question: "28. ¿Qué evita bajo acoplamiento?",
+    options: ["Errores", "Velocidad", "UI", "Dependencias fuertes"],
+    correctAnswer: 3,
+  },
+  {
+    question: "29. ¿Qué genera ViewBinding?",
+    options: ["Clases de binding", "Errores", "APIs", "Layouts"],
+    correctAnswer: 0,
+  },
+  {
+    question: "30. ¿Qué evita ViewBinding?",
+    options: ["Errores SQL", "NullPointerException", "Errores API", "Errores UI"],
+    correctAnswer: 1,
+  },
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
