@@ -14,16 +14,231 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Acceso a Datos",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "¿Qué método de Connection permite comprobar si la conexión sigue abierta?",
+    options: ["checkConnection()", "isClosed()", "connectionState()", "isOpen()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué devuelve isClosed() cuando la conexión está activa?",
+    options: ["true", "false", "null", "SQLException"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método JDBC crea consultas preparadas con parámetros?",
+    options: ["executeQuery()", "prepareStatement()", "createQuery()", "buildSQL()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué ventaja tiene usar parámetros en PreparedStatement?",
+    options: ["Elimina conexiones", "Mejora seguridad y legibilidad", "Evita ResultSet", "Sustituye SQL"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método de PreparedStatement se usa para valores decimales?",
+    options: ["getDouble()", "putDouble()", "setDouble()", "readDouble()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué método de PreparedStatement se usa para valores enteros?",
+    options: ["getInt()", "setInt()", "putint()", "nextInt()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método de PreparedStatement se usa para texto?",
+    options: ["getString()", "putString()", "setString()", "readString()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué método permite recuperar un valor String desde ResultSet?",
+    options: ["readString()", "nextString()", "setString()", "getString()"],
+    correctAnswer: 3,
+  },
+  {
+    question: "¿Qué método permite recuperar un valor entero desde ResultSet?",
+    options: ["readint()", "getint()", "setInt()", "nextInt()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué ocurre si next() no encuentra más registros?",
+    options: ["Devuelve null", "Devuelve false", "Reinicia ResultSet", "Lanza IOException"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método JDBC suele utilizarse para cerrar ResultSet?",
+    options: ["destroy()", "finish()", "close()", "stop()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué excepción controla errores relacionados con SQL?",
+    options: ["IOException", "SQLException", "EOFException", "ParseException"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método confirma definitivamente una transacción?",
+    options: ["rollback()", "close()", "execute()", "commit()"],
+    correctAnswer: 3,
+  },
+  {
+    question: "¿Qué método deshace operaciones pendientes?",
+    options: ["rollback()", "commit()", "restart()", "undo()"],
     correctAnswer: 0,
   },
   {
-    question: "Pregunta de ejemplo 2 para Acceso a Datos",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "¿Qué patrón desacopla persistencia y lógica de negocio?",
+    options: ["MVC", "DAO", "Factory", "Singleton"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "¿Qué ventaja principal tiene DAO?",
+    options: ["Elimina SQL", "Facilita mantenimiento", "Evita conexiones", "Sustituye JDBC"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué interfaz permite serializar objetos Java?",
+    options: ["Runnable", "Serializable", "Cloneable", "Readable"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué palabra clave evita serializar atributos?",
+    options: ["static", "transient", "volatile", "final"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué flujo permite guardar objetos serializados?",
+    options: ["BufferedReader", "Scanner", "FileReader", "ObjectOutputStream"],
+    correctAnswer: 3,
+  },
+  {
+    question: "¿Qué flujo permite recuperar objetos serializados?",
+    options: ["BufferedWriter", "ObjectInputStream", "PrintWriter", "FileWriter"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué excepción puede aparecer al llegar al final de un stream binario?",
+    options: ["SQLException", "EOFException", "DOMException", "MongoException"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué clase permite leer texto carácter a carácter?",
+    options: ["Scanner", "ObjectInputStream", "BufferedOutputStream", "FileReader"],
+    correctAnswer: 3,
+  },
+  {
+    question: "¿Qué clase permite escribir texto en archivos?",
+    options: ["FileInputStream", "BufferedReader", "FileWriter", "Scanner"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué ventaja aporta BufferedReader?",
+    options: ["Elimina excepciones", "Usa BSON", "Reduce accesos físicos", "Serializa objetos"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué ventaja aporta BufferedWriter?",
+    options: ["Evita SQL", "Mejora eficiencia de escritura", "Elimina buffers", "Usa XML"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué API XML representa documentos mediante nodos?",
+    options: ["SAX", "JSON", "DOM", "DTD"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué API XML funciona mediante eventos?",
+    options: ["SAX", "DOM", "JDBC", "JSON"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué ventaja tiene SAX en XML extensos?",
+    options: ["Permite modificar nodos", "Consume menos memoria", "Carga todo el documento", "Usa BSON"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué representa un nodo en DOM?",
+    options: ["Consulta SQL", "Elemento XML", "Documento BSON", "Transacción"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué formato usa etiquetas de apertura y cierre?",
+    options: ["JSON", "CSV", "XML", "BSON"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué formato usa pares clave-valor?",
+    options: ["XML", "DTD", "JSON", "DOM"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué símbolo delimita objetos JSON?",
+    options: ["[] (Corchetes)", "{} (Llaves)", "<> (Signos de mayor y menor)", "() (Paréntesis)"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué símbolo delimita arrays JSON?",
+    options: ["{} (Llaves)", "[] (Corchetes)", "() (Paréntesis)", "<> (Signos de mayor y menor)"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué librería Java suele utilizarse con JSON?",
+    options: ["Swing", "JDBC", "Gson", "SAX"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué característica distingue MongoDB?",
+    options: ["Usa tablas", "Depende de joins", "Es orientada a documentos", "Solo guarda XML"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué estructura almacena MongoDB?",
+    options: ["Filas", "Documentos BSON", "Columnas", "Tuplas"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué operación inserta documentos en MongoDB?",
+    options: ["find()", "insertOne()", "deleteOne()", "drop()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué operación consulta documentos en MongoDB?",
+    options: ["insertOne()", "updateOne()", "find()", "drop()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué operación modifica documentos existentes?",
+    options: ["find()", "insertOne()", "updateOne()", "deleteOne()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué operación elimina documentos?",
+    options: ["find()", "deleteOne()", "insertOne()", "drop()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué ventaja tiene BSON respecto a JSON?",
+    options: ["Más etiquetas", "Menor velocidad", "Mejor soporte de tipos", "Usa XML"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué ventaja tienen algunas bases NoSQL?",
+    options: ["Dependencia relacional", "Uso obligatorio de SQL", "Escalabilidad horizontal", "Rigidez estructural"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué método JDBC ejecuta consultas SELECT?",
+    options: ["executeUpdate()", "runSelect()", "executeQuery()", "executeSQL()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué método JDBC ejecuta INSERT  UPDATE?",
+    options: ["executeQuery()", "executeUpdate()", "runUpdate()", "executeSelect()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué devuelve executeUpdate()?",
+    options: ["ResultSet", "Número de filas afectadas", "Connection", "Documento BSON"],
+    correctAnswer: 1,
+  }
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
