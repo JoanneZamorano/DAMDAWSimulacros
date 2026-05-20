@@ -14,16 +14,248 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Acceso a Datos",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "¿Qué interfaz JDBC representa una conexión activa con la base de datos?",
+    options: ["Connection", "Statement", "ResultSet", "DriverManager"],
     correctAnswer: 0,
   },
   {
-    question: "Pregunta de ejemplo 2 para Acceso a Datos",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "¿Qué método de ResultSet permite obtener valores de tipo String?",
+    options: ["getText()", "readString()", "getString()", "nextString()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué objeto JDBC se usa normalmente tras crear una conexión?",
+    options: ["Driver", "Statement", "SQLException", "Serializable"],
     correctAnswer: 1,
   },
-]
+  {
+    question: "¿Qué sucede si executeQuery() se usa con un INSERT?",
+    options: ["Devuelve filas afectadas", "Produce error", "Cierra la conexión", "Ignora la consulta"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué tipo de consultas suele ejecutar PreparedStatement?",
+    options: ["Consultas parametrizadas", "Consultas XML", "Consultas sin SQL", "Consultas BSON"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué componente JDBC traduce llamadas Java al SGBD?",
+    options: ["Connection", "Driver JDBC", "ResultSet", "Statement"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método de ResultSet suele utilizarse antes de leer datos?",
+    options: ["forward()", "next()", "move()", "read()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué excepción puede producirse al trabajar con ResultSet?",
+    options: ["SQLException", "DOMException", "IOException", "EOFException"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué ventaja tiene reutilizar PreparedStatement?",
+    options: ["Reduce compilación repetida de consultas", "Elimina transacciones", "Evita ResultSet", "Sustituye commit()"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué flujo pertenece a serialización de objetos?",
+    options: ["Scanner", "BufferedReader", "ObjectInputStream", "FileWriter"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué ocurre si un atributo es transient?",
+    options: ["Se almacena dos veces", "No se serializa", "Se convierte en XML", "Se cifra automáticamente"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué interfaz Java permite marcar objetos serializables?",
+    options: ["Runnable", "Cloneable", "Serializable", "Closable"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué API XML basada en eventos consume menos memoria?",
+    options: ["DOM", "JAXB", "SAX", "DTD"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué formato de datos usa llaves y pares clave-valor?",
+    options: ["XML", "JSON", "CSV", "DTD"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué librería Java permite convertir JSON fácilmente?",
+    options: ["Gson", "JDBC", "SAX", "NIO"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué base de datos del temario es NoSQL?",
+    options: ["MySQL", "Oracle", "MongoDB", "PostgreSQL"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué estructura almacena MongoDB?",
+    options: ["Filas", "Documentos", "Tablas", "Columnas"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué operación MongoDB borra un documento?",
+    options: ["insertOne()", "findOne()", "updateOne()", "deleteOne()"],
+    correctAnswer: 3,
+  },
+  {
+    question: "¿Qué operación MongoDB modifica documentos?",
+    options: ["insertOne()", "updateOne()", "deleteOne()", "find()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué ventaja suele tener JSON frente a XML?",
+    options: ["Mayor tamaño", "Más etiquetas", "Parseo más ligero", "Uso obligatorio de DTD"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué paquete Java moderno sustituye parte de java.io?",
+    options: ["java.awt", "java.nio.file", "java.sql", "java.net"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué clase de NIO representa archivos y rutas?",
+    options: ["Files", "Directory", "Path", "Scanner"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué clase de NIO contiene métodos utilitarios sobre archivos?",
+    options: ["Files", "Path", "Directory", "Route"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué ventaja aporta NIO respecto a IO clásica?",
+    options: ["Acceso no bloqueante", "Elimina excepciones", "Evita buffers", "Sustituye JDBC"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué método JDBC confirma cambios de transacción?",
+    options: ["rollback()", "commit()", "close()", "flush()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método JDBC revierte cambios pendientes?",
+    options: ["rollback()", "commit()", "restart()", "undo()"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué patrón mejora separación entre persistencia y negocio?",
+    options: ["DAO", "Factory", "Singleton", "MVC"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué método de ResultSet obtiene números enteros?",
+    options: ["getNumber()", "readint()", "getString()", "getInt()"],
+    correctAnswer: 3,
+  },
+  {
+    question: "¿Qué tecnología representa datos mediante etiquetas?",
+    options: ["JSON", "XML", "CSV", "BSON"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método JDBC se usa para cerrar conexiones?",
+    options: ["finish()", "stop()", "close()", "destroy()"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué problema intenta evitar el pool de conexiones?",
+    options: ["Creación constante de conexiones", "Uso de SQL", "Errores XML", "Serialización"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué excepción pertenece al acceso a archivos?",
+    options: ["SQLException", "IOException", "MongoException", "ParseException"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué característica tienen las bases NoSQL?",
+    options: ["Escalabilidad horizontal", "Uso obligatorio de tablas", "Dependencia total de SQL", "Rigidez estructural"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué método de MongoDB inserta un documento?",
+    options: ["insertOne()", "updateOne()", "deleteOne()", "findOne()"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué método de MongoDB consulta documentos?",
+    options: ["insertOne()", "find()", "deleteOne()", "drop()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué API XML carga el documento completo antes de procesarlo?",
+    options: ["SAX", "DOM", "JSON", "DTD"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué API XML procesa secuencialmente el documento?",
+    options: ["DOM", "JDBC", "SAX", "JSON"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué objeto JDBC ejecuta sentencias SQL simples?",
+    options: ["Connection", "Statement", "PreparedStatement", "ResultSet"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método de PreparedStatement asigna enteros?",
+    options: ["setString()", "setInt()", "getint()", "putint()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué método de PreparedStatement asigna texto?",
+    options: ["setString()", "getString()", "putString()", "readString()"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué tecnología del temario usa documentos BSON?",
+    options: ["XML", "JDBC", "MongoDB", "JSON"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué método JDBC suele utilizarse con consultas parametrizadas?",
+    options: ["prepareStatement()", "executeUpdate()", "executeQuery()", "createStatement()"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué ventaja tiene DAO en aplicaciones grandes?",
+    options: ["Separar persistencia de negocio", "Eliminar SQL", "Evitar conexiones", "Sustituir ResultSet"],
+    correctAnswer: 0,
+  },
+  {
+    question: "¿Qué característica tiene JSON frente a XML?",
+    options: ["Mayor verbosidad", "Menor ligereza", "Parseo más ligero", "Uso obligatorio de etiquetas"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué método elimina documentos en MongoDB según el temario?",
+    options: ["removeDocument()", "deleteOne()", "dropDocument()", "deleteRow()"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué clase JDBC se usa para consultas parametrizadas?",
+    options: ["Connection", "PreparedStatement", "ResultSet", "DriverManager"],
+    correctAnswer: 1,
+  },
+  {
+    question: "¿Qué propiedad garantiza persistencia tras fallo del sistema en transacciones?",
+    options: ["Atomicidad", "Consistencia", "Durabilidad", "Aislamiento"],
+    correctAnswer: 2,
+  },
+  {
+    question: "¿Qué hace ResultSet.next() cuando no quedan registros?",
+    options: ["Devuelve false", "Lanza excepción", "Cierra conexión", "Reinicia ResultSet"],
+    correctAnswer: 0,
+  }
+];
+
+
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
