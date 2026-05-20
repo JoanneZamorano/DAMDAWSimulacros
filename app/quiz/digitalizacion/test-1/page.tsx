@@ -9,9 +9,307 @@ import Link from "next/link"
 interface Question { question: string; options: string[]; correctAnswer: number }
 
 const questions: Question[] = [
-  { question: "Pregunta de ejemplo 1 para Digitalizacion - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 0 },
-  { question: "Pregunta de ejemplo 2 para Digitalizacion - Test I", options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"], correctAnswer: 1 },
-]
+  {
+    question: "1. ¿Qué define mejor la digitalización?",
+    options: [
+      "Uso de redes sociales",
+      "Sustitución del papel por PDFs",
+      "Transformación del modelo de negocio mediante tecnología",
+      "Uso de ordenadores en la empresa"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "2. ¿Qué caracteriza a la Industria 4.0?",
+    options: [
+      "Producción manual",
+      "Interconexión y automatización inteligente",
+      "Uso exclusivo de robots",
+      "Eliminar de humanos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "3. ¿Cuál es el foco principal de la Industria 5.0?",
+    options: [
+      "Automatización total",
+      "Reducción de costes",
+      "Eliminación de errores humanos",
+      "Persona en el centro del proceso"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "4. ¿Qué es IT?",
+    options: [
+      "Control de máquinas industriales",
+      "Sistemas de información y gestión de datos",
+      "Sensores físicos",
+      "Automatización mecánica"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "5. ¿Qué es OT?",
+    options: [
+      "Software de oficina",
+      "Redes sociales",
+      "Tecnología que controla procesos físicos",
+      "Bases de datos"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "6. ¿Qué ocurre en la convergencia IT/OT?",
+    options: [
+      "Separación de sistemas",
+      "Eliminación de datos",
+      "Conexión entre sistemas digitales y físicos",
+      "Sustitución de OT"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "7. ¿Qué es IoT?",
+    options: [
+      "Red social",
+      "Dispositivos conectados que generan datos",
+      "Software de oficina",
+      "Lenguaje de programación"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "8. ¿Cuál es la clave del IoT?",
+    options: [
+      "El hardware",
+      "El diseño",
+      "El dato y su análisis",
+      "La estética"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "9. ¿Qué caracteriza a los cobots?",
+    options: [
+      "Trabajan aislados",
+      "No son programables",
+      "Sustituyen humanos totalmente",
+      "Colaboran con personas"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "10. ¿Para qué sirve la RA?",
+    options: [
+      "Crear mundos virtuales",
+      "Superponer información sobre el mundo real",
+      "Programar robots",
+      "Analizar datos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "11. ¿Para qué sirve la RV?",
+    options: [
+      "Mostrar datos reales",
+      "Simular entornos digitales",
+      "Gestionar bases de datos",
+      "Controlar sensores"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "12. ¿Qué papel tiene la ciberseguridad en la Industria 4.0?",
+    options: [
+      "Es opcional",
+      "Solo para bancos",
+      "Pilar transversal",
+      "Solo para servidores"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "13. ¿Qué es Cloud Computing?",
+    options: [
+      "Comprar servidores",
+      "Usar recursos bajo demanda",
+      "Programar software",
+      "Crear redes"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "14. ¿Qué ofrece IaaS?",
+    options: [
+      "Software completo",
+      "Infraestructura virtualizada",
+      "Aplicaciones listas",
+      "Interfaces de usuario"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "15. ¿Qué ofrece PaaS?",
+    options: [
+      "Hardware físico",
+      "Plataforma de desarrollo",
+      "Redes privadas",
+      "Dispositivos IoT"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "16. ¿Qué es SaaS?",
+    options: [
+      "Infraestructura virtualizada",
+      "Sistema operativo",
+      "Software listo para usar",
+      "Red privada"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "17. ¿Qué es nube híbrida?",
+    options: [
+      "Solo pública",
+      "Solo privada",
+      "Mezcla de nube pública y privada",
+      "Infraestructura local"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "18. ¿Cuál es la ventaja principal del cloud?",
+    options: [
+      "Mayor hardware propio",
+      "Pago por uso",
+      "Más infraestructura física",
+      "Menos capacidad de datos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "19. ¿Qué permite la escalabilidad en el cloud?",
+    options: [
+      "Reducir datos almacenados",
+      "Ajustar recursos según demanda",
+      "Eliminar usuarios del sistema",
+      "Crear software automáticamente"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "20. ¿Qué es la Inteligencia Artificial?",
+    options: [
+      "Hardware especializado",
+      "Software básico de oficina",
+      "Sistemas que imitan inteligencia humana",
+      "Red física de computadoras"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "21. ¿Qué es ANI?",
+    options: [
+      "IA general",
+      "IA actual especializada en tareas concretas",
+      "IA futura hipotética",
+      "IA con consciencia humana"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "22. ¿Qué es AGI?",
+    options: [
+      "IA actual disponible",
+      "IA muy limitada",
+      "IA general hipotética",
+      "IA de procesamiento de datos"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "23. ¿Qué hace el Machine Learning?",
+    options: [
+      "Crear redes de comunicación",
+      "Aprender de datos automáticamente",
+      "Diseñar hardware",
+      "Controlar robots industriales"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "24. ¿Qué caracteriza al Deep Learning?",
+    options: [
+      "Uso de bases de datos relacionales",
+      "Redes neuronales artificiales profundas",
+      "Redes físicas de comunicación",
+      "Lenguajes de programación específicos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "25. ¿Qué hace el NLP?",
+    options: [
+      "Controlar robots industriales",
+      "Analizar e interpretar lenguaje humano",
+      "Crear sensores físicos",
+      "Programar hardware de red"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "26. ¿Qué hace la visión artificial?",
+    options: [
+      "Generar texto automáticamente",
+      "Analizar e interpretar imágenes",
+      "Generar sonido sintetizado",
+      "Diseñar redes físicas"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "27. ¿Por cuántas 'V' se define Big Data?",
+    options: [
+      "2V",
+      "3V",
+      "4V",
+      "5V"
+    ],
+    correctAnswer: 3
+  },
+  {
+    "question": "28. ¿Qué relación hay entre IA y Big Data?",
+    options: [
+      "Son tecnologías independientes",
+      "La IA usa datos para aprender y mejorar",
+      "Big Data no aporta valor a la IA",
+      "La IA no necesita datos externos"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "29. ¿Qué combinación genera mayor valor en Industria 4.0?",
+    options: [
+      "Una sola tecnología aislada",
+      "Solo Inteligencia Artificial",
+      "Orquestación de varias tecnologías",
+      "Solo IoT"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "30. ¿Qué permite la IA en las empresas?",
+    options: [
+      "Reducir el hardware necesario",
+      "Tomar decisiones más inteligentes",
+      "Eliminar todos los datos",
+      "Crear redes de comunicación"
+    ],
+    correctAnswer: 1
+  }
+];
 
 function shuffleArray<T>(array: T[]): T[] { const newArray = [...array]; for (let i = newArray.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [newArray[i], newArray[j]] = [newArray[j], newArray[i]] } return newArray }
 
