@@ -131,7 +131,7 @@ const secondYearSubjects = [
       testI: "/quiz/ingles/test-1",
       testII: "/quiz/ingles/test-2",
     },
-     extraSimulacros: [                                          
+     extraSimulacros: [
     { label: "Test Extra 1", link: "/quiz/ingles/test-extra-1" },
     { label: "Test Extra 2", link: "/quiz/ingles/test-extra-2" },
   ],
@@ -397,6 +397,24 @@ export default function HomePage() {
                           → Test II: Proximamente
                         </div>
                       )}
+                      
+                      {/* ExtraSimulacros*/}
+                        {subject.extraSimulacros &&
+                          subject.extraSimulacros.map((extra, index) =>
+                            extra.link ? (
+                              <Link
+                                key={index}
+                                href={extra.link}
+                                className={`block text-sm ${extra.color || "text-blue-500 hover:text-blue-400"} hover:underline transition-colors`}
+                              >
+                                → {extra.label}
+                              </Link>
+                            ) : (
+                              <div key={index} className="text-sm text-muted-foreground/50">
+                                → {extra.label}: Proximamente
+                              </div>
+                            )
+                          )}
                     </div>
                   </div>
                 </Card>
