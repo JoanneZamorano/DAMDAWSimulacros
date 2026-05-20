@@ -28,8 +28,8 @@ const secondYearSubjects = [
     color: "bg-pink-500",
     hoverBorder: "hover:border-pink-500/50",
     simulacros: {
-      simulacroI: "/quiz/desarrollo-interfaces/simulacro-1",
-      simulacroII: "/quiz/desarrollo-interfaces/simulacro-2",
+      //simulacroI: "/quiz/desarrollo-interfaces/simulacro-1",
+      //simulacroII: "/quiz/desarrollo-interfaces/simulacro-2",
     },
     tests: {
       testI: "/quiz/desarrollo-interfaces/test-1",
@@ -44,12 +44,12 @@ const secondYearSubjects = [
     color: "bg-indigo-500",
     hoverBorder: "hover:border-indigo-500/50",
     simulacros: {
-      simulacroI: "/quiz/psp/simulacro-1",
-      simulacroII: "/quiz/psp/simulacro-2",
+      //simulacroI: "/quiz/psp/simulacro-1",
+      //simulacroII: "/quiz/psp/simulacro-2",
     },
     tests: {
       testI: "/quiz/psp/test-1",
-      testII: "/quiz/psp/test-2",
+      //testII: "/quiz/psp/test-2",
     },
   },
   {
@@ -60,8 +60,8 @@ const secondYearSubjects = [
     color: "bg-emerald-500",
     hoverBorder: "hover:border-emerald-500/50",
     simulacros: {
-      simulacroI: "/quiz/pmdm/simulacro-1",
-      simulacroII: "/quiz/pmdm/simulacro-2",
+      //simulacroI: "/quiz/pmdm/simulacro-1",
+      //simulacroII: "/quiz/pmdm/simulacro-2",
     },
     tests: {
       testI: "/quiz/pmdm/test-1",
@@ -76,8 +76,8 @@ const secondYearSubjects = [
     color: "bg-amber-500",
     hoverBorder: "hover:border-amber-500/50",
     simulacros: {
-      simulacroI: "/quiz/sistemas-gestion-empresarial/simulacro-1",
-      simulacroII: "/quiz/sistemas-gestion-empresarial/simulacro-2",
+      //simulacroI: "/quiz/sistemas-gestion-empresarial/simulacro-1",
+      //simulacroII: "/quiz/sistemas-gestion-empresarial/simulacro-2",
     },
     tests: {
       testI: "/quiz/sistemas-gestion-empresarial/test-1",
@@ -92,8 +92,8 @@ const secondYearSubjects = [
     color: "bg-violet-500",
     hoverBorder: "hover:border-violet-500/50",
     simulacros: {
-      simulacroI: "/quiz/digitalizacion/simulacro-1",
-      simulacroII: "/quiz/digitalizacion/simulacro-2",
+      //simulacroI: "/quiz/digitalizacion/simulacro-1",
+      //simulacroII: "/quiz/digitalizacion/simulacro-2",
     },
     tests: {
       testI: "/quiz/digitalizacion/test-1",
@@ -108,8 +108,8 @@ const secondYearSubjects = [
     color: "bg-lime-500",
     hoverBorder: "hover:border-lime-500/50",
     simulacros: {
-      simulacroI: "/quiz/sostenibilidad/simulacro-1",
-      simulacroII: "/quiz/sostenibilidad/simulacro-2",
+      //simulacroI: "/quiz/sostenibilidad/simulacro-1",
+      //simulacroII: "/quiz/sostenibilidad/simulacro-2",
     },
     tests: {
       testI: "/quiz/sostenibilidad/test-1",
@@ -124,8 +124,8 @@ const secondYearSubjects = [
     color: "bg-rose-500",
     hoverBorder: "hover:border-rose-500/50",
     simulacros: {
-      simulacroI: "/quiz/ingles/simulacro-1",
-      simulacroII: "/quiz/ingles/simulacro-2",
+      //simulacroI: "/quiz/ingles/simulacro-1",
+      //simulacroII: "/quiz/ingles/simulacro-2",
     },
     tests: {
       testI: "/quiz/ingles/test-1",
