@@ -91,6 +91,10 @@ const secondYearSubjects = [
       testI: "/quiz/sistemas-gestion-empresarial/test-1",
       testII: "/quiz/sistemas-gestion-empresarial/test-2",
     },
+    extraSimulacros: [
+    { label: "Test Extra 1", link: "/quiz/sistemas-gestion-empresarial/test-extra-1" },
+    { label: "Test Extra 2", link: "/quiz/sistemas-gestion-empresarial/test-extra-2" },
+  ],
   },
   {
     id: "digitalizacion",
