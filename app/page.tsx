@@ -1,7 +1,120 @@
 import Link from "next/link"
 import { Card } from "@/components/ui/card"
-import { BookOpen, Code, Database, Hammer, Server, Terminal, Briefcase } from "lucide-react"
+import { BookOpen, Code, Database, Hammer, Server, Terminal, Briefcase, MonitorSmartphone, Layout, Cpu, Smartphone, Building2, Leaf, Globe, GraduationCap } from "lucide-react"
 
+// Segundo Curso
+const secondYearSubjects = [
+  {
+    id: "acceso-datos",
+    title: "Acceso a Datos",
+    description: "Persistencia, JDBC, Hibernate y ficheros",
+    icon: Database,
+    color: "bg-cyan-500",
+    hoverBorder: "hover:border-cyan-500/50",
+    simulacros: {
+      simulacroI: "/quiz/acceso-datos/simulacro-1",
+      simulacroII: "/quiz/acceso-datos/simulacro-2",
+    },
+  },
+  {
+    id: "desarrollo-interfaces",
+    title: "Desarrollo de Interfaces",
+    description: "Interfaces de usuario y usabilidad",
+    icon: Layout,
+    color: "bg-pink-500",
+    hoverBorder: "hover:border-pink-500/50",
+    simulacros: {
+      simulacroI: "/quiz/desarrollo-interfaces/simulacro-1",
+      simulacroII: "/quiz/desarrollo-interfaces/simulacro-2",
+    },
+  },
+  {
+    id: "psp",
+    title: "PSP",
+    description: "Programacion de Servicios y Procesos",
+    icon: Cpu,
+    color: "bg-indigo-500",
+    hoverBorder: "hover:border-indigo-500/50",
+    simulacros: {
+      simulacroI: "/quiz/psp/simulacro-1",
+      simulacroII: "/quiz/psp/simulacro-2",
+    },
+  },
+  {
+    id: "pmdm",
+    title: "PMDM",
+    description: "Programacion Multimedia y Dispositivos Moviles",
+    icon: Smartphone,
+    color: "bg-emerald-500",
+    hoverBorder: "hover:border-emerald-500/50",
+    simulacros: {
+      simulacroI: "/quiz/pmdm/simulacro-1",
+      simulacroII: "/quiz/pmdm/simulacro-2",
+    },
+  },
+  {
+    id: "sistemas-gestion-empresarial",
+    title: "Sistemas de Gestion Empresarial",
+    description: "ERP, CRM y sistemas empresariales",
+    icon: Building2,
+    color: "bg-amber-500",
+    hoverBorder: "hover:border-amber-500/50",
+    simulacros: {
+      simulacroI: "/quiz/sistemas-gestion-empresarial/simulacro-1",
+      simulacroII: "/quiz/sistemas-gestion-empresarial/simulacro-2",
+    },
+  },
+  {
+    id: "digitalizacion",
+    title: "Digitalizacion",
+    description: "Transformacion digital y tecnologias",
+    icon: MonitorSmartphone,
+    color: "bg-violet-500",
+    hoverBorder: "hover:border-violet-500/50",
+    simulacros: {
+      simulacroI: "/quiz/digitalizacion/simulacro-1",
+      simulacroII: "/quiz/digitalizacion/simulacro-2",
+    },
+  },
+  {
+    id: "sostenibilidad",
+    title: "Sostenibilidad",
+    description: "Desarrollo sostenible y medioambiente",
+    icon: Leaf,
+    color: "bg-lime-500",
+    hoverBorder: "hover:border-lime-500/50",
+    simulacros: {
+      simulacroI: "/quiz/sostenibilidad/simulacro-1",
+      simulacroII: "/quiz/sostenibilidad/simulacro-2",
+    },
+  },
+  {
+    id: "ingles",
+    title: "Ingles",
+    description: "Ingles tecnico profesional",
+    icon: Globe,
+    color: "bg-rose-500",
+    hoverBorder: "hover:border-rose-500/50",
+    simulacros: {
+      simulacroI: "/quiz/ingles/simulacro-1",
+      simulacroII: "/quiz/ingles/simulacro-2",
+    },
+  },
+  {
+    id: "ipe-2",
+    title: "IPE II",
+    description: "Itinerario para la empleabilidad II",
+    icon: GraduationCap,
+    color: "bg-teal-500",
+    hoverBorder: "hover:border-teal-500/50",
+    simulacros: {
+      simulacroI: "/quiz/ipe-2/simulacro-1",
+      simulacroII: "/quiz/ipe-2/simulacro-2",
+    },
+  },
+]
+
+// Primer Curso
 const subjects = [
   {
     id: "lenguaje-marcas",
@@ -148,111 +261,185 @@ export default function HomePage() {
             DAM/DAW <span className="text-blue-500">SIMULACROS</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Exámenes interactivos de todas las asignaturas | 1er curso
+            Examenes interactivos de todas las asignaturas
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {subjects.map((subject) => {
-            const Icon = subject.icon
-            const hasAnySimulacro = Object.values(subject.simulacros).some((link) => link !== null)
+        {/* SEGUNDO CURSO */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-6 border-b border-border pb-2">
+            Segundo Curso
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {secondYearSubjects.map((subject) => {
+              const Icon = subject.icon
+              const hasAnySimulacro = Object.values(subject.simulacros).some((link) => link !== null)
 
-            return (
-              <Card
-                key={subject.id}
-                className={`h-full p-6 bg-card border-border ${subject.hoverBorder} transition-all`}
-              >
-                <div className="flex flex-col h-full space-y-4">
-                  <div className="flex items-start justify-between">
-                    <div className={`p-3 rounded-lg ${subject.color} text-white`}>
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    {!hasAnySimulacro && (
-                      <span className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">
-                        Próximamente
-                      </span>
-                    )}
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">{subject.title}</h3>
-                    <p className="text-sm text-muted-foreground">{subject.description}</p>
-                  </div>
-
-                  <div className="pt-2 space-y-2 border-t border-border">
-                    {/* Simulacro Junio */}
-                    {subject.simulacros.junio ? (
-                      <Link
-                        href={subject.simulacros.junio}
-                        className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
-                      >
-                        →{" "}
-                        {subject.customLabels?.junio ||
-                          `Simulacro Junio${subject.specialLabel ? ` (${subject.specialLabel})` : ""}`}
-                      </Link>
-                    ) : (
-                      <div className="text-sm text-muted-foreground/50">
-                        → {subject.customLabels?.junio || "Simulacro Junio"}: Próximamente
+              return (
+                <Card
+                  key={subject.id}
+                  className={`h-full p-6 bg-card border-border ${subject.hoverBorder} transition-all`}
+                >
+                  <div className="flex flex-col h-full space-y-4">
+                    <div className="flex items-start justify-between">
+                      <div className={`p-3 rounded-lg ${subject.color} text-white`}>
+                        <Icon className="w-6 h-6" />
                       </div>
-                    )}
-
-                    {/* Simulacro Diciembre I */}
-                    {subject.simulacros.diciembreI ? (
-                      <Link
-                        href={subject.simulacros.diciembreI}
-                        className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
-                      >
-                        →{" "}
-                        {subject.customLabels?.diciembreI ||
-                          `Simulacro Diciembre I${subject.specialLabel ? ` (${subject.specialLabel})` : ""}`}
-                      </Link>
-                    ) : (
-                      <div className="text-sm text-muted-foreground/50">
-                        → {subject.customLabels?.diciembreI || "Simulacro Diciembre I"}: Próximamente
-                      </div>
-                    )}
-
-                    {/* Simulacro Diciembre II */}
-                    {subject.simulacros.diciembreII ? (
-                      <Link
-                        href={subject.simulacros.diciembreII}
-                        className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
-                      >
-                        → {subject.customLabels?.diciembreII || "Simulacro Diciembre II"}
-                      </Link>
-                    ) : (
-                      <div className="text-sm text-muted-foreground/50">
-                        → {subject.customLabels?.diciembreII || "Simulacro Diciembre II"}: Próximamente
-                      </div>
-                    )}
-
-                    {/* Extra Simulacros */}
-                    {subject.extraSimulacros &&
-                      subject.extraSimulacros.map((extraSimulacro, index) =>
-                        extraSimulacro.link ? (
-                          <Link
-                            key={index}
-                            href={extraSimulacro.link}
-                            className={`block text-sm ${extraSimulacro.color || "text-blue-500 hover:text-blue-400"} hover:underline transition-colors`}
-                          >
-                            → {extraSimulacro.label}
-                          </Link>
-                        ) : (
-                          <div key={index} className="text-sm text-muted-foreground/50">
-                            → {extraSimulacro.label}: Próximamente
-                          </div>
-                        ),
+                      {!hasAnySimulacro && (
+                        <span className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">
+                          Proximamente
+                        </span>
                       )}
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground mb-2">{subject.title}</h3>
+                      <p className="text-sm text-muted-foreground">{subject.description}</p>
+                    </div>
+
+                    <div className="pt-2 space-y-2 border-t border-border">
+                      {/* Simulacro I */}
+                      {subject.simulacros.simulacroI ? (
+                        <Link
+                          href={subject.simulacros.simulacroI}
+                          className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                        >
+                          → Simulacro I
+                        </Link>
+                      ) : (
+                        <div className="text-sm text-muted-foreground/50">
+                          → Simulacro I: Proximamente
+                        </div>
+                      )}
+
+                      {/* Simulacro II */}
+                      {subject.simulacros.simulacroII ? (
+                        <Link
+                          href={subject.simulacros.simulacroII}
+                          className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                        >
+                          → Simulacro II
+                        </Link>
+                      ) : (
+                        <div className="text-sm text-muted-foreground/50">
+                          → Simulacro II: Proximamente
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </Card>
-            )
-          })}
+                </Card>
+              )
+            })}
+          </div>
+        </div>
+
+        {/* PRIMER CURSO */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-foreground mb-6 border-b border-border pb-2">
+            Primer Curso
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {subjects.map((subject) => {
+              const Icon = subject.icon
+              const hasAnySimulacro = Object.values(subject.simulacros).some((link) => link !== null)
+
+              return (
+                <Card
+                  key={subject.id}
+                  className={`h-full p-6 bg-card border-border ${subject.hoverBorder} transition-all`}
+                >
+                  <div className="flex flex-col h-full space-y-4">
+                    <div className="flex items-start justify-between">
+                      <div className={`p-3 rounded-lg ${subject.color} text-white`}>
+                        <Icon className="w-6 h-6" />
+                      </div>
+                      {!hasAnySimulacro && (
+                        <span className="text-xs px-2 py-1 rounded-full bg-muted text-muted-foreground">
+                          Proximamente
+                        </span>
+                      )}
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground mb-2">{subject.title}</h3>
+                      <p className="text-sm text-muted-foreground">{subject.description}</p>
+                    </div>
+
+                    <div className="pt-2 space-y-2 border-t border-border">
+                      {/* Simulacro Junio */}
+                      {subject.simulacros.junio ? (
+                        <Link
+                          href={subject.simulacros.junio}
+                          className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                        >
+                          →{" "}
+                          {subject.customLabels?.junio ||
+                            `Simulacro Junio${subject.specialLabel ? ` (${subject.specialLabel})` : ""}`}
+                        </Link>
+                      ) : (
+                        <div className="text-sm text-muted-foreground/50">
+                          → {subject.customLabels?.junio || "Simulacro Junio"}: Proximamente
+                        </div>
+                      )}
+
+                      {/* Simulacro Diciembre I */}
+                      {subject.simulacros.diciembreI ? (
+                        <Link
+                          href={subject.simulacros.diciembreI}
+                          className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                        >
+                          →{" "}
+                          {subject.customLabels?.diciembreI ||
+                            `Simulacro Diciembre I${subject.specialLabel ? ` (${subject.specialLabel})` : ""}`}
+                        </Link>
+                      ) : (
+                        <div className="text-sm text-muted-foreground/50">
+                          → {subject.customLabels?.diciembreI || "Simulacro Diciembre I"}: Proximamente
+                        </div>
+                      )}
+
+                      {/* Simulacro Diciembre II */}
+                      {subject.simulacros.diciembreII ? (
+                        <Link
+                          href={subject.simulacros.diciembreII}
+                          className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                        >
+                          → {subject.customLabels?.diciembreII || "Simulacro Diciembre II"}
+                        </Link>
+                      ) : (
+                        <div className="text-sm text-muted-foreground/50">
+                          → {subject.customLabels?.diciembreII || "Simulacro Diciembre II"}: Proximamente
+                        </div>
+                      )}
+
+                      {/* Extra Simulacros */}
+                      {subject.extraSimulacros &&
+                        subject.extraSimulacros.map((extraSimulacro, index) =>
+                          extraSimulacro.link ? (
+                            <Link
+                              key={index}
+                              href={extraSimulacro.link}
+                              className={`block text-sm ${extraSimulacro.color || "text-blue-500 hover:text-blue-400"} hover:underline transition-colors`}
+                            >
+                              → {extraSimulacro.label}
+                            </Link>
+                          ) : (
+                            <div key={index} className="text-sm text-muted-foreground/50">
+                              → {extraSimulacro.label}: Proximamente
+                            </div>
+                          ),
+                        )}
+                    </div>
+                  </div>
+                </Card>
+              )
+            })}
+          </div>
         </div>
 
         <div className="mt-12 text-center">
           <Card className="inline-block p-6 bg-card border-border">
-            <p className="text-sm text-muted-foreground">Más simulacros se añadirán próximamente</p>
+            <p className="text-sm text-muted-foreground">Mas simulacros se anadiran proximamente</p>
           </Card>
         </div>
       </div>
