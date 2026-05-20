@@ -147,7 +147,7 @@ const questions: Question[] = [
   {
     question: "28. My colleague is very good ......... numbers and financial data.",
     options: ["at", "in", "with", "on"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question: "29. Chris works only 15 hours per week. He has a ......... job.",
