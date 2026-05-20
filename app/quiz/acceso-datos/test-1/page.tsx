@@ -165,7 +165,6 @@ const questions: Question[] = [
   }
 ];
 
-```
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
