@@ -99,6 +99,13 @@ const secondYearSubjects = [
       testI: "/quiz/digitalizacion/test-1",
       testII: "/quiz/digitalizacion/test-2",
     },
+      extraSimulacros: [                                          
+    { label: "Test Extra 1", link: "/quiz/digitalizacion/test-extra-1" },
+    { label: "Test Extra 2", link: "/quiz/digitalizacion/test-extra-2" },
+    { label: "Test Extra 3", link: "/quiz/digitalizacion/test-extra-3" },
+    { label: "Test Extra 4", link: "/quiz/digitalizacion/test-extra-4" },
+    { label: "Test Extra 5", link: "/quiz/digitalizacion/test-extra-5" },
+  ],
   },
   {
     id: "sostenibilidad",
