@@ -14,15 +14,455 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Sistemas de Gestion Empresarial",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    "question": "¿Qué ventaja aporta SOA en Odoo?",
+    "options": [
+      "Escalabilidad modular",
+      "Código monolitico único",
+      "Dependencia entre modulos",
+      "Datos aislados"
+    ],
+    "correctAnswer": 0
   },
   {
-    question: "Pregunta de ejemplo 2 para Sistemas de Gestion Empresarial",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    "question": "¿Qué módulo actúa como núcleo lógico en Odoo?",
+    "options": [
+      "Cliente web",
+      "PostgreSQL",
+      "Servidor Odoo",
+      "Power BI"
+    ],
+    "correctAnswer": 2
   },
+  {
+    "question": "¿Qué API usa Odoo para integrar módulos?",
+    "options": [
+      "SOAP-RMI",
+      "XML-RPC y JSON-RPC",
+      "REST-SQL",
+      "Git Hooks"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué permite añadir módulos sin rediseñar el sistema?",
+    "options": [
+      "Escalabilidad",
+      "Caché local",
+      "Serializacion",
+      "Virtualización"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué componente almacena datos centralizados?",
+    "options": [
+      "Frontend React",
+      "Cliente movil",
+      "Servidor Apache",
+      "PostgreSQL"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué representa el frontend de Odoo?",
+    "options": [
+      "Motor SQL",
+      "Interfaz visual",
+      "Plan contable",
+      "Sistema GPS"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué ventaja evita duplicar datos en Odoo?",
+    "options": [
+      "Interoperabilidad",
+      "Encapsulación",
+      "Integración modular",
+      "Compresión binaria"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué debe hacerse antes de instalar un ERP modular?",
+    "options": [
+      "Migrar facturas",
+      "Configurar Docker",
+      "Entender la estructura",
+      "Crear APIs externas"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué herramienta prueba APIs de Odoo?",
+    "options": [
+      "Instagram",
+      "Postman",
+      "Odoo Shell",
+      "Canva"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué significa modularidad en Odoo?",
+    "options": [
+      "Separar servicios independientes",
+      "Eliminar bases SQL",
+      "Usar varios ERPs",
+      "Crear copias locales"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué ventaja tiene actualizar módulos por fases?",
+    "options": [
+      "Reduce estabilidad",
+      "Evita APIs",
+      "Garantiza estabilidad",
+      "Elimina integraciones"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué ocurre al validar una factura en Odoo?",
+    "options": [
+      "Se borra el pedido",
+      "Se crea un asiento",
+      "Se reinicia PostgreSQL",
+      "Se elimina el IVA"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué permite la conciliación bancaria?",
+    "options": [
+      "Borrar balances",
+      "Crear módulos",
+      "Relacionar movimientos y facturas",
+      "Generar menús XML"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué informe genera Odoo en tiempo real?",
+    "options": [
+      "Balances financieros",
+      "Código Python",
+      "Backups Docker",
+      "Diagramas UML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué módulo sincroniza movimientos bancarios?",
+    "options": [
+      "Pivot Tables",
+      "Bank Synchronization App",
+      "Odoo Studio",
+      "VS Code"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué integración garantiza coherencia financiera?",
+    "options": [
+      "Ventas y Compras",
+      "Docker y GitHub",
+      "HTML y CSS",
+      "Power BI y GPS"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué minimiza la automatización contable?",
+    "options": [
+      "Errores humanos",
+      "Dependencias XML",
+      "Consultas ORM",
+      "Campos Many2one"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué vista usa Odoo CRM para oportunidades?",
+    "options": [
+      "Árbol AVL",
+      "Kanban",
+      "Canvas SVG",
+      "Bash Shell"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué convierte un presupuesto en pedido?",
+    "options": [
+      "Exportarlo a Excel",
+      "Eliminar el lead",
+      "Confirmarlo",
+      "Crear una API"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué registra el CRM desde el primer contacto?",
+    "options": [
+      "Solo pagos",
+      "Trazabilidad comercial",
+      "Código fuente",
+      "Claves SSH"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué automatización ayuda al seguimiento comercial?",
+    "options": [
+      "Correos y tareas",
+      "Copias SQL",
+      "Bloqueo XML",
+      "Compresión ZIP"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué fase sigue a captar leads?",
+    "options": [
+      "Facturación",
+      "Cierre fiscal",
+      "Calificación de oportunidades",
+      "Migración SQL"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué ofrece integrar CRM y Ventas?",
+    "options": [
+      "Menos módulos",
+      "Datos desconectados",
+      "Interfaz monolítica",
+      "Trazabilidad completa"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué identifica la auditoría inicial?",
+    "options": [
+      "KPIs financieros",
+      "Problemas y cuellos de botella",
+      "Reglas CSS",
+      "Repositorios Git"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué busca el análisis funcional?",
+    "options": [
+      "Definir flujos y módulos",
+      "Eliminar PostgreSQL",
+      "Crear backups locales",
+      "Reducir XML"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué filosofía recomienda Odoo al implantar?",
+    "options": [
+      "Programar siempre",
+      "Separar clientes",
+      "Configurar antes que programar",
+      "Usar módulos monolíticos"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué paso importa datos antiguos?",
+    "options": [
+      "Parametrización",
+      "Go-Live",
+      "Migración de datos",
+      "Auditoría inicial"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué ocurre en el Go-Live?",
+    "options": [
+      "Se eliminan APIs",
+      "Se capacita a usuarios",
+      "Se borra PostgreSQL",
+      "Se desinstala CRM"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué evita implantar toda la empresa de golpe?",
+    "options": [
+      "Sobrecarga inicial",
+      "Código Python",
+      "Consultas ORM",
+      "Dependencias SQL"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué perfil enlaza consultora y empresa?",
+    "options": [
+      "Key User",
+      "Frontend Dev",
+      "DBA externo",
+      "Tester QA"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué entorno recomienda probar pedidos reales?",
+    "options": [
+      "Producción",
+      "Sandbox",
+      "GitLab",
+      "Nginx"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué reduce personalizar demasiado un ERP?",
+    "options": [
+      "Mantenimiento sencillo",
+      "Compatibilidad futura",
+      "Escalabilidad API",
+      "Automatización bancaria"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué traduce modelos Python en tablas?",
+    "options": [
+      "Power BI",
+      "QWeb",
+      "ORM",
+      "Odoo Shell"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué modelo representa clientes en Odoo?",
+    "options": [
+      "sale.order",
+      "res.partner",
+      "account.move",
+      "product.template"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué tipo de campo conecta modelos?",
+    "options": [
+      "Boolean",
+      "Date",
+      "Relacional",
+      "Float"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué almacena sale.order?",
+    "options": [
+      "Facturas",
+      "Clientes",
+      "Pedidos de venta",
+      "Inventarios"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué herramienta consulta tablas PostgreSQL?",
+    "options": [
+      "pgAdmin",
+      "Trello",
+      "Canva",
+      "Asana"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué permite el ORM de Odoo?",
+    "options": [
+      "Conectar código y datos",
+      "Diseñar logos",
+      "Editar imágenes",
+      "Crear contenedores"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué evita duplicar información entre modelos?",
+    "options": [
+      "Campos relacionales",
+      "Copias CSV",
+      "Código Java",
+      "Claves externas manuales"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué archivo define dependencias del módulo?",
+    "options": [
+      "views.xml",
+      "models.py",
+      "manifest.py",
+      "static.css"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué carpeta contiene lógica Python en Odoo?",
+    "options": [
+      "data/",
+      "models/",
+      "views/",
+      "static/"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué tecnología usa Odoo para vistas?",
+    "options": [
+      "QWeb",
+      "Python",
+      "PostgreSQL",
+      "XML"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué debe hacerse tras añadir un módulo nuevo?",
+    "options": [
+      "Reiniciar servidor",
+      "Borrar PostgreSQL",
+      "Cerrar GitHub",
+      "Exportar CSV"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué práctica recomienda ampliar módulos estándar?",
+    "options": [
+      "Modificar código original",
+      "Heredar modelos y vistas",
+      "Eliminar dependencias",
+      "Usar Excel externo"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué guarda la carpeta data/?",
+    "options": [
+      "Registros iniciales",
+      "Consultas ORM",
+      "Imágenes PNG",
+      "Drivers SQL"
+    ],
+    "correctAnswer": 0
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
