@@ -73,7 +73,7 @@ const secondYearSubjects = [
     hoverBorder: "hover:border-emerald-500/50",
     simulacros: {
       //simulacroI: "/quiz/pmdm/simulacro-1",
-      //simulacroII: "/quiz/pmdm/simulacro-2",
+      simulacroII: "/quiz/pmdm/simulacro-2",
     },
     tests: {
       testI: "/quiz/pmdm/test-1",
