@@ -112,8 +112,8 @@ const secondYearSubjects = [
     color: "bg-violet-500",
     hoverBorder: "hover:border-violet-500/50",
     simulacros: {
-      //simulacroI: "/quiz/digitalizacion/simulacro-1",
-      //simulacroII: "/quiz/digitalizacion/simulacro-2",
+      simulacroI: "/quiz/digitalizacion/simulacro-1",
+      simulacroII: "/quiz/digitalizacion/simulacro-2",
     },
     tests: {
       testI: "/quiz/digitalizacion/test-1",
