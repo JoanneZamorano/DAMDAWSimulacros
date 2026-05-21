@@ -72,7 +72,7 @@ const secondYearSubjects = [
     color: "bg-emerald-500",
     hoverBorder: "hover:border-emerald-500/50",
     simulacros: {
-      //simulacroI: "/quiz/pmdm/simulacro-1",
+      simulacroI: "/quiz/pmdm/simulacro-1",
       simulacroII: "/quiz/pmdm/simulacro-2",
     },
     tests: {
