@@ -14,13 +14,303 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Digitalizacion",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    question: "1. ¿Qué describe mejor la 'digitalización' de una empresa?",
+    options: [
+      "Tener página web y redes sociales",
+      "Sustituir papel por archivos PDF",
+      "Reorganización del modelo de negocio usando tecnología digital como catalizador",
+      "Comprar ordenadores nuevos para todos los empleados"
+    ],
+    correctAnswer: 2,
   },
   {
-    question: "Pregunta de ejemplo 2 para Digitalizacion",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+    question: "2. ¿Cuál es el pilar tecnológico principal de la Industria 4.0?",
+    options: [
+      "Electricidad y producción en masa",
+      "IoT + IA + Cloud = interconexión inteligente",
+      "Vapor y mecanización",
+      "Impresión offset y fax"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "3. ¿Qué distingue a la Industria 5.0 de la 4.0?",
+    options: [
+      "Mayor automatización y eliminación del factor humano",
+      "Énfasis en la persona, sostenibilidad y resiliencia frente a crisis",
+      "Uso exclusivo de inteligencia artificial sin intervención humana",
+      "Producción en masa a bajo coste en países emergentes"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "4. ¿Qué representa la 'OT' en la convergencia IT/OT?",
+    options: [
+      "Online Technology: sistemas de comunicación por internet",
+      "Operational Technology: tecnología de control físico (PLCs, SCADA, sensores)",
+      "Output Technology: sistemas de impresión y salida de datos",
+      "Open Technology: software de código abierto"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "5. ¿A qué sector pertenece la 'AgroTech' o Agricultura de Precisión?",
+    options: [
+      "Sector Secundario (Industria)",
+      "Sector Terciario (Servicios)",
+      "Sector Primario (Agricultura, Ganadería, Pesca)",
+      "Sector Cuaternario (Conocimiento)"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "6. La fábrica de Siemens en Amberg lleva 30 años multiplicando su producción. ¿En qué factor clave se basa?",
+    options: [
+      "Incorporación de miles de trabajadores nuevos cada año",
+      "Fusión perfecta IT/OT: gemelo digital + 1.000+ sensores + código único por producto",
+      "Subcontratación de producción a países con mano de obra barata",
+      "Reubicación de la planta a zonas de menor coste energético"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "7. ¿Cuál de estas afirmaciones sobre la Industria 4.0 es FALSA?",
+    options: [
+      "La IA puede automatizar tareas repetitivas liberando tiempo creativo a las personas",
+      "La Industria 4.0 destruye masivamente empleos sin crear nuevos perfiles",
+      "La digitalización es accesible también para pymes gracias al Cloud y el SaaS",
+      "Los cobots trabajan junto a personas de forma colaborativa y segura"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "8. ¿Qué tecnología usa Inditex/Zara para tener control de inventario en tiempo real?",
+    options: [
+      "Códigos QR en cada prenda",
+      "Etiquetas RFID con identificador único en cada prenda",
+      "Cámaras de visión artificial en todas las tiendas",
+      "Escáneres láser de código de barras tradicional"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "9. ¿Cuál es la clave real del IoT, más allá del dispositivo físico?",
+    options: [
+      "La velocidad de conexión a internet del dispositivo",
+      "El dato en contexto: leerlo, almacenarlo, analizarlo y actuar sobre él",
+      "El precio del hardware del sensor",
+      "La marca del fabricante del dispositivo conectado"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "10. ¿Qué son los 'cobots' y en qué se diferencian de robots tradicionales?",
+    options: [
+      "Robots de combate militar autónomos",
+      "Robots colaborativos diseñados para trabajar junto a personas de forma segura y flexible",
+      "Robots de alta velocidad que sustituyen completamente al operario",
+      "Ordenadores de control de procesos industriales (PLCs)"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "11. ¿Cuál es la diferencia clave entre Realidad Aumentada (RA) y Realidad Virtual (RV)?",
+    options: [
+      "RA crea un entorno 100% digital; RV superpone info digital sobre el mundo real",
+      "RA superpone capas digitales sobre el mundo real; RV crea un entorno 100% digital inmersivo",
+      "Son lo mismo, solo cambia el nombre según el fabricante",
+      "RA es para uso médico y RV es exclusivamente para videojuegos"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "12. ¿Por qué se dice que la ciberseguridad es un 'pilar transversal' de las THD?",
+    options: [
+      "Porque solo afecta a los departamentos de IT",
+      "Porque IoT, RA, robótica y cloud generan superficies de ataque que deben protegerse",
+      "Porque es obligatoria solo en grandes empresas con más de 250 empleados",
+      "Porque reemplaza a los firewalls tradicionales"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "13. ¿Qué característica hace al Blockchain diferente de una base de datos tradicional?",
+    options: [
+      "Es más rápido que cualquier base de datos relacional",
+      "Es distribuido, encriptado e inmutable: no puede modificarse sin consenso de toda la red",
+      "Solo puede almacenar transacciones de criptomonedas",
+      "Requiere un servidor central que valide todas las operaciones"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "14. ¿Qué permite hacer un Gemelo Digital que no permite un plano técnico tradicional?",
+    options: [
+      "Mostrar el diseño en 3D con colores",
+      "Actualizarse con datos reales en tiempo real para simular, predecir fallos y optimizar sin intervenir el sistema físico",
+      "Calcular el coste de fabricación del producto",
+      "Compartir documentos de diseño entre varios ingenieros"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "15. ¿Qué ventaja principal aporta la Impresión 3D frente a la fabricación tradicional?",
+    options: [
+      "Produce piezas más baratas en cualquier cantidad",
+      "Añade solo el material necesario capa a capa, reduciendo residuos y permitiendo piezas personalizadas",
+      "Es el único método para fabricar piezas de metal",
+      "Elimina la necesidad de diseñadores y ingenieros"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "16. ¿Cuál es la característica del 5G más crítica para el IoT industrial?",
+    options: [
+      "Mayor resolución de pantalla en smartphones",
+      "Latencia ultrabaja + velocidad ultraalta + conectividad masiva de dispositivos",
+      "Mejor cobertura en zonas rurales remotas",
+      "Reducción del consumo de batería en teléfonos móviles"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "17. Un equipo de TI quiere máximo control sobre el sistema operativo y las aplicaciones. ¿Qué modelo cloud elige?",
+    options: [
+      "SaaS (Software as a Service)",
+      "PaaS (Platform as a Service)",
+      "IaaS (Infrastructure as a Service)",
+      "DaaS (Desktop as a Service)"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "18. ¿Cuál de estas herramientas es un ejemplo de SaaS?",
+    options: [
+      "Amazon EC2",
+      "Google App Engine",
+      "Heroku",
+      "Salesforce CRM"
+    ],
+    correctAnswer: 3,
+  },
+  {
+    question: "19. Un banco quiere guardar datos sensibles en infraestructura exclusiva pero usar la nube pública para picos de demanda. ¿Qué tipo de nube usa?",
+    options: [
+      "Nube pública",
+      "Nube privada",
+      "Nube híbrida",
+      "Nube comunitaria"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "20. La mayoría de brechas de datos en la nube se deben a…",
+    options: [
+      "Fallos de hardware de los proveedores cloud",
+      "Errores de configuración por parte del usuario (contraseñas débiles, permisos incorrectos)",
+      "Ataques físicos a los centros de datos",
+      "Virus transmitidos por el aire en salas de servidores"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "21. ¿Qué modelo de servicio cloud adoptó Netflix principalmente tras migrar a AWS?",
+    options: [
+      "SaaS: usaron Google Workspace para gestionar su contenido",
+      "IaaS + algunos componentes PaaS, con arquitectura autoscalable",
+      "PaaS exclusivamente con Heroku",
+      "Nube privada propia sin proveedores externos"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "22. En el 'Modelo de Responsabilidad Compartida' del cloud, ¿qué protege el cliente (no el proveedor)?",
+    options: [
+      "La seguridad física de los centros de datos",
+      "El hardware de servidores y la red de fibra óptica",
+      "Los accesos, contraseñas, permisos y configuración de sus datos",
+      "La disponibilidad y redundancia de la infraestructura cloud"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "23. ¿Qué analogía describe mejor a PaaS?",
+    options: [
+      "Alquilar un terreno donde tú construyes la casa a tu medida (IaaS)",
+      "Alquilar un coche para usarlo directamente sin preocuparte del mantenimiento",
+      "Alquilar un taller con herramientas listas para usar: tú solo desarrollas",
+      "Comprar tu propio terreno y construir desde cero"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "24. ¿Cuál de estas afirmaciones sobre el cloud es VERDADERA?",
+    options: [
+      "La nube solo sirve para almacenar archivos como Dropbox o Google Drive",
+      "La nube es siempre más cara que mantener servidores propios",
+      "La nube permite desplegar IA, Big Data, IoT, videojuegos online y fábricas conectadas",
+      "Migrar a la nube garantiza automáticamente el éxito del proyecto digital"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "25. ¿Qué tipo de IA existe actualmente en el mercado de forma real y funcional?",
+    options: [
+      "AGI (Inteligencia General Artificial) capaz de razonar en cualquier contexto",
+      "ANI (Inteligencia Estrecha) diseñada para tareas concretas con alta precisión",
+      "Superinteligencia que supera las capacidades humanas en todos los campos",
+      "IA cuántica que procesa información a nivel de partículas subatómicas"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "26. ¿En qué se basa el Machine Learning?",
+    options: [
+      "En reglas explícitas programadas por el desarrollador para cada situación",
+      "En algoritmos que identifican patrones en datos sin que el programador especifique cada regla",
+      "En copiar el comportamiento humano paso a paso mediante scripts",
+      "En buscar información en internet en tiempo real"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "27. ¿Qué diferencia al Deep Learning del Machine Learning clásico?",
+    options: [
+      "El DL requiere menos datos para entrenarse",
+      "El DL usa redes neuronales profundas con muchas capas que aprenden representaciones abstractas por sí solas",
+      "El DL solo funciona con imágenes, no con texto o audio",
+      "El DL es más lento y menos preciso que el ML tradicional"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "28. ¿Qué tecnología hace posible que un asistente virtual entienda y responda en lenguaje humano natural?",
+    options: [
+      "Computer Vision (Visión Artificial)",
+      "Natural Language Processing (NLP)",
+      "Robotic Process Automation (RPA)",
+      "Business Intelligence (BI)"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "29. Las '3V del Big Data' son…",
+    options: [
+      "Velocidad, Virtualización, Verificación",
+      "Volumen, Velocidad, Variedad",
+      "Valor, Veracidad, Virtualización",
+      "Volumen, Visualización, Validación"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "30. ¿Cómo se relacionan Big Data e IA?",
+    options: [
+      "Son tecnologías opuestas que no pueden usarse juntas",
+      "Big Data alimenta a la IA con datos; la IA los convierte en conocimiento accionable formando un ciclo virtuoso",
+      "El Big Data reemplaza a la IA haciendo innecesario el aprendizaje automático",
+      "La IA genera Big Data de forma automática sin necesidad de recopilar datos reales"
+    ],
     correctAnswer: 1,
   },
 ]
