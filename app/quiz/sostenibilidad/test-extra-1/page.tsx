@@ -640,10 +640,10 @@ export default function DigitalizacionSimulacro1Quiz() {
 
           <div className="text-center space-y-6">
             <h1 className="text-4xl font-bold">
-              <span className="text-foreground">Digitalizacion</span>
+              <span className="text-foreground">Sostenibilidad</span>
             </h1>
             <h2 className="text-xl text-muted-foreground">Test extra I</h2>
-            <p className="text-muted-foreground text-lg">Transformacion digital y tecnologias</p>
+            <p className="text-muted-foreground text-lg">Desarrollo sostenible y medioambiente</p>
 
             <div className="space-y-4 text-left py-6">
               <div className="flex items-start gap-3">
