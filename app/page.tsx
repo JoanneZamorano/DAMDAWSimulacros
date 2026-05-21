@@ -92,7 +92,7 @@ const secondYearSubjects = [
     color: "bg-amber-500",
     hoverBorder: "hover:border-amber-500/50",
     simulacros: {
-      //simulacroI: "/quiz/sistemas-gestion-empresarial/simulacro-1",
+      simulacroI: "/quiz/sistemas-gestion-empresarial/simulacro-1",
       //simulacroII: "/quiz/sistemas-gestion-empresarial/simulacro-2",
     },
     tests: {
