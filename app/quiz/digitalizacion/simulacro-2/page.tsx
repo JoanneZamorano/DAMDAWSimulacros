@@ -13,17 +13,307 @@ interface Question {
 }
 
 const questions: Question[] = [
-  {
-    question: "Pregunta de ejemplo 1 para Digitalizacion",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
-  },
-  {
-    question: "Pregunta de ejemplo 2 para Digitalizacion",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
+ {
+    question: "31. ¿Qué ocurrió con el sistema de selección de personal de IA desarrollado por Amazon en 2018?",
+    options: [
+      "Funcionó perfectamente y redujo el tiempo de contratación un 90%",
+      "Penalizó automáticamente currículums femeninos por estar entrenado con datos históricos sesgados hacia hombres",
+      "Fue hackeado y comprometió datos de candidatos",
+      "Rechazó candidatos sin experiencia favoreciendo solo a perfiles senior"
+    ],
     correctAnswer: 1,
   },
-]
+  {
+    question: "32. ¿Qué es el AI Act de la Unión Europea aprobado en 2024?",
+    options: [
+      "Una ley que prohíbe el uso de IA en entornos empresariales europeos",
+      "Un marco legal que clasifica sistemas de IA por nivel de riesgo y obliga a transparencia, trazabilidad y supervisión humana",
+      "Una directiva que obliga a todas las empresas a usar IA en sus procesos",
+      "Un acuerdo internacional que cede la regulación de IA a Estados Unidos"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "33. '37 ºC' es un dato. '37 ºC de temperatura corporal de un paciente adulto' es…",
+    options: [
+      "Sigue siendo un dato sin valor añadido",
+      "Información (dato + contexto + estructura)",
+      "Conocimiento aplicable para tomar decisiones",
+      "Big Data porque tiene muchos decimales"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "34. ¿Cuál es el orden correcto del ciclo de vida del dato?",
+    options: [
+      "Análisis → Captura → Almacenamiento → Uso → Destrucción",
+      "Captura → Almacenamiento → Procesamiento → Análisis → Uso → Archivo/Destrucción",
+      "Uso → Análisis → Captura → Almacenamiento → Destrucción",
+      "Destrucción → Captura → Análisis → Almacenamiento → Uso"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "35. ¿Cuál es la filosofía de almacenamiento de un Data Warehouse?",
+    options: [
+      "Schema-on-read: la estructura se aplica al leer los datos",
+      "Schema-on-write: el formato y validación se definen antes de almacenar los datos",
+      "No-schema: acepta cualquier tipo de dato sin estructura",
+      "Schema-on-demand: el esquema se crea cuando lo pide el analista"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "36. ¿Para qué uso es más adecuado un Data Lake?",
+    options: [
+      "Reporting financiero mensual con datos estructurados",
+      "Exploración, Machine Learning y Ciencia de Datos con datos en bruto (estructurados y no estructurados)",
+      "Contabilidad y facturación empresarial",
+      "Gestión de relaciones con clientes (CRM)"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "37. ¿Qué es un Data Lakehouse?",
+    options: [
+      "Un Data Lake ubicado físicamente dentro de un almacén industrial",
+      "Una arquitectura que combina la gobernanza del Data Warehouse con la flexibilidad del Data Lake",
+      "Un tipo de base de datos NoSQL para startups",
+      "Una nube privada exclusiva para gestión de datos empresariales"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "38. La 'tríada CIA' en ciberseguridad hace referencia a…",
+    options: [
+      "Central Intelligence Agency, Confidential Information, Access",
+      "Confidencialidad, Integridad y Disponibilidad de la información",
+      "Cloud, IoT, Automatización: los tres pilares de la Industria 4.0",
+      "Contraseña, Identificación y Autenticación"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "39. El ataque WannaCry de 2017 fue un ejemplo de…",
+    options: [
+      "Phishing: correo falso para robar contraseñas",
+      "Ransomware: cifró archivos en miles de equipos y exigió rescate en Bitcoin",
+      "DDoS: saturó servidores con tráfico masivo",
+      "Ingeniería social: manipuló empleados para revelar contraseñas"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "40. ¿Qué principio fundamental establece el RGPD sobre la protección de datos?",
+    options: [
+      "Las empresas pueden usar datos personales sin restricciones si los anonimiza",
+      "Privacidad desde el diseño y por defecto: seguridad incorporada desde el origen del sistema",
+      "Solo aplica a empresas de más de 500 empleados en Europa",
+      "Los datos personales pueden compartirse libremente entre empresas del mismo sector"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "41. ¿Cómo usó el Ayuntamiento de Barcelona los datos para mejorar la recogida de residuos?",
+    options: [
+      "Contratando más camiones y conductores para más frecuencia de recogida",
+      "Sensores IoT en contenedores + modelos de optimización de rutas → rutas dinámicas según nivel de llenado real",
+      "Instalando contenedores más grandes para reducir la frecuencia",
+      "Subcontratando el servicio a empresas privadas con tecnología propia"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "42. ¿Cuál es el riesgo de 'acumular muchos datos sin estrategia'?",
+    options: [
+      "Que los datos se dupliquen y ocupen más espacio del necesario",
+      "Crear un 'data swamp': pantano de datos inutilizables por falta de gobernanza, calidad y preguntas claras",
+      "Que los datos expiren y dejen de ser válidos",
+      "Que otros competidores puedan acceder a esos datos fácilmente"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "43. ¿Cuál es el primer paso correcto para iniciar un proyecto de transformación digital?",
+    options: [
+      "Seleccionar la tecnología más innovadora del mercado (IA, blockchain, IoT)",
+      "Contratar a un consultora tecnológica para que implante soluciones",
+      "Definir la estrategia digital: qué objetivos persigue y desde dónde parte la empresa",
+      "Migrar toda la infraestructura a la nube inmediatamente"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "44. ¿Cuáles son las 4 áreas del diagnóstico digital?",
+    options: [
+      "Hardware, Software, Redes y Almacenamiento",
+      "Procesos, Personas/Cultura, Tecnología y Clientes",
+      "Marketing, Ventas, Producción y Logística",
+      "Finanzas, RRHH, IT y Operaciones"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "45. Al seleccionar una Tecnología Habilitadora Digital (THD), ¿cuál es el criterio más importante?",
+    options: [
+      "Que sea la tecnología más mencionada en redes sociales y conferencias",
+      "Que sea la más económica del mercado",
+      "Que resuelva necesidades estratégicas concretas con ROI, escalabilidad y seguridad",
+      "Que la use la competencia directa de la empresa"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "46. ¿Para qué sirve la 'Matriz Impacto/Esfuerzo' en un proyecto de transformación digital?",
+    options: [
+      "Para calcular el presupuesto total del proyecto digital",
+      "Para clasificar iniciativas en 4 cuadrantes y priorizar: alto impacto/bajo esfuerzo primero",
+      "Para medir el impacto ambiental de la digitalización",
+      "Para evaluar el rendimiento individual de los empleados en el proceso de cambio"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "47. ¿Cuáles son las 4 áreas críticas del Plan de Implantación?",
+    options: [
+      "Marketing, Ventas, IT y Finanzas",
+      "Gestión de datos, Seguridad, Recursos Humanos/Cambio y Medición (KPIs SMART)",
+      "Hardware, Software, Redes y Formación",
+      "Nube, IA, Blockchain y IoT"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "48. ¿Por qué fracasan muchos proyectos de transformación digital?",
+    options: [
+      "Por elegir tecnología demasiado avanzada para el mercado actual",
+      "Porque la tecnología es demasiado cara y los presupuestos son insuficientes",
+      "Por no gestionar el cambio cultural: las personas no adoptan las nuevas herramientas",
+      "Porque los reguladores no permiten implementar innovaciones digitales"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "49. ¿Cómo logró LEGO su transformación digital sin abandonar su producto físico?",
+    options: [
+      "Vendiendo la empresa a un fabricante de videojuegos",
+      "Creando LEGO Ideas (co-creación online), ecosistema de videojuegos y series, manteniendo la esencia creativa",
+      "Reduciendo el catálogo de productos para centrarse solo en sets digitales",
+      "Externalizando toda la producción y convirtiéndose en empresa puramente digital"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "50. ¿Qué significa que un objetivo de transformación digital sea 'SMART'?",
+    options: [
+      "Que use tecnología inteligente (Smart Technology) para medirse automáticamente",
+      "Específico, Medible, Alcanzable, Relevante y con límite de Tiempo",
+      "Que sea diseñado por consultores externos especializados en digitalización",
+      "Simple, Manejable, Adaptable, Repetible y Transferible"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "51. ¿Cuál de estas afirmaciones es VERDADERA?",
+    options: [
+      "La RV profesional solo se usa para videojuegos",
+      "La ciberseguridad solo afecta a bancos y gobiernos grandes",
+      "Blockchain es lo mismo que Bitcoin",
+      "La nube bien configurada suele ser más segura que servidores locales propios"
+    ],
+    correctAnswer: 3,
+  },
+  {
+    question: "52. Waze/Google Maps son ejemplos de IA aplicada a…",
+    options: [
+      "Visión Artificial para detectar obstáculos en carretera",
+      "NLP para interpretar comandos de voz del conductor",
+      "ML aplicado a optimización de rutas en tiempo real con millones de datos GPS",
+      "Deep Learning para predecir el tiempo meteorológico"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "53. ¿Qué tecnología es la clave del 'fast fashion' de Inditex para reaccionar en días a las tendencias?",
+    options: [
+      "Big Data de redes sociales para predecir modas",
+      "IA generativa para diseñar ropa automáticamente",
+      "RFID + integración en tiempo real entre tiendas, online y cadena de suministro (IT/OT)",
+      "Impresión 3D para fabricar prendas bajo demanda"
+    ],
+    correctAnswer: 2,
+  },
+  {
+    question: "54. Una startup quiere desplegar su app web rápido sin configurar servidores. ¿Qué modelo cloud elige?",
+    options: [
+      "IaaS con Amazon EC2 y configuración manual del servidor",
+      "PaaS con Heroku o Render: sube código y la app queda online en minutos",
+      "Nube privada con servidores propios en las oficinas",
+      "SaaS: usa Gmail para gestionar la comunicación del equipo"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "55. ¿Qué garantiza el RGPD a cualquier ciudadano europeo?",
+    options: [
+      "Que sus datos nunca se almacenen digitalmente",
+      "Acceso, rectificación, supresión y portabilidad de sus datos personales (derechos ARCO-POL)",
+      "Que no pueda comprarse publicidad personalizada en internet",
+      "Que las empresas paguen por usar sus datos personales"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "56. Un termostato inteligente que enciende la calefacción al recibir una orden de voz es ejemplo de…",
+    options: [
+      "Inteligencia Artificial General (AGI)",
+      "Convergencia IT/OT a pequeña escala: voz (IT) controla sistema físico de calefacción (OT)",
+      "Blockchain para registro seguro de la temperatura",
+      "Data Warehouse para histórico de temperaturas del hogar"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "57. Según el temario, ¿por qué las personas se resisten a la transformación digital?",
+    options: [
+      "Porque son incapaces de aprender nuevas tecnologías a partir de cierta edad",
+      "Por incertidumbre y falta de comprensión del porqué: no se resisten al cambio sino a no entenderlo",
+      "Porque prefieren el trabajo manual y no valoran la eficiencia",
+      "Porque los sindicatos bloquean sistemáticamente cualquier innovación tecnológica"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "58. ¿Cómo usa McLaren F1 las THD en competición?",
+    options: [
+      "Solo usa Big Data offline para analizar carreras pasadas",
+      "Gemelo Digital (300+ sensores) + Impresión 3D + Blockchain + 5G para optimizar rendimiento en tiempo real",
+      "Principalmente IA generativa para diseñar el monoplaza cada temporada",
+      "Cobots que realizan los cambios de neumáticos durante las paradas en boxes"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "59. ¿Qué significa que Amazon use 'logística predictiva'?",
+    options: [
+      "Que Amazon adivina qué quiere comprar el usuario antes de que lo busque usando magia algorítmica",
+      "Que modelos de Big Data + ML predicen qué productos se venderán en cada zona y los preposicionan en almacenes cercanos antes del pedido",
+      "Que los precios suben automáticamente cuando hay mucha demanda",
+      "Que los repartidores usan GPS inteligente para optimizar su ruta diaria"
+    ],
+    correctAnswer: 1,
+  },
+  {
+    question: "60. ¿Cuál es el hilo conductor de todas las unidades del curso?",
+    options: [
+      "La tecnología por sí misma garantiza el éxito empresarial",
+      "Los datos son el petróleo del siglo XXI: capturarlos, analizarlos y actuar sobre ellos es la ventaja competitiva real, siempre con personas y ética en el centro",
+      "La digitalización es un proceso técnico que solo compete al departamento de IT",
+      "Las grandes empresas siempre llevan ventaja sobre las pymes en transformación digital"
+    ],
+    correctAnswer: 1,
+  }
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
