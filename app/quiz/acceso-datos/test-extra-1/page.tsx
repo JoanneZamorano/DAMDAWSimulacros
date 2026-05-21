@@ -620,10 +620,10 @@ export default function DesarrolloInterfacesSimulacro1Quiz() {
 
           <div className="text-center space-y-6">
             <h1 className="text-4xl font-bold">
-              <span className="text-foreground">Desarrollo de Interfaces</span>
+              <span className="text-foreground">Acceso a Datos</span>
             </h1>
             <h2 className="text-xl text-muted-foreground">Test Extra 1</h2>
-            <p className="text-muted-foreground text-lg">Interfaces de usuario y usabilidad</p>
+            <p className="text-muted-foreground text-lg">Persistencia, JDBC, Hibernate y ficheros</p>
 
             <div className="space-y-4 text-left py-6">
               <div className="flex items-start gap-3">
