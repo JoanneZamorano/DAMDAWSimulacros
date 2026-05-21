@@ -14,15 +14,445 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para PMDM",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    "question": "¿Qué vista del Editor de Unity se usa para construir el mundo visual colocando objetos luces y cámaras?",
+    "options": [
+      "Game View",
+      "Inspector",
+      "Scene View",
+      "Hierarchy"
+    ],
+    "correctAnswer": 2
   },
   {
-    question: "Pregunta de ejemplo 2 para PMDM",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    "question": "¿Qué tecnología de React Native permite ver actualizaciones instantáneamente sin recompilar toda la app?",
+    "options": [
+      "Cold Reload",
+      "Full Reload",
+      "Fast Refresh",
+      "Hot Reloading"
+    ],
+    "correctAnswer": 3
   },
+  {
+    "question": "¿Qué tipo de módulos en Android ofrecen servicios transversales como red almacenamiento y utilidades?",
+    "options": [
+      "Feature modules",
+      "Dynamic modules",
+      "Core modules",
+      "App modules"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué hace el método AddForce() en Unity?",
+    "options": [
+      "Mueve el objeto directamente con Transform",
+      "Aplica una textura al objeto",
+      "Detecta colisiones entre objetos",
+      "Aplica una fuerza fisica respetando las leyes del motor"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué patrón de Unity actúa como un cerebro visual recibiendo variables desde scripts y transformándolas en animaciones?",
+    "options": [
+      "Rigidbody2D",
+      "Collider2D",
+      "Animator",
+      "Prefab"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de Collider2D en Unity es más adecuado para detectar con precisión si un personaje está tocando el suelo?",
+    "options": [
+      "BoxCollider2D",
+      "PolygonCollider2D",
+      "EdgeCollider2D",
+      "CircleCollider2D"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué ventaja ofrece la modularización en Android según la Unidad 2?",
+    "options": [
+      "Aumenta el tamaño del APK",
+      "Reduce la necesidad de pruebas",
+      "Elimina la necesidad de Gradle",
+      "Permite compilaciones más rápidas y equipos trabajando en paralelo"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué componente de React Native se usa para mostrar listas largas de forma eficiente?",
+    "options": [
+      "ScrollView",
+      "ListView",
+      "FlatList",
+      "RecyclerView"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué representa la capa de Datos en la arquitectura Android moderna?",
+    "options": [
+      "La interfaz de usuario con Activities y Fragments",
+      "Los casos de uso y reglas de negocio independientes",
+      "Las pantallas de navegacion del usuario",
+      "Los repositorios que combinan fuentes de datos remotas y locales"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué herramienta de Android permite acceder a vistas de forma segura sin casts ni NullPointerException?",
+    "options": [
+      "DataBinding",
+      "Hilt",
+      "ViewBinding",
+      "Navigation Component"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué significa UDF en el contexto de arquitectura Android?",
+    "options": [
+      "Universal Data Framework",
+      "Unified Development Flow",
+      "Unidirectional Data Flow",
+      "Universal Domain Function"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de Dynamic Feature Module en Android permite descargar funcionalidades bajo demanda reduciendo el APK base?",
+    "options": [
+      "Core Module",
+      "Feature Module estático",
+      "App Module",
+      "Dynamic Feature Module"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué componente de Unity detecta el área de colisión invisible alrededor de un objeto?",
+    "options": [
+      "Transform",
+      "Renderer",
+      "Script",
+      "Collider"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué librería de React Native permite consumir APIs REST con gestión avanzada de autenticación paginación y cabeceras?",
+    "options": [
+      "fetch()",
+      "XMLHttpRequest",
+      "Axios",
+      "React Query"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de scope de Hilt en Android se usa para dependencias que solo viven durante una Activity específica?",
+    "options": [
+      "@Singleton",
+      "@ActivityScoped",
+      "@FragmentScoped",
+      "@ViewModelScoped"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué concepto de Unity permite que cambiar un objeto original actualice automáticamente todas sus instancias?",
+    "options": [
+      "GameObject",
+      "Script",
+      "Scene",
+      "Prefab"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué representa el NavHostFragment en el Navigation Component de Android?",
+    "options": [
+      "El archivo que define las rutas de navegación",
+      "El controlador que gestiona el back stack",
+      "El contenedor visual que renderiza los destinos del nav graph",
+      "Los argumentos que se pasan entre pantallas"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de shader en Unity calcula cómo la luz interactúa con superficies como metal vidrio o plástico?",
+    "options": [
+      "Particle System",
+      "Transform",
+      "Collider",
+      "Shader"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué hace SafeArgs en el Navigation Component de Android?",
+    "options": [
+      "Gestiona las animaciones de transición",
+      "Controla el back stack de navegación",
+      "Renderiza los fragments en pantalla",
+      "Garantiza que los datos entre pantallas sean del tipo correcto"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué ventaja ofrece Hilt frente a la inyección de dependencias manual en Android?",
+    "options": [
+      "Hilt genera el código en tiempo de ejecución aumentando el rendimiento",
+      "Hilt elimina la necesidad de pruebas unitarias",
+      "Hilt automatiza la creación y gestión del ciclo de vida de las dependencias",
+      "Hilt solo funciona con proyectos pequeños"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué representa la arquitectura de tres capas en Android?",
+    "options": [
+      "Frontend backend y base de datos",
+      "Modelo Vista y Controlador",
+      "UI Dominio y Datos",
+      "Actividades Fragmentos y ViewModels"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de materiales usa Unity para lograr texturas fotorrealistas con albedo metallic normal map y smoothness?",
+    "options": [
+      "Standard Shader",
+      "Toon Shader",
+      "Unlit Shader",
+      "PBR Physically Based Rendering"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué componente de React Native se usa como contenedor principal para estructurar la interfaz?",
+    "options": [
+      "Text",
+      "Image",
+      "Button",
+      "View"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué método del ciclo de vida de un Fragment en Android es el lugar correcto para evitar memory leaks?",
+    "options": [
+      "onCreateView()",
+      "onViewCreated()",
+      "onDestroyView()",
+      "onPause()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué herramienta visual de Unity permite crear materiales personalizados sin escribir código?",
+    "options": [
+      "Particle System",
+      "Shader Graph",
+      "ProBuilder",
+      "Terrain Tools"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué tipo de inicialización ofrece App Startup para librerías no críticas que no deben bloquear el hilo principal?",
+    "options": [
+      "Eager initialization",
+      "Parallel initialization",
+      "Lazy initialization",
+      "Sequential initialization"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué representa el ViewModel en la arquitectura MVVM de Android?",
+    "options": [
+      "El acceso directo a la base de datos",
+      "La interfaz gráfica de usuario",
+      "El modulo de navegación entre pantallas",
+      "El componente que expone el estado observable a la UI mediante Live Data"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué tipo de exportación permite publicar proyectos Unity en navegadores sin instalación?",
+    "options": [
+      "Android Build",
+      "IOS Build",
+      "Desktop Build",
+      "WebGL"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué tipo de iluminación en Unity precalcula la iluminación estática para optimizar el rendimiento?",
+    "options": [
+      "Dynamic Lighting",
+      "Real Time Lighting",
+      "Baked Lighting",
+      "Global Illumination"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Cuál es el beneficio principal del patrón Repository en Android según la Unidad 2?",
+    "options": [
+      "Gestionar las animaciones de la interfaz",
+      "Manejar la navegación entre pantallas",
+      "Servir como única fuente de verdad combinando datos remotos y locales",
+      "Controlar el ciclo de vida de los ViewModels"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué componente de React Native permite implementar un menú lateral desplegable tipo hamburguesa?",
+    "options": [
+      "Tab Navigator",
+      "Stack Navigator",
+      "Modal Navigator",
+      "Drawer Navigator"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué tipo de pruebas recomienda la Unidad 2 empezar antes que las pruebas de Ul por ser más rápidas y estables?",
+    "options": [
+      "Instrumented tests",
+      "UI tests con Espresso",
+      "End to end tests",
+      "Tests unitarios de Use Cases y Repositorios"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué evento de Unity se activa específicamente cuando dos objetos con Collider dejan de estar en contacto?",
+    "options": [
+      "OnTriggerEnter2D()",
+      "OnCollisionEnter2D()",
+      "OnTriggerExit2D()",
+      "OnCollisionExit2D()"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué herramienta de Unity se recomienda para crear y editar entornos 2D con precisión física mediante tiles?",
+    "options": [
+      "Shader Graph",
+      "ProBuilder",
+      "Particle System",
+      "Tilemap Editor"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué tipo de inyección de dependencias en Android pasa la dependencia como parámetro al crear el objeto?",
+    "options": [
+      "Service Locator",
+      "Setter Injection",
+      "Property Injection",
+      "Constructor Injection"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué representa el objeto binding.root en ViewBinding de Android?",
+    "options": [
+      "La propiedad tipada de una vista específica",
+      "El ViewModel asociado al layout",
+      "La jerarquía del layout que se establece como contenido de la pantalla",
+      "El ciclo de vida del Fragment"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de scope de Hilt se usa para dependencias específicas de un ViewModel?",
+    "options": [
+      "@Singleton",
+      "@ActivityScoped",
+      "@ViewModelScoped",
+      "@FragmentScoped"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué librería de control de versiones menciona la Unidad 5 de Unity para proyectos colaborativos?",
+    "options": [
+      "GitHub",
+      "GitLab",
+      "Plastic SCM Git",
+      "Bitbucket"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué representa la JavaScript Layer en la arquitectura interna de React Native?",
+    "options": [
+      "El nivel más bajo con módulos nativos escritos en Java o Swift",
+      "El puente que comunica JavaScript con código nativo",
+      "El gestor de paquetes npm o yarn",
+      "La capa donde se escribe la logica"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué tipo de módulo de Hilt define los objetos que puede crear y compartir con anotación @Provides?",
+    "options": [
+      "@HiltAndroidApp",
+      "@AndroidEntryPoint",
+      "@Inject",
+      "@Module"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué diferencia existe entre OnCollisionEnter2D y OnTriggerEnter2D en Unity?",
+    "options": [
+      "OnTriggerEnter2D bloquea fisicamente los objetos y OnCollisionEnter2D no",
+      "Ambos funcionan exactamente igual",
+      "OnCollisionEnter2D se usa cuando el collider tiene is Trigger activado",
+      "OnTriggerEnter2D se usa cuando el collider tiene Is Trigger activado"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué representa el concepto de alta cohesión en la modularización?",
+    "options": [
+      "Que los módulos dependan entre sí lo máximo posible",
+      "Que cada módulo tenga muchas responsabilidades diferentes",
+      "Que cada módulo haga una cosa bien con limites claros",
+      "Que todos los módulos compartan el mismo código"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de animación en Unity define el estado visual como Idle Run Jump o Attack en el Animator Controller?",
+    "options": [
+      "Blend Tree",
+      "Clip de animación",
+      "Transition",
+      "State"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué herramienta integrada de Unity permite visualizar colliders trayectorias y fuerzas durante la ejecución?",
+    "options": [
+      "Scene View",
+      "Game View",
+      "Physics 2D Debug Mode",
+      "Inspector"
+    ],
+    "correctAnswer": 2
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
