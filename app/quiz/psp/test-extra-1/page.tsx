@@ -590,10 +590,10 @@ export default function SGESimulacro2Quiz() {
 
           <div className="text-center space-y-6">
             <h1 className="text-4xl font-bold">
-              <span className="text-foreground">Sistemas de Gestion Empresarial</span>
+              <span className="text-foreground">PSP</span>
             </h1>
             <h2 className="text-xl text-muted-foreground">Test Extra I</h2>
-            <p className="text-muted-foreground text-lg">ERP, CRM y sistemas empresariales</p>
+            <p className="text-muted-foreground text-lg">Programacion de Servicios y Procesos</p>
 
             <div className="space-y-4 text-left py-6">
               <div className="flex items-start gap-3">
