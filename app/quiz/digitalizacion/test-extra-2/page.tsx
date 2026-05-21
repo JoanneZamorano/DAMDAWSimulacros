@@ -540,7 +540,7 @@ export default function DigitalizacionSimulacro1Quiz() {
         </Card>
       </div>
     )
-  }
+  
 
   if (finished) {
     const finalScore = correctCount - (incorrectCount * 0.25)
