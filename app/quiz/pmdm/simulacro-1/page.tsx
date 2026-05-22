@@ -421,7 +421,7 @@ const questions: Question[] = [
       "OnCollisionEnter2D se usa cuando el collider tiene is Trigger activado",
       "OnTriggerEnter2D se usa cuando el collider tiene Is Trigger activado"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 3
   },
   {
     "question": "¿Qué representa el concepto de alta cohesión en la modularización?",
