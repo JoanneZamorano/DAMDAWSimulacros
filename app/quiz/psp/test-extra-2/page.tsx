@@ -152,6 +152,156 @@ const questions: Question[] = [
       "Pasa a estado preparado y compite de nuevo por la CPU de inmediato"
     ],
     correctAnswer: 1
+  },
+  {
+    question: "65. En el contexto del paralelismo, ¿qué principio describe el límite o 'techo' de la aceleración que se puede conseguir al añadir más núcleos?",
+    options: [
+      "La condición de carrera (Race condition)",
+      "La Ley de Moore",
+      "La herencia de prioridades",
+      "La Ley de Amdahl"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "66. ¿Qué modelo de control de accesos se caracteriza porque las reglas son centralizadas y no pueden ser modificadas por los usuarios?",
+    options: [
+      "DAC (Discretionary Access Control)",
+      "MAC (Mandatory Access Control)",
+      "RBAC (Role-Based Access Control)",
+      "ABAC (Attribute-Based Access Control)"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "67. Respecto a la criptografía simétrica (como AES), ¿cuál es su principal ventaja y su mayor debilidad según la teoría?",
+    options: [
+      "Es muy segura para el intercambio de claves, pero ineficiente para grandes volúmenes de datos",
+      "No requiere claves, pero su algoritmo matemático es fácilmente reversible",
+      "Es rápida e ideal para grandes volúmenes de datos, pero su debilidad es el intercambio seguro de la clave",
+      "Utiliza funciones irreversibles (hash), pero permite colisiones frecuentes"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "68. En el caso de estudio de Linux, ¿qué mecanismo de IPC (Comunicación Entre Procesos) utiliza 'systemd' para permitir que las aplicaciones se comuniquen entre sí?",
+    options: [
+      "Sockets TCP puros",
+      "Tuberías anónimas (pipes)",
+      "D-Bus, un sistema moderno de paso de mensajes",
+      "Memoria compartida exclusivamente"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "69. ¿Qué modelo de control de acceso se caracteriza porque el propio propietario de un recurso es quien tiene la autoridad para decidir qué otros usuarios pueden acceder a él?",
+    options: [
+      "DAC (Discretionary Access Control)",
+      "MAC (Mandatory Access Control)",
+      "RBAC (Role-Based Access Control)",
+      "ABAC (Attribute-Based Access Control)"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "70. ¿Qué modelo de control de acceso permite establecer reglas dinámicas analizando variables del entorno y del contexto, tales como la ubicación geográfica o la hora del día en la que se solicita el acceso?",
+    options: [
+      "DAC (Discretionary Access Control)",
+      "MAC (Mandatory Access Control)",
+      "RBAC (Role-Based Access Control)",
+      "ABAC (Attribute-Based Access Control)"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "71. Al configurar un bloque o método 'synchronized' en Java, ¿sobre qué elemento se adquiere el bloqueo (monitor lock) si el método es estático?",
+    options: [
+      "Sobre la instancia concreta representada por la palabra clave 'this'",
+      "Sobre el hilo actual que está invocando el método (Thread.currentThread())",
+      "Sobre el objeto de la propia clase (Clase.class)",
+      "Sobre el planificador de hilos de la Máquina Virtual de Java (JVM)"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "72. ¿Qué diferencia fundamental existe entre aplicar una función Hash y un algoritmo de Cifrado sobre un conjunto de datos?",
+    options: [
+      "El cifrado utiliza claves públicas y el hash solo claves privadas compartidas",
+      "El hash transforma los datos en una cadena reversible, mientras que el cifrado es siempre irreversible",
+      "El hash es de longitud variable y el cifrado siempre genera bloques de tamaño fijo",
+      "A diferencia del cifrado, el hash genera una cadena de longitud fija e irreversible que no se descifra, sino que se compara"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "73. ¿Qué herremienta gráfica open-source se recomienda en el temario para enviar y recibir payloads de red (TCP/UDP) a un puerto concreto sin necesidad de programar el código del cliente?",
+    options: [
+      "Let's Encrypt",
+      "Packet Sender",
+      "Wireshark",
+      "JMeter"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "74. ¿Cuál es el error conceptual del mito 'Si una variable se declara como volatile en Java, ya no necesito utilizar synchronized o bloques atómicos'?",
+    options: [
+      "Que 'volatile' está deprecated desde Java 8",
+      "Que 'volatile' solo garantiza la visibilidad de los cambios entre las memorias de los hilos, pero no asegura la atomicidad en operaciones compuestas (como un contador++)",
+      "Que 'volatile' consume más memoria de CPU que un ReentrantLock",
+      "Que 'volatile' solo se puede aplicar a interfaces y no a variables mutables"
+    ],
+    correctAnswer: 1
+  },
+  {
+    question: "75. En sistemas concurrentes, ¿a qué tipo de errores efímeros, no deterministas y difíciles de replicar se les denomina 'Heisenbugs'?",
+    options: [
+      "A los errores de compilación causados por una sintaxis JSON incorrecta",
+      "A fallos de hardware provocados por la temperatura del procesador",
+      "A fallos que dependen de la temporización exacta de los hilos y que pueden desaparecer al intentar observarlos con un depurador o añadir un print",
+      "A desbordamientos de búfer provocados exclusivamente por inyecciones SQL"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "76. En la programación multihilo de Java, ¿qué ocurre si intentas invocar el método start() sobre un hilo que ya se encuentra en estado TERMINATED?",
+    options: [
+      "El hilo se reinicia desde el principio volviendo al estado NEW",
+      "El hilo pasa directamente a competir por la CPU en estado RUNNABLE",
+      "Lanza una excepción en tiempo de ejecución, ya que los hilos en Java son de un solo uso",
+      "El planificador de la JVM ignora la llamada y destruye el objeto de forma asíncrona"
+    ],
+    correctAnswer: 2
+  },
+  {
+    question: "77. Al diseñar la estrategia de concurrencia en un servidor, ¿qué número óptimo de hilos activos se recomienda si la tarea es puramente computacional e intensiva (CPU-bound)?",
+    options: [
+      "Un número de hilos igual o cercano al número de núcleos físicos de la CPU",
+      "Tantos hilos como clientes concurrentes soliciten acceso, sin límite establecido",
+      "Un único hilo que gestione un Selector asíncrono (NIO)",
+      "Exactamente el doble del tamaño asignado a la memoria caché del sistema"
+    ],
+    correctAnswer: 0
+  },
+  {
+    question: "78. Al consumir servicios web orientados a la integración de sistemas distribuidos, ¿qué estilo arquitectónico destaca por ser flexible, no requerir un contrato rígido XML (como el WSDL de SOAP) y representar habitualmente los recursos en formato JSON?",
+    options: [
+      "RMI (Remote Method Invocation)",
+      "RPC (Remote Procedure Call)",
+      "REST (Representational State Transfer)",
+      "D-Bus"
+    ],
+    correctAnswer: 3
+  },
+  {
+    question: "79. En el ecosistema de Google Workspace, además del modelo de roles predefinidos (RBAC), ¿qué características del modelo ABAC implementan para robustecer el control de accesos?",
+    options: [
+      "Permitir que cualquier usuario propietario configure de forma discrecional los permisos",
+      "Limitar o denegar los accesos basándose en atributos dinámicos como la ubicación geográfica o la dirección IP del usuario",
+      "Delegar el control de accesos a la validación estricta de formularios frontend",
+      "Eliminar el uso de la autenticación multifactor (MFA)"
+    ],
+    correctAnswer: 1
   }
 ];
 
