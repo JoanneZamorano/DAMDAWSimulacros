@@ -35,127 +35,97 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "6. ¿En cuál de las siguientes situaciones es apropiado buscar trabajos temporales sin contrato permanente?",
-    options: ["Mientras se espera un ascenso", "Durante el período vacacional de verano", "Para abandonar la empresa actual", "Cuando se ha completado un proyecto"],
-    correctAnswer: 1
-  },
-  {
-    question: "7. Al dejar un mensaje telefónico en una empresa y no poder hablar con el destinatario, ¿qué acción garantiza mejor que el mensaje llegue correctamente?",
+    question: "6. Al dejar un mensaje telefónico en una empresa y no poder hablar con el destinatario, ¿qué acción garantiza mejor que el mensaje llegue correctamente?",
     options: ["Dejar únicamente su nombre sin más información", "Confiar en que los compañeros le informarán del asunto", "Verificar que quien anota el mensaje lo transmitirá e indicar que se espera respuesta", "Llamar repetidamente en distintos momentos hasta contactar directamente"],
     correctAnswer: 2
   },
   {
-    question: "8. In a meeting context, what does the phrase 'Let's get down to business' mean?",
+    question: "7. In a meeting context, what does the phrase 'Let's get down to business' mean?",
     options: ["Let's stop talking and get to the main topics we need to address.", "Let's sit down at our desks and work quietly.", "Let's arrange a business lunch for later.", "Let's discuss social matters and build rapport."],
     correctAnswer: 0
   },
   {
-    question: "9. Which situation requires using 'Dear Sir or Madam' as a greeting in professional correspondence?",
-    options: ["When responding to a familiar contact", "When you know the person very well", "When writing to a close colleague", "When you are unaware of the recipient's name"],
-    correctAnswer: 3
-  },
-  {
-    question: "10. ¿Cuál es la frase profesional adecuada para abrir una reunión y pasar al tema principal?",
-    options: ["Let's talk about work", "Let's begin the conversation", "Let's get down to business", "Let's start the official part"],
-    correctAnswer: 2
-  },
-  {
-    question: "11. In a formal business email to an unknown recipient, which greeting is most appropriate when you specifically know the recipient is an individual person but do not have their name?",
+    question: "8. In a formal business email to an unknown recipient, which greeting is most appropriate when you specifically know the recipient is an individual person but do not have their name?",
     options: ["To Whom It May Concern:", "Hello everyone,", "Dear Sir or Madam,", "Hi there,"],
     correctAnswer: 2
   },
   {
-    question: "12. What is the defining characteristic of a 'team player' in professional environments?",
+    question: "9. What is the defining characteristic of a 'team player' in professional environments?",
     options: ["Someone who collaborates effectively with colleagues and contributes to collective goals.", "Someone who avoids participating in group discussions.", "Someone who prefers individual recognition over group success.", "Someone who always works independently without input from others."],
     correctAnswer: 0
   },
   {
-    question: "13. Which verb correctly describes the daily transportation activity of workers who live distant from the city center?",
+    question: "10. Which verb correctly describes the daily transportation activity of workers who live distant from the city center?",
     options: ["relocate", "commute", "travel", "journey"],
     correctAnswer: 1
   },
   {
-    question: "14. Which phrase is considered the MOST professional and polite way for a receptionist to ask a caller to wait while locating information?",
+    question: "11. Which phrase is considered the MOST professional and polite way for a receptionist to ask a caller to wait while locating information?",
     options: ["Just a second.", "Wait a moment.", "Hang on, will you?", "Hold on, please."],
     correctAnswer: 3
   },
   {
-    question: "15. In professional email correspondence, which phrase should you use when attaching a document or file to your message?",
+    question: "12. In professional email correspondence, which phrase should you use when attaching a document or file to your message?",
     options: ["The file is now inside this email.", "I'm sending you a file together with this message.", "Please find attached the document you requested.", "I have pasted the file below."],
     correctAnswer: 2
   },
   {
-    question: "16. When a manager says 'Let's get down to business' during a meeting, it means",
-    options: ["take a break now", "begin discussing the main topics", "stop working immediately", "finish the session quickly"],
-    correctAnswer: 1
-  },
-  {
-    question: "17. Which statement correctly describes someone who is responsible for a specific project or deliverable in the workplace?",
+    question: "13. Which statement correctly describes someone who is responsible for a specific project or deliverable in the workplace?",
     options: ["I am managing the company's responsibilities.", "I am responsible for developing new features for our web application.", "I am in charge of all team projects.", "I am supervising the development department."],
     correctAnswer: 1
   },
   {
-    question: "18. ¿Qué frase utiliza el verbo frasal correcto Y el registro apropiado para transferir una llamada en un entorno profesional?",
+    question: "14. ¿Qué frase utiliza el verbo frasal correcto Y el registro apropiado para transferir una llamada en un entorno profesional?",
     options: ["I'll put you through to the finance department, please hold.", "I'll connect you through for the finance department.", "I'll pass you over with the finance department.", "I'll transfer you with the finance department."],
     correctAnswer: 0
   },
   {
-    question: "19. When a receptionist says 'Hold on, please' during a phone call, she is",
+    question: "15. When a receptionist says 'Hold on, please' during a phone call, she is",
     options: ["ending the conversation", "asking the caller to wait briefly", "requesting personal information", "transferring to another line"],
     correctAnswer: 1
   },
   {
-    question: "20. En una llamada telefónica profesional, no puedes atender en este momento. ¿Qué expresión usas para pedir al interlocutor que vuelva a llamarte más tarde?",
+    question: "16. En una llamada telefónica profesional, no puedes atender en este momento. ¿Qué expresión usas para pedir al interlocutor que vuelva a llamarte más tarde?",
     options: ["Can you return later?", "Can you wait later?", "Can you come back later?", "Can you call back later?"],
     correctAnswer: 3
   },
   {
-    question: "21. In a professional email, the abbreviation 'ASAP' indicates that something should be completed",
+    question: "17. In a professional email, the abbreviation 'ASAP' indicates that something should be completed",
     options: ["as soon as possible", "within business hours", "at the end of the day", "without further notice"],
     correctAnswer: 0
   },
   {
-    question: "22. In a professional email, you need to direct the reader's attention to a PDF report you have included. Which is the MOST concise and standard phrase used in British and American business English for this purpose?",
+    question: "18. In a professional email, you need to direct the reader's attention to a PDF report you have included. Which is the MOST concise and standard phrase used in British and American business English for this purpose?",
     options: ["You will find that I have added the file somewhere in this email.", "I am enclosing herewith the requested documentation for your perusal.", "Kindly be advised that a document has been appended to this correspondence.", "Please see the attached file."],
     correctAnswer: 3
   },
   {
-    question: "23. ¿Cuál es el significado de la frase 'Hold on, please' en una conversación telefónica profesional?",
+    question: "19. ¿Cuál es el significado de la frase 'Hold on, please' en una conversación telefónica profesional?",
     options: ["Repetir lo que se ha dicho", "Hablar más lentamente", "Terminar la llamada inmediatamente", "Esperar mientras se procesa la llamada a otra línea"],
     correctAnswer: 3
   },
   {
-    question: "24. The developer worked _______ last month to meet the project deadline.",
+    question: "20. The developer worked _______ last month to meet the project deadline.",
     options: ["part-time", "overtime", "full-time", "flexitime"],
     correctAnswer: 1
   },
   {
-    question: "25. Which term best describes the daily journey a professional makes between their home and a distant workplace?",
-    options: ["Transferring", "Relocating", "Commuting", "Teleworking"],
-    correctAnswer: 2
-  },
-  {
-    question: "26. ¿Cuál es el término correcto para describir el trabajo adicional realizado más allá de las horas habituales?",
-    options: ["Extra hours", "Extra time", "Overtime", "Additional work"],
-    correctAnswer: 2
-  },
-  {
-    question: "27. When you wish to express disagreement with a proposal during a formal meeting, which phrase allows you to do so respectfully?",
+    question: "21. When you wish to express disagreement with a proposal during a formal meeting, which phrase allows you to do so respectfully?",
     options: ["I don't agree at all.", "That's completely wrong.", "That idea doesn't work.", "I respectfully disagree with that approach."],
     correctAnswer: 3
   },
   {
-    question: "28. En el ámbito de recursos humanos, ¿qué término describe específicamente a un trabajador que establece sus propias metas y gestiona su aprendizaje sin depender de instrucciones externas?",
+    question: "22. En el ámbito de recursos humanos, ¿qué término describe específicamente a un trabajador que establece sus propias metas y gestiona su aprendizaje sin depender de instrucciones externas?",
     options: ["Autonomous", "Self-directed", "Dependent", "Subordinate"],
     correctAnswer: 1
   },
   {
-    question: "29. ¿Cuál es el significado de la expresión 'Let's get down to business' en una reunión profesional?",
+    question: "23. ¿Cuál es el significado de la expresión 'Let's get down to business' en una reunión profesional?",
     options: ["Comencemos con los temas importantes", "Vamos a hablar de dinero", "Terminemos esta reunión", "Vamos a sentarnos en el suelo"],
     correctAnswer: 0
   },
   {
-    question: "30. In professional email closing statements, which phrase indicates that you are expecting a response from the recipient?",
+    question: "24. In professional email closing statements, which phrase indicates that you are expecting a response from the recipient?",
     options: ["Best regards.", "Have a good day.", "I look forward to hearing from you.", "Thank you for your time."],
     correctAnswer: 2
   }
