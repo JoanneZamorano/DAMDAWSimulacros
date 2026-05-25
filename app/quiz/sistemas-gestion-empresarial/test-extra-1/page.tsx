@@ -168,36 +168,6 @@ const questions: Question[] = [
     options: ["Gestionar la relación con clientes mediante automatización de ventas, servicio y análisis de datos", "Reemplazar completamente el departamento de ventas humano", "Almacenar exclusivamente documentos contractuales en formato digital", "Controlar los inventarios de productos en almacén"],
     correctAnswer: 0,
   },
-  {
-    question: "32. ¿Qué característica distingue a los sistemas ERP modernos en comparación con generaciones anteriores?",
-    options: ["Arquitectura basada en servicios (SOA), modularidad, computación en la nube y actualizaciones continuas", "Uso exclusivo de tecnología cliente-servidor sin opciones de nube", "Obligatoriedad de datos almacenados exclusivamente en servidores locales", "Eliminar completamente la necesidad de parametrización de usuarios"],
-    correctAnswer: 0,
-  },
-  {
-    question: "33. ¿Qué ventaja estratégica aporta la modularidad en la arquitectura de un sistema ERP?",
-    options: ["Permite activar y personalizar solo los módulos necesarios, reducir costos iniciales y adaptar el sistema al crecimiento empresarial", "Simplifica que todos los usuarios accedan a todas las funcionalidades sin restricciones", "Elimina la necesidad de cualquier formación en el sistema", "Garantiza que el sistema nunca requiera mantenimiento posterior"],
-    correctAnswer: 0,
-  },
-  {
-    question: "34. ¿Cuál es la base de datos que utiliza Odoo como su motor de almacenamiento por defecto?",
-    options: ["PostgreSQL", "MySQL", "Oracle Database", "Microsoft SQL Server"],
-    correctAnswer: 0,
-  },
-  {
-    question: "35. ¿Qué es la arquitectura SOA y cómo se aplica en sistemas ERP modernos?",
-    options: ["Una arquitectura que descompone el sistema en servicios independientes y reutilizables que se comunican mediante interfaces estándar", "Un modelo monolítico donde todos los módulos comparten el mismo código base sin separación", "Un sistema que solo permite comunicación local entre componentes sin acceso remoto", "Una arquitectura que elimina la necesidad de bases de datos centralizadas"],
-    correctAnswer: 0,
-  },
-  {
-    question: "36. ¿Qué componente en Odoo es responsable de ejecutar la lógica de negocio y aplicar reglas de validación?",
-    options: ["El servidor Odoo (motor de negocio) que procesa modelos, campos y reglas de negocio", "Únicamente el cliente web en navegador", "La base de datos PostgreSQL", "El sistema operativo del servidor"],
-    correctAnswer: 0,
-  },
-  {
-    question: "37. ¿Cuál es la función principal del cliente en un sistema ERP como Odoo?",
-    options: ["Presentar la interfaz de usuario, capturar datos, enviar solicitudes al servidor y mostrar resultados", "Almacenar datos de forma permanente en la máquina del usuario", "Ejecutar toda la lógica de validación y negocio del sistema", "Gestionar conexiones directas a la base de datos sin pasar por el servidor"],
-    correctAnswer: 0,
-  },
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
