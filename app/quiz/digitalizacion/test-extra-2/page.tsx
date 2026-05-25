@@ -14,7 +14,7 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "56. ¿Cuál es la función específica de una plataforma de desarrollo interno como Gravity en una entidad financiera?",
+    question: "45. ¿Cuál es la función específica de una plataforma de desarrollo interno como Gravity en una entidad financiera?",
     options: [
       "Sustituir completamente los sistemas operativos de todas las máquinas",
       "Facilitar la creación de aplicaciones y servicios digitales propios sin dependencia total de proveedores externos",
@@ -24,7 +24,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "58. ¿Qué tecnología de IA permite que un chatbot empresarial mantenga conversaciones coherentes considerando el contexto histórico de la interacción?",
+    question: "46. ¿Qué tecnología de IA permite que un chatbot empresarial mantenga conversaciones coherentes considerando el contexto histórico de la interacción?",
     options: [
       "Un árbol de decisión estático programado manualmente",
       "Procesamiento del Lenguaje Natural (NLP) con redes neuronales recurrentes o Transformers",
@@ -34,7 +34,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "59. ¿Qué modelo de servicio en la nube es más apropiado para una empresa que requiere máxima flexibilidad para instalar sus propios sistemas operativos, bases de datos y aplicaciones?",
+    question: "47. ¿Qué modelo de servicio en la nube es más apropiado para una empresa que requiere máxima flexibilidad para instalar sus propios sistemas operativos, bases de datos y aplicaciones?",
     options: [
       "Software as a Service (SaaS)",
       "Infrastructure as a Service (IaaS)",
@@ -44,7 +44,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "60. ¿Cuál de las siguientes tácticas es la más efectiva para mitigar la principal fuente de brechas de seguridad en entornos cloud, según informes de ciberseguridad?",
+    question: "48. ¿Cuál de las siguientes tácticas es la más efectiva para mitigar la principal fuente de brechas de seguridad en entornos cloud, según informes de ciberseguridad?",
     options: [
       "Utilizar exclusivamente encriptación simétrica en todas las comunicaciones",
       "Implementar autenticación multifactor, gestión de identidades y control de accesos estrictos",
@@ -54,7 +54,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "61. En términos de ciberseguridad, ¿a qué se refiere la tríada CIA?",
+    question: "49. En términos de ciberseguridad, ¿a qué se refiere la tríada CIA?",
     options: [
       "Central Intelligence Agency; una agencia de seguridad informática",
       "Confidentiality (Confidencialidad), Integrity (Integridad), Availability (Disponibilidad); los pilares de la seguridad de la información",
@@ -64,7 +64,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "62. ¿Cuál es la relación jerárquica correcta entre Machine Learning y Deep Learning?",
+    question: "50. ¿Cuál es la relación jerárquica correcta entre Machine Learning y Deep Learning?",
     options: [
       "Deep Learning es independiente de Machine Learning; son disciplinas paralelas sin conexión",
       "Machine Learning es una rama de inteligencia artificial; Deep Learning es un subcampo especializado de Machine Learning basado en redes neuronales profundas",
@@ -74,7 +74,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "63. ¿Cuál es la aplicación principal de la Realidad Aumentada en el caso de DHL Vision Picking?",
+    question: "51. ¿Cuál es la aplicación principal de la Realidad Aumentada en el caso de DHL Vision Picking?",
     options: [
       "Proyectar entretenimiento en la pantalla del operario durante descansos",
       "Guiar al operario mostrando rutas óptimas, flechas direccionales y alertas sobre artículos específicos a recoger",
@@ -84,7 +84,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "64. En un modelo de nube privada, ¿quién asume la responsabilidad de mantenimiento, actualizaciones de seguridad y gestión de la infraestructura?",
+    question: "52. En un modelo de nube privada, ¿quién asume la responsabilidad de mantenimiento, actualizaciones de seguridad y gestión de la infraestructura?",
     options: [
       "Exclusivamente el proveedor de la nube",
       "Solo el cliente, sin apoyo técnico externo",
@@ -94,7 +94,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "65. ¿Por qué el caso del sistema de reclutamiento de Amazon representa un fracaso en la aplicación de IA?",
+    question: "53. ¿Por qué el caso del sistema de reclutamiento de Amazon representa un fracaso en la aplicación de IA?",
     options: [
       "Porque utilizaba excesiva automatización en el análisis de CV",
       "Porque el algoritmo reproducía sesgos históricos del conjunto de entrenamiento, discriminando candidatas mujeres",
@@ -104,7 +104,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "66. ¿Cuál es la diferencia fundamental entre Industria 4.0 e Industria 5.0?",
+    question: "54. ¿Cuál es la diferencia fundamental entre Industria 4.0 e Industria 5.0?",
     options: [
       "La Industria 5.0 incorpora el factor humano como elemento central y propicia la sostenibilidad y la resiliencia, además de la eficiencia",
       "La Industria 5.0 utiliza exclusivamente inteligencia artificial sin participación de operarios",
@@ -114,7 +114,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "67. En una arquitectura de sistemas de control industrial, ¿cuál es la función principal de un sistema SCADA?",
+    question: "55. En una arquitectura de sistemas de control industrial, ¿cuál es la función principal de un sistema SCADA?",
     options: [
       "Realizar cálculos matemáticos complejos para optimización de procesos",
       "Supervisar, controlar y adquirir datos de procesos industriales en tiempo real",
@@ -124,7 +124,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "68. ¿Cuál de los siguientes es el pilar tecnológico que permite la latencia ultrabaja y la alta velocidad de transferencia de datos esencial para IoT y Gemelos Digitales?",
+    question: "56. ¿Cuál de los siguientes es el pilar tecnológico que permite la latencia ultrabaja y la alta velocidad de transferencia de datos esencial para IoT y Gemelos Digitales?",
     options: [
       "Tecnología 4G LTE con procesamiento cloud tradicional",
       "Tecnología 5G con capacidad de baja latencia (< 10 ms) y ancho de banda aumentado",
@@ -134,7 +134,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "69. ¿Qué es un Gemelo Digital en el contexto de Industria 4.0?",
+    question: "57. ¿Qué es un Gemelo Digital en el contexto de Industria 4.0?",
     options: [
       "Un segundo equipo físico idéntico que duplica exactamente las funciones del primero",
       "Una réplica virtual y dinámica de un proceso, máquina o sistema físico que simula su comportamiento en tiempo real",
@@ -144,7 +144,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "70. ¿Cuál de las siguientes afirmaciones sobre Blockchain es técnicamente correcta?",
+    question: "58. ¿Cuál de las siguientes afirmaciones sobre Blockchain es técnicamente correcta?",
     options: [
       "Blockchain es más rápido que bases de datos SQL porque no registra transacciones",
       "Blockchain garantiza trazabilidad e inmutabilidad mediante encriptación criptográfica y consenso distribuido",
@@ -154,7 +154,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "71. ¿Cuál es la característica principal que diferencia a la computación en nube privada de la pública en términos de responsabilidad y seguridad?",
+    question: "59. ¿Cuál es la característica principal que diferencia a la computación en nube privada de la pública en términos de responsabilidad y seguridad?",
     options: [
       "La nube privada es siempre más rápida porque está geográficamente más cercana",
       "La nube privada es infraestructura dedicada controlada por la empresa, mientras que la pública comparte recursos con otros usuarios",
@@ -164,7 +164,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "72. ¿Qué establece el modelo de responsabilidad compartida en la computación en la nube pública?",
+    question: "60. ¿Qué establece el modelo de responsabilidad compartida en la computación en la nube pública?",
     options: [
       "El proveedor es responsable únicamente de mantener los servidores físicos; el cliente de todo lo demás",
       "El cliente es responsable exclusivamente de los datos; el proveedor de infraestructura, SO y seguridad física",
@@ -174,7 +174,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "73. ¿Cuál es el principal origen de las brechas de seguridad en infraestructuras cloud según informes de ciberseguridad?",
+    question: "61. ¿Cuál es el principal origen de las brechas de seguridad en infraestructuras cloud según informes de ciberseguridad?",
     options: [
       "Fallos en hardware de almacenamiento que el proveedor no puede controlar",
       "Configuraciones incorrectas de acceso y permisos, así como credenciales débiles del cliente",
