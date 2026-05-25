@@ -14,47 +14,7 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "1. ¿Cuál es la función principal al diseñar la interfaz de usuario en una aplicación móvil?",
-    options: [
-      "Optimizar algoritmos de procesamiento",
-      "Permitir que el usuario interactúe de forma intuitiva con la aplicación",
-      "Aumentar la resolución de pantalla",
-      "Minimizar el uso de memoria RAM"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "2. ¿Cuál es la consecuencia negativa de una jerarquía visual deficiente en una interfaz móvil?",
-    options: [
-      "Aumenta la capacidad de procesamiento",
-      "El usuario encuentra dificultad para identificar elementos prioritarios y comprender la estructura",
-      "Reduce significativamente el consumo de batería",
-      "Simplifica el ciclo de desarrollo"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "3. ¿Cuál es la responsabilidad fundamental de un patrón Repository en arquitectura móvil?",
-    options: [
-      "Controlar la visualización de elementos UI",
-      "Abstraer y centralizar el acceso a múltiples fuentes de datos",
-      "Ejecutar animaciones y transiciones visuales",
-      "Gestionar la navegación entre pantallas"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "4. ¿Cuál es la ventaja más significativa de utilizar React Native para desarrollo multiplataforma?",
-    options: [
-      "Requiere código exclusivamente nativo en cada plataforma",
-      "Permite reutilizar una única base de código para iOS y Android",
-      "Elimina completamente los componentes nativos del sistema",
-      "Ofrece mejor rendimiento que aplicaciones nativas puras"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "5. ¿Cuál es la función del hook useState en React/React Native?",
+    question: "1. ¿Cuál es la función del hook useState en React/React Native?",
     options: [
       "Ejecutar código una única vez al montar el componente",
       "Crear y gestionar variables de estado dentro del componente",
@@ -64,7 +24,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "6. ¿Cuál es el propósito principal de un prefab en Unity?",
+    question: "2. ¿Cuál es el propósito principal de un prefab en Unity?",
     options: [
       "Ejecutar funciones de lógica de negocio",
       "Guardar configuraciones de estado entre escenas",
@@ -74,7 +34,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "7. En el contexto de animaciones en aplicaciones móviles, ¿qué ventaja proporciona el uso de animaciones basadas en propiedades frente a animaciones basadas en fotogramas?",
+    question: "3. En el contexto de animaciones en aplicaciones móviles, ¿qué ventaja proporciona el uso de animaciones basadas en propiedades frente a animaciones basadas en fotogramas?",
     options: [
       "Mayor consumo de batería y mejor rendimiento en dispositivos antiguos",
       "Interpolación automática de valores intermedios y mejor optimización del hardware",
@@ -84,7 +44,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "8. ¿Cuál es la principal diferencia entre el ciclo de vida de onCreate() y onStart() en una Activity de Android?",
+    question: "4. ¿Cuál es la principal diferencia entre el ciclo de vida de onCreate() y onStart() en una Activity de Android?",
     options: [
       "onCreate() se ejecuta cuando la Activity es completamente visible; onStart() se ejecuta antes de que sea visible",
       "onCreate() se ejecuta una única vez durante la creación; onStart() puede ejecutarse múltiples veces al reanudar la Activity",
@@ -94,7 +54,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "9. En React Native, ¿cuál es el propósito del hook useCallback?",
+    question: "5. En React Native, ¿cuál es el propósito del hook useCallback?",
     options: [
       "Ejecutar efectos secundarios cuando dependencias cambian",
       "Memoizar funciones para evitar recrearlas en cada render",
@@ -104,27 +64,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "10. ¿Qué ocurre cuando una interfaz móvil carece de una jerarquía visual clara?",
-    options: [
-      "El usuario puede confundirse sobre qué elementos son más importantes y la navegación se vuelve ineficiente",
-      "Se reduce automáticamente el tamaño de la aplicación",
-      "La batería del dispositivo se descarga más lentamente",
-      "El código se vuelve más mantenible"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "11. En el patrón de arquitectura de una aplicación móvil, ¿cuál es la responsabilidad principal de un Repository?",
-    options: [
-      "Gestionar la renderización de componentes visuales",
-      "Abstraer la lógica de acceso a datos y proporcionar una interfaz consistente",
-      "Ejecutar animaciones y transiciones",
-      "Controlar la navegación entre pantallas"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "12. ¿Cuál es una ventaja principal de usar TypeScript en lugar de JavaScript puro para desarrollo móvil?",
+    question: "6. ¿Cuál es una ventaja principal de usar TypeScript en lugar de JavaScript puro para desarrollo móvil?",
     options: [
       "Aumenta automáticamente la velocidad de ejecución del código",
       "Proporciona tipado estático y detección de errores en tiempo de compilación",
@@ -134,7 +74,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "13. En una aplicación con Jetpack Compose, ¿cuál es el rol fundamental de un Composable?",
+    question: "7. En una aplicación con Jetpack Compose, ¿cuál es el rol fundamental de un Composable?",
     options: [
       "Gestionar la persistencia de datos en la base de datos",
       "Describir una parte de la interfaz de usuario de forma funcional y reactiva",
@@ -144,7 +84,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "14. ¿Qué problema resuelve el uso de databinding en Android?",
+    question: "8. ¿Qué problema resuelve el uso de databinding en Android?",
     options: [
       "Sincronizar automáticamente datos del modelo con la interfaz y reducir código repetitivo",
       "Mejorar la velocidad de compilación del proyecto",
@@ -154,7 +94,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "15. En desarrollo de aplicaciones móviles multiplataforma, ¿cuál es la principal ventaja de Flutter sobre otras alternativas?",
+    question: "9. En desarrollo de aplicaciones móviles multiplataforma, ¿cuál es la principal ventaja de Flutter sobre otras alternativas?",
     options: [
       "Utiliza exclusivamente código nativo de cada plataforma",
       "Motor gráfico propio que garantiza consistencia visual y excelente rendimiento en ambas plataformas",
@@ -164,7 +104,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "16. ¿Cuál es el propósito de usar una corrutina en Kotlin para desarrollo Android?",
+    question: "10. ¿Cuál es el propósito de usar una corrutina en Kotlin para desarrollo Android?",
     options: [
       "Realizar operaciones asincrónicas sin bloquear el hilo principal",
       "Compilar el código Java a bytecode",
@@ -174,7 +114,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "17. En el contexto de seguridad móvil, ¿qué propósito tiene el almacenamiento de datos sensibles en un Keystore?",
+    question: "11. En el contexto de seguridad móvil, ¿qué propósito tiene el almacenamiento de datos sensibles en un Keystore?",
     options: [
       "Aumentar la velocidad de carga de la aplicación",
       "Proteger credenciales y claves criptográficas mediante encriptación del sistema operativo",
@@ -184,7 +124,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "18. ¿Qué es el principio de Single Responsibility en el contexto de arquitectura de aplicaciones móviles?",
+    question: "12. ¿Qué es el principio de Single Responsibility en el contexto de arquitectura de aplicaciones móviles?",
     options: [
       "Cada clase o módulo debe tener una única razón para cambiar, facilitando mantenimiento y pruebas",
       "Solo un desarrollador puede trabajar en el proyecto simultáneamente",
@@ -194,7 +134,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "19. ¿Cuál es el principal objetivo del diseño de interfaces en aplicaciones móviles?",
+    question: "13. ¿Cuál es el principal objetivo del diseño de interfaces en aplicaciones móviles?",
     options: [
       "Maximizar la cantidad de contenido visible en pantalla",
       "Facilitar la interacción del usuario considerando el tamaño reducido de la pantalla y el contexto de uso",
@@ -204,7 +144,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "20. ¿Qué consecuencia tiene una jerarquía visual deficiente en una interfaz móvil?",
+    question: "14. ¿Qué consecuencia tiene una jerarquía visual deficiente en una interfaz móvil?",
     options: [
       "Aumenta el tamaño del archivo de la aplicación",
       "El usuario no identifica correctamente el orden de lectura ni los elementos prioritarios, dificultando la navegación",
@@ -214,17 +154,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "21. ¿Cuál es la función principal de un Repository en la arquitectura de una aplicación móvil?",
-    options: [
-      "Renderizar los componentes visuales en pantalla",
-      "Gestionar la obtención y persistencia de datos, abstrayendo la fuente de datos",
-      "Ejecutar animaciones y transiciones entre pantallas",
-      "Controlar la rotación del dispositivo"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "22. ¿Cuál es la principal ventaja de utilizar React Native para el desarrollo de aplicaciones móviles?",
+    question: "15. ¿Cuál es la principal ventaja de utilizar React Native para el desarrollo de aplicaciones móviles?",
     options: [
       "Usar código exclusivamente nativo de cada plataforma",
       "Permitir escribir código una sola vez en JavaScript/TypeScript y compilarlo para iOS y Android",
@@ -234,7 +164,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "23. ¿Cuál es el propósito del hook useState en aplicaciones React o React Native?",
+    question: "16. ¿Cuál es el propósito del hook useState en aplicaciones React o React Native?",
     options: [
       "Obtener datos de una API externa",
       "Gestionar el estado interno de un componente funcional",
@@ -244,7 +174,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "24. ¿Cuál es la diferencia principal entre useState y useEffect en React?",
+    question: "17. ¿Cuál es la diferencia principal entre useState y useEffect en React?",
     options: [
       "useState es más rápido que useEffect",
       "useState gestiona estado, mientras que useEffect ejecuta efectos secundarios tras cambios",
@@ -254,17 +184,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "25. ¿Qué componente en una arquitectura de motor gráfico 3D define la posición y rotación de un objeto en el espacio?",
-    options: [
-      "Renderer",
-      "Collider",
-      "Transform",
-      "Material"
-    ],
-    correctAnswer: 2,
-  },
-  {
-    question: "26. ¿Cuál es la función del patrón ViewModel en una arquitectura MVVM de aplicaciones móviles?",
+    question: "18. ¿Cuál es la función del patrón ViewModel en una arquitectura MVVM de aplicaciones móviles?",
     options: [
       "Renderizar directamente los componentes visuales",
       "Almacenar exclusivamente datos en bases de datos locales",
@@ -274,7 +194,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "27. ¿Cuál es el principal beneficio de implementar inyección de dependencias en una aplicación móvil?",
+    question: "19. ¿Cuál es el principal beneficio de implementar inyección de dependencias en una aplicación móvil?",
     options: [
       "Aumentar el tamaño de la aplicación",
       "Facilitar testing y mantener código desacoplado y flexible",
@@ -284,17 +204,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "28. ¿Qué significa que una aplicación móvil sea responsiva?",
-    options: [
-      "Que responde a toques del usuario rápidamente",
-      "Que la interfaz se adapta y funciona correctamente en diferentes tamaños de pantalla y orientaciones",
-      "Que usa bibliotecas externas para mejorar el rendimiento",
-      "Que tiene habilitadas las notificaciones push"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "29. ¿Cuál es el propósito del Collider en un motor gráfico 3D como Unity?",
+    question: "20. ¿Cuál es el propósito del Collider en un motor gráfico 3D como Unity?",
     options: [
       "Definir el material visual del objeto",
       "Gestionar colisiones y detectar cuándo dos cuerpos se tocan",
@@ -304,7 +214,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "30. ¿Qué es un LiveData en Android y cuál es su principal ventaja?",
+    question: "21. ¿Qué es un LiveData en Android y cuál es su principal ventaja?",
     options: [
       "Una base de datos en tiempo real que sincroniza automáticamente con el servidor",
       "Un contenedor de datos observable que respeta el ciclo de vida de componentes y evita fugas de memoria",
@@ -314,7 +224,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "31. ¿Cuál es la diferencia entre una Activity y un Fragment en Android?",
+    question: "22. ¿Cuál es la diferencia entre una Activity y un Fragment en Android?",
     options: [
       "Una Activity es una pantalla completa, un Fragment es una parte reutilizable de interfaz dentro de una Activity",
       "Los Fragments son más antiguos que las Activities",
@@ -324,7 +234,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "32. ¿Qué es el proceso de serialización en el contexto de aplicaciones móviles?",
+    question: "23. ¿Qué es el proceso de serialización en el contexto de aplicaciones móviles?",
     options: [
       "Ejecutar tareas en orden secuencial",
       "Convertir objetos en un formato que puede ser almacenado o transmitido (JSON, XML, binario)",
@@ -334,7 +244,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "33. ¿Cuál es el propósito de un Animator en un motor gráfico 3D?",
+    question: "24. ¿Cuál es el propósito de un Animator en un motor gráfico 3D?",
     options: [
       "Gestionar la física y colisiones de objetos",
       "Controlar transiciones suaves de propiedades (posición, rotación, escala) a lo largo del tiempo",
@@ -344,37 +254,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "34. ¿Cuál es el propósito principal de utilizar un patrón Repository en la arquitectura de una aplicación móvil?",
-    options: [
-      "Abstraer la lógica de acceso a datos y centralizar las operaciones de persistencia",
-      "Renderizar componentes visuales en la pantalla del dispositivo",
-      "Ejecutar animaciones y transiciones entre vistas",
-      "Gestionar los permisos de seguridad del sistema operativo"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "35. En el desarrollo de interfaces móviles, ¿qué consecuencia tiene una jerarquía visual deficiente?",
-    options: [
-      "El usuario no puede identificar fácilmente los elementos más importantes de la interfaz",
-      "Se reduce automáticamente el consumo de batería del dispositivo",
-      "Aumenta la velocidad de carga de los recursos multimedia",
-      "Mejora la compatibilidad con dispositivos antiguos"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "36. ¿Cuál es la principal ventaja de utilizar React Native en el desarrollo de aplicaciones móviles?",
-    options: [
-      "Permitir escribir código una sola vez y desplegarlo en múltiples plataformas móviles",
-      "Asegurar que solo se utilice código nativo del sistema operativo",
-      "Eliminar completamente la necesidad de interfaces gráficas",
-      "Requerir conocimiento exclusivo de Swift y Kotlin"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "37. ¿Cuál es la función del hook useState en React?",
+    question: "25. ¿Cuál es la función del hook useState en React?",
     options: [
       "Gestionar el estado local de un componente funcional",
       "Realizar peticiones HTTP a servidores remotos",
@@ -384,7 +264,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "38. En el contexto de programación 3D con Unity, ¿qué componente es responsable de definir la posición, rotación y escala de un objeto?",
+    question: "26. En el contexto de programación 3D con Unity, ¿qué componente es responsable de definir la posición, rotación y escala de un objeto en el espacio?",
     options: [
       "Transform",
       "Renderer",
@@ -394,7 +274,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "39. ¿Cuál es la responsabilidad principal de un ViewModel en la arquitectura MVVM de una aplicación móvil?",
+    question: "27. ¿Cuál es la responsabilidad principal de un ViewModel en la arquitectura MVVM de una aplicación móvil?",
     options: [
       "Contener la lógica de negocio y exponer los datos que la Vista necesita",
       "Dibujar directamente los píxeles en la pantalla",
@@ -404,7 +284,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "40. ¿Qué es responsive design en el contexto del desarrollo de aplicaciones móviles?",
+    question: "28. ¿Qué es responsive design en el contexto del desarrollo de aplicaciones móviles?",
     options: [
       "Capacidad de la interfaz de adaptarse automáticamente a diferentes tamaños de pantalla y orientaciones",
       "Proceso de compilar el código en lenguaje máquina para mayor velocidad",
@@ -414,17 +294,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "41. ¿Cuál es el propósito del hook useEffect en React?",
-    options: [
-      "Ejecutar código con efectos secundarios después del renderizado del componente",
-      "Obtener datos de un archivo JSON local",
-      "Cambiar el estado de un componente padre desde un componente hijo",
-      "Compilar el código TypeScript a JavaScript"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "42. En desarrollo Android nativo, ¿qué es un Intent y cuál es su función principal?",
+    question: "29. En desarrollo Android nativo, ¿qué es un Intent y cuál es su función principal?",
     options: [
       "Un mecanismo para comunicar intenciones o acciones entre componentes de Android",
       "Un tipo de variable que almacena números decimales",
@@ -434,7 +304,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "43. ¿Cuál es la función de un Observer en el patrón Reactive programming para aplicaciones móviles?",
+    question: "30. ¿Cuál es la función de un Observer en el patrón Reactive programming para aplicaciones móviles?",
     options: [
       "Suscribirse a cambios en un flujo de datos y reaccionar cuando estos cambios ocurren",
       "Almacenar permanentemente datos en el dispositivo",
@@ -444,7 +314,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "44. ¿Qué es el ciclo de vida de una Activity en Android?",
+    question: "31. ¿Qué es el ciclo de vida de una Activity en Android?",
     options: [
       "La secuencia de métodos callback que se invocan a medida que una Activity transita entre diferentes estados",
       "El tiempo máximo que una aplicación puede estar abierta sin ser cerrada",
@@ -454,7 +324,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "45. ¿Cuál es el propósito de utilizar constraintLayout en diseños XML de Android?",
+    question: "32. ¿Cuál es el propósito de utilizar constraintLayout en diseños XML de Android?",
     options: [
       "Crear diseños flexibles y complejos definiendo restricciones posicionales entre vistas",
       "Ejecutar operaciones matemáticas en tiempo de ejecución",
@@ -464,7 +334,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "46. ¿Qué es la asincronía en el desarrollo de aplicaciones móviles y por qué es importante?",
+    question: "33. ¿Qué es la asincronía en el desarrollo de aplicaciones móviles y por qué es importante?",
     options: [
       "La capacidad de ejecutar operaciones prolongadas sin bloquear el hilo principal de la UI",
       "Un método para encriptar datos transmitidos por red",
@@ -474,7 +344,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "47. ¿Cuál es la función de Gradle en un proyecto Android?",
+    question: "34. ¿Cuál es la función de Gradle en un proyecto Android?",
     options: [
       "Sistema de construcción automatizado que gestiona dependencias, compilación y empaquetado",
       "Editor de código fuente para escribir aplicaciones Android",
@@ -484,7 +354,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "48. ¿Qué es el principio de separación de responsabilidades en arquitectura de software móvil?",
+    question: "35. ¿Qué es el principio de separación de responsabilidades en arquitectura de software móvil?",
     options: [
       "Dividir la aplicación en componentes independientes, cada uno con una responsabilidad específica",
       "Usar un único archivo para todo el código de la aplicación",
@@ -494,7 +364,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "49. ¿Qué patrón arquitectónico divide una aplicación en tres capas: datos, interfaz de usuario y gestión de la interacción entre ambas?",
+    question: "36. ¿Qué patrón arquitectónico divide una aplicación en tres capas: datos, interfaz de usuario y gestión de la interacción entre ambas?",
     options: [
       "Modelo Vista Controlador (MVC)",
       "Singleton",
@@ -504,7 +374,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "50. En React Native, ¿cuál es la ventaja principal de utilizar FlatList en lugar de ScrollView para listas largas?",
+    question: "37. En React Native, ¿cuál es la ventaja principal de utilizar FlatList en lugar de ScrollView para listas largas?",
     options: [
       "FlatList renderiza todos los elementos simultáneamente, mejorando la velocidad visual",
       "FlatList solo renderiza los elementos visibles en pantalla, optimizando memoria y rendimiento",
@@ -514,17 +384,17 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "51. ¿Cuál es el propósito del hook useEffect en React?",
+    question: "38. ¿Cuál es el propósito del hook useEffect en React?",
     options: [
       "Gestionar el estado de los componentes",
-      "Ejecutar efectos secundarios y sincronizar con el ciclo de vida del componente",
+      "Ejecutar efectos secundarios y sincronizar con el ciclo de vida del componente, después del renderizado",
       "Optimizar el rendering evitando re-renders innecesarios",
       "Gestionar la navegación entre pantallas"
     ],
     correctAnswer: 1,
   },
   {
-    question: "52. ¿Qué componente de Unity es responsable de la renderización gráfica de un objeto 3D?",
+    question: "39. ¿Qué componente de Unity es responsable de la renderización gráfica de un objeto 3D?",
     options: [
       "Collider",
       "Renderer",
@@ -534,7 +404,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "53. ¿Cuál es la función principal de un ViewModel en arquitectura MVVM para aplicaciones móviles?",
+    question: "40. ¿Cuál es la función principal de un ViewModel en arquitectura MVVM para aplicaciones móviles?",
     options: [
       "Definir la interfaz gráfica visual",
       "Gestionar la lógica de presentación e interactuar con los modelos de datos",
@@ -544,7 +414,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "54. ¿Qué método del ciclo de vida de Android se ejecuta cuando el usuario sale de la actividad?",
+    question: "41. ¿Qué método del ciclo de vida de Android se ejecuta cuando el usuario sale de la actividad?",
     options: [
       "onDestroy()",
       "onPause()",
@@ -554,7 +424,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "55. ¿Cuál es el propósito del patrón Repository en desarrollo de aplicaciones móviles?",
+    question: "42. ¿Cuál es el propósito del patrón Repository en desarrollo de aplicaciones móviles?",
     options: [
       "Controlar la renderización de la interfaz gráfica",
       "Abstraer las fuentes de datos (API, base de datos local) y proporcionar una interfaz única para acceder a ellos",
