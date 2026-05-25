@@ -44,7 +44,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "4. ¿Cuál es la clasificación de PostgreSQL dentro de los sistemas de gestión de bases de datos?",
+    question: "4. ¿Cuál es la clasificación de PostgreSQL dentro de los sistemas de gestión de bases de datos de codigo abierto?",
     options: [
       "Sistema relacional que organiza los datos en tablas con esquema definido",
       "Base de datos NoSQL centrada en el almacenamiento de documentos JSON",
@@ -64,37 +64,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "6. ¿Cuál es la característica definitoria de una clave primaria en una tabla?",
-    options: [
-      "Garantizar que cada registro sea identificable de forma única e irrepetible dentro de la tabla",
-      "Proporcionar un campo opcional para mejorar la búsqueda",
-      "Servir como criterio de unión en operaciones JOIN",
-      "Permitir duplicación de valores para flexibilidad de datos"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "7. ¿Cuál es el propósito funcional de una clave foránea en el diseño de bases de datos?",
-    options: [
-      "Establecer y mantener la conexión referencial entre registros de dos tablas diferentes",
-      "Permitir la clasificación ascendente o descendente de datos",
-      "Garantizar la unicidad absoluta de valores dentro de una tabla",
-      "Generar índices automáticos para optimizar consultas"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "8. En el diseño de bases de datos relacionales, ¿qué tipo de cardinalidad predomina en la mayoría de los modelos de datos empresariales, como el de clientes y pedidos?",
-    options: [
-      "Uno a uno (1:1)",
-      "Muchos a muchos (N:M)",
-      "Cero a uno (0:1)",
-      "Uno a muchos (1:N)"
-    ],
-    correctAnswer: 3,
-  },
-  {
-    question: "9. ¿Cuál es la función específica de la cláusula WHERE en una sentencia SQL?",
+    question: "6. ¿Cuál es la función específica de la cláusula WHERE en una sentencia SQL?",
     options: [
       "Especificar las condiciones lógicas que deben cumplir los registros recuperados",
       "Determinar el orden secuencial de las filas en el resultado",
@@ -104,47 +74,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "10. ¿Qué efecto produce la utilización de ORDER BY en una consulta SQL?",
-    options: [
-      "Estructura el conjunto de resultados según un campo y dirección especificados",
-      "Selecciona únicamente filas que cumplen criterios específicos",
-      "Consolida filas con valores idénticos en un registro único",
-      "Remueve registros duplicados del resultado final"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "11. ¿Cuál es el propósito de utilizar DISTINCT en una consulta SQL?",
-    options: [
-      "Eliminar las filas duplicadas del conjunto de resultados",
-      "Agrupar registros por categorías",
-      "Reducir el número de registros según un valor límite",
-      "Clasificar resultados en orden ascendente"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "12. ¿Qué acción realiza la cláusula LIMIT en el contexto de una consulta?",
-    options: [
-      "Regula el número máximo de filas que retorna la consulta",
-      "Clasifica los registros según criterios de ordenamiento",
-      "Restringe el acceso a determinadas columnas",
-      "Consolida registros duplicados en una única fila"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "13. ¿Cuál es el comportamiento de un INNER JOIN en una operación de combinación de tablas?",
-    options: [
-      "Retorna únicamente los registros que tienen correspondencia en ambas tablas",
-      "Devuelve todos los registros de ambas tablas sin importar coincidencias",
-      "Elimina valores nulos o duplicados automáticamente",
-      "Incluye todos los registros de la tabla referenciada en FROM"
-    ],
-    correctAnswer: 0,
-  },
-  {
-    question: "14. ¿Cuál es la característica distintiva de un LEFT JOIN en comparación con otros tipos de uniones?",
+    question: "7. ¿Cuál es la característica distintiva de un LEFT JOIN en comparación con otros tipos de uniones?",
     options: [
       "Preserva la totalidad de registros de la tabla izquierda, incluyendo aquellos sin correspondencia en la tabla derecha",
       "Devuelve exclusivamente las filas con coincidencia entre ambas tablas",
@@ -154,7 +84,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "15. ¿Cuál es la función principal de una colección dentro de una base de datos MongoDB?",
+    question: "8. ¿Cuál es la función principal de una colección dentro de una base de datos MongoDB?",
     options: [
       "Indexar campos para mejorar búsquedas",
       "Agrupar un conjunto de documentos relacionados",
@@ -164,7 +94,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "16. El acrónimo CRUD en desarrollo de aplicaciones se refiere a:",
+    question: "9. El acrónimo CRUD en desarrollo de aplicaciones se refiere a:",
     options: [
       "Componentes de Recursos Únicos Distribuidos",
       "Operaciones fundamentales de manipulación de datos",
@@ -174,7 +104,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "17. ¿Cuál es la característica distintiva de una arquitectura REST frente a otros estilos de servicios web?",
+    question: "10. ¿Cuál es la característica distintiva de una arquitectura REST frente a otros estilos de servicios web?",
     options: [
       "Expone recursos identificables por URIs mediante comunicación sin estado sobre HTTP",
       "Mantiene una sesión persistente en el servidor entre peticiones del cliente",
@@ -184,7 +114,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "18. ¿Qué método HTTP se emplea cuando se desea recuperar información de un servidor?",
+    question: "11. ¿Qué método HTTP se emplea cuando se desea recuperar información de un servidor?",
     options: [
       "GET",
       "POST",
@@ -194,7 +124,7 @@ const questions: Question[] = [
     correctAnswer: 0,
   },
   {
-    question: "19. ¿Cuál es el propósito del verbo HTTP POST en el contexto de APIs REST?",
+    question: "12. ¿Cuál es el propósito del verbo HTTP POST en el contexto de APIs REST?",
     options: [
       "Eliminar recursos existentes",
       "Obtener información del servidor",
@@ -204,7 +134,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "20. ¿Cuál es la función principal de Node.js en el desarrollo de aplicaciones web?",
+    question: "13. ¿Cuál es la función principal de Node.js en el desarrollo de aplicaciones web?",
     options: [
       "Compilar y transpilar código TypeScript a JavaScript nativo",
       "Actuar como entorno de ejecución de JavaScript en el lado del servidor",
@@ -214,7 +144,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "21. ¿Cuál es la función de Express en un proyecto Node.js?",
+    question: "14. ¿Cuál es la función de Express en un proyecto Node.js?",
     options: [
       "Compilador de módulos JavaScript",
       "Marco de trabajo para construir servidores y APIs",
@@ -224,7 +154,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "22. ¿Qué información se debe proteger almacenándola en un archivo .env?",
+    question: "15. ¿Qué información se debe proteger almacenándola en un archivo .env?",
     options: [
       "Código fuente comentado",
       "Rutas públicas accesibles",
@@ -234,7 +164,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "23. ¿Cuál es la consecuencia de no implementar un manejo adecuado de excepciones en una API?",
+    question: "16. ¿Cuál es la consecuencia de no implementar un manejo adecuado de excepciones en una API?",
     options: [
       "Incrementa significativamente la velocidad de respuesta",
       "Optimiza automáticamente las consultas a base de datos",
@@ -244,7 +174,7 @@ const questions: Question[] = [
     correctAnswer: 2,
   },
   {
-    question: "24. ¿Cuál es el efecto de ejecutar una consulta SQL con una cláusula WHERE en los resultados?",
+    question: "17. ¿Cuál es el efecto de ejecutar una consulta SQL con una cláusula WHERE en los resultados?",
     options: [
       "Ordena los registros según columna especificada",
       "Aplica condiciones lógicas para seleccionar registros específicos",
@@ -254,7 +184,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "25. ¿Qué operación realiza GROUP BY en una consulta SQL?",
+    question: "18. ¿Qué operación realiza GROUP BY en una consulta SQL?",
     options: [
       "Elimina filas duplicadas de los resultados",
       "Agrupa filas compartiendo valores comunes en columnas especificadas",
@@ -264,7 +194,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "26. ¿Cuál es la diferencia fundamental entre las cláusulas WHERE y HAVING en SQL?",
+    question: "19. ¿Cuál es la diferencia fundamental entre las cláusulas WHERE y HAVING en SQL?",
     options: [
       "WHERE filtra registros tras el agrupamiento; HAVING antes",
       "WHERE actúa antes del agrupamiento; HAVING después",
@@ -274,7 +204,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "27. ¿Qué formato de serialización utilizan mayoritariamente las APIs REST para intercambiar datos?",
+    question: "20. ¿Qué formato de serialización utilizan mayoritariamente las APIs REST para intercambiar datos?",
     options: [
       "XML con esquemas complejos",
       "JSON por su ligereza y estructura jerárquica",
@@ -284,7 +214,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "28. ¿Cuál es la herramienta específicamente diseñada para realizar pruebas y depuración de APIs REST?",
+    question: "21. ¿Cuál es la herramienta específicamente diseñada para realizar pruebas y depuración de APIs REST?",
     options: [
       "Git para control de versiones",
       "Postman para enviar solicitudes y analizar respuestas",
@@ -294,47 +224,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "29. ¿Cuál es la función principal del JDK en el desarrollo de aplicaciones Java?",
-    options: [
-      "Proporcionar solo el compilador para traducir código fuente a bytecode",
-      "Ofrecer las herramientas necesarias para compilar, ejecutar y desarrollar programas Java",
-      "Almacenar las librerías de bases de datos relacional",
-      "Gestionar automáticamente la conexión a servidores de MongoDB"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "30. ¿Qué es un driver JDBC?",
-    options: [
-      "Un protocolo de comunicación para transferir datos por internet",
-      "Un software que permite la conexión entre aplicaciones Java y bases de datos relacionales",
-      "Un tipo de base de datos no relacional",
-      "Una herramienta para diseñar diagramas entidad-relación"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "31. ¿Cuál es la característica fundamental de PostgreSQL?",
-    options: [
-      "Es una base de datos de documentos JSON distribuida",
-      "Es un sistema gestor de bases de datos relacionales de código abierto",
-      "Es un motor de búsqueda para indexación de texto",
-      "Es un servidor de caché en memoria para aplicaciones web"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "32. En el modelo relacional, ¿qué representa una tabla?",
-    options: [
-      "Una colección de documentos sin estructura definida",
-      "Una entidad con sus atributos organizados en filas y columnas",
-      "Un archivo binario que almacena datos comprimidos",
-      "Una función que realiza cálculos sobre los datos"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "33. ¿Cuál es el propósito de una clave primaria (PK) en una tabla?",
+    question: "22. ¿Cuál es el propósito de una clave primaria (PK) en una tabla?",
     options: [
       "Optimizar la velocidad de búsqueda en todas las consultas",
       "Identificar de forma única cada fila en la tabla y garantizar integridad",
@@ -344,7 +234,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "34. ¿Qué función cumple una clave foránea (FK) en la base de datos?",
+    question: "23. ¿Qué función cumple una clave foránea (FK) en la base de datos?",
     options: [
       "Almacenar datos cifrados que solo el administrador puede ver",
       "Crear una referencia a la clave primaria de otra tabla estableciendo relaciones",
@@ -354,7 +244,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "35. En el diseño de bases de datos relacionales, ¿qué tipo de relación entre tablas se implementa colocando la clave primaria de una tabla como clave foránea en otra, y es la más habitual en sistemas reales?",
+    question: "24. En el diseño de bases de datos relacionales, ¿qué tipo de relación entre tablas se implementa colocando la clave primaria de una tabla como clave foránea en otra, y es la más habitual en sistemas reales?",
     options: [
       "Relación uno a uno",
       "Relación uno a muchos",
@@ -364,7 +254,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "36. ¿Cuál es el propósito de la cláusula WHERE en una sentencia SQL?",
+    question: "25. ¿Cuál es el propósito de la cláusula WHERE en una sentencia SQL?",
     options: [
       "Ordenar los resultados de forma ascendente o descendente",
       "Filtrar las filas que cumplen una condición específica",
@@ -374,7 +264,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "37. ¿Qué función desempeña la cláusula ORDER BY en SQL?",
+    question: "26. ¿Qué función desempeña la cláusula ORDER BY en SQL?",
     options: [
       "Selecciona solo las filas que tienen valores únicos",
       "Ordena los resultados de la consulta según una o más columnas en orden ascendente o descendente",
@@ -384,7 +274,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "38. ¿Cuál es el objetivo de la palabra clave DISTINCT en una consulta SQL?",
+    question: "27. ¿Cuál es el objetivo de la palabra clave DISTINCT en una consulta SQL?",
     options: [
       "Eliminar filas que no cumplen la condición WHERE",
       "Eliminar duplicados del resultado de la consulta",
@@ -394,7 +284,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "39. ¿Qué efecto produce la cláusula LIMIT en una consulta SQL?",
+    question: "28. ¿Qué efecto produce la cláusula LIMIT en una consulta SQL?",
     options: [
       "Filtra registros basándose en condiciones lógicas",
       "Restringe el número máximo de filas que devuelve la consulta",
@@ -404,7 +294,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "40. ¿Cuál es el comportamiento de un INNER JOIN entre dos tablas?",
+    question: "29. ¿Cuál es el comportamiento de un INNER JOIN entre dos tablas?",
     options: [
       "Devuelve todas las filas de la primera tabla y las filas coincidentes de la segunda",
       "Devuelve solo las filas que tienen coincidencias en ambas tablas",
@@ -414,7 +304,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "41. ¿Qué diferencia principal existe entre LEFT JOIN e INNER JOIN?",
+    question: "30. ¿Qué diferencia principal existe entre LEFT JOIN e INNER JOIN?",
     options: [
       "LEFT JOIN ordena los resultados de forma ascendente",
       "LEFT JOIN incluye todas las filas de la tabla izquierda, incluso sin coincidencia en la derecha",
@@ -424,7 +314,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "42. ¿Cuál es la principal característica de MongoDB como base de datos?",
+    question: "31. ¿Cuál es la principal característica de MongoDB como base de datos?",
     options: [
       "Es una base de datos relacional que usa tablas y SQL",
       "Es una base de datos NoSQL orientada a documentos que almacena datos en formato JSON",
@@ -434,7 +324,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "43. ¿Qué operación del estándar CRUD se asocia con el verbo HTTP GET?",
+    question: "32. ¿Qué operación del estándar CRUD se asocia con el verbo HTTP GET?",
     options: [
       "Create (crear nuevos datos)",
       "Read (leer u obtener datos existentes)",
@@ -444,37 +334,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "44. ¿Cuál es la principal responsabilidad de un driver JDBC en una aplicación Java?",
-    options: [
-      "Compilar el código Java a bytecode ejecutable",
-      "Establecer la comunicación entre la aplicación Java y la base de datos",
-      "Gestionar la memoria de la máquina virtual Java",
-      "Proporcionar las clases necesarias para crear interfaces gráficas"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "45. ¿A qué categoría pertenece PostgreSQL desde el punto de vista de los sistemas de gestión de bases de datos?",
-    options: [
-      "Base de datos no relacional orientada a documentos",
-      "Base de datos relacional de código abierto",
-      "Base de datos en memoria especializada en cachés",
-      "Base de datos propietaria de Microsoft"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "47. ¿Qué propósito cumple una clave foránea en una tabla relacional?",
-    options: [
-      "Servir como identificador único del registro",
-      "Referenciar la clave primaria de otra tabla para establecer relaciones",
-      "Ordenar automáticamente los registros de la tabla",
-      "Comprimir los datos almacenados en la base de datos"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "48. En el diseño de bases de datos relacionales, ¿qué tipo de relación entre tablas se considera la más habitual en sistemas de gestión empresarial como ERPs o tiendas online?",
+    question: "33. En el diseño de bases de datos relacionales, ¿qué tipo de relación entre tablas se considera la más habitual en sistemas de gestión empresarial como ERPs o tiendas online?",
     options: [
       "Relación uno a uno (1:1)",
       "Relación uno a muchos (1:N)",
@@ -484,17 +344,7 @@ const questions: Question[] = [
     correctAnswer: 1,
   },
   {
-    question: "49. ¿Cuál es el resultado de ejecutar una consulta con INNER JOIN entre dos tablas?",
-    options: [
-      "Todos los registros de la primera tabla, aunque no tengan coincidencia",
-      "Solo los registros que tienen correspondencia en ambas tablas",
-      "Todos los registros de ambas tablas sin excepción",
-      "Los registros de la segunda tabla que no coincidan con la primera"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "50. Una consulta LEFT JOIN entre la tabla \"clientes\" y \"pedidos\" devuelve 150 registros, pero solo 90 clientes tienen pedidos registrados. ¿Qué contienen los campos de \"pedidos\" para los 60 clientes restantes?",
+    question: "34. Una consulta LEFT JOIN entre la tabla \"clientes\" y \"pedidos\" devuelve 150 registros, pero solo 90 clientes tienen pedidos registrados. ¿Qué contienen los campos de \"pedidos\" para los 60 clientes restantes?",
     options: [
       "Se eliminan automáticamente del resultado final",
       "Se rellenan con el valor 0 por defecto del sistema",
@@ -502,46 +352,6 @@ const questions: Question[] = [
       "Se duplican con los datos del último pedido encontrado"
     ],
     correctAnswer: 2,
-  },
-  {
-    question: "51. ¿Para qué se utiliza la cláusula WHERE en una sentencia SQL?",
-    options: [
-      "Para ordenar los resultados en forma descendente",
-      "Para filtrar registros según condiciones específicas",
-      "Para limitar el número máximo de filas devueltas",
-      "Para eliminar duplicados en los resultados"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "52. ¿Qué función cumple la cláusula ORDER BY en SQL?",
-    options: [
-      "Agrupa registros por valores comunes",
-      "Ordena el conjunto de resultados según una o más columnas",
-      "Filtra registros que no cumplan las condiciones",
-      "Calcula sumas y promedios de datos numéricos"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "53. ¿Cuál es la función del operador DISTINCT en una consulta SQL?",
-    options: [
-      "Sumar todos los valores de una columna",
-      "Eliminar filas duplicadas del resultado",
-      "Crear una copia de seguridad de los datos",
-      "Contar el número total de registros"
-    ],
-    correctAnswer: 1,
-  },
-  {
-    question: "54. ¿Qué efecto tiene la cláusula LIMIT en una consulta SQL?",
-    options: [
-      "Restringe el número de filas devueltas",
-      "Define el máximo valor que puede tener una columna",
-      "Limita el acceso a ciertos usuarios de la base de datos",
-      "Establece un tamaño máximo para la base de datos"
-    ],
-    correctAnswer: 0,
   },
 ]
 
