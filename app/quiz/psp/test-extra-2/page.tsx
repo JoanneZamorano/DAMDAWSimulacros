@@ -14,7 +14,7 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "51. ¿Qué protocolo proporciona una alternativa segura a Telnet para administración remota de sistemas?",
+    question: "44. ¿Qué protocolo proporciona una alternativa segura a Telnet para administración remota de sistemas?",
     options: [
       "FTP (File Transfer Protocol)",
       "SSH (Secure Shell)",
@@ -24,7 +24,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "52. En Java, cuando un thread ejecuta Thread.sleep(ms) entra en estado TIMED_WAITING, y con wait() sin tiempo entra en WAITING. ¿Cómo se denomina genéricamente este grupo de estados frente a BLOCKED (espera de monitor)?",
+    question: "45. En Java, cuando un thread ejecuta Thread.sleep(ms) entra en estado TIMED_WAITING, y con wait() sin tiempo entra en WAITING. ¿Cómo se denomina genéricamente este grupo de estados frente a BLOCKED (espera de monitor)?",
     options: [
       "Estado Ejecutando (RUNNING)",
       "Estado Listo (RUNNABLE)",
@@ -34,7 +34,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "53. ¿Qué garantiza un método o bloque de código declarado como synchronized cuando es invocado sobre el mismo objeto?",
+    question: "46. ¿Qué garantiza un método o bloque de código declarado como synchronized cuando es invocado sobre el mismo objeto?",
     options: [
       "Que se ejecuta más rápido que código no sincronizado",
       "Que solo un thread puede ejecutarlo a la vez sobre ese objeto",
@@ -44,7 +44,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "54. ¿Qué característica fundamental distingue a la criptografía simétrica de la asimétrica?",
+    question: "47. ¿Qué característica fundamental distingue a la criptografía simétrica de la asimétrica?",
     options: [
       "La criptografía simétrica utiliza un par de claves pública-privada mientras que la asimétrica usa una única clave compartida",
       "La criptografía simétrica emplea la misma clave para cifrar y descifrar, mientras que la asimétrica usa claves diferentes para cada operación",
@@ -54,7 +54,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "55. En un sistema con un único núcleo de procesador, ¿cómo logra el sistema operativo que varios procesos parezcan ejecutarse al mismo tiempo?",
+    question: "48. En un sistema con un único núcleo de procesador, ¿cómo logra el sistema operativo que varios procesos parezcan ejecutarse al mismo tiempo?",
     options: [
       "Ejecutando todos los procesos en paralelo real mediante hipervisión de núcleo único",
       "Alternando rápidamente entre procesos mediante cambios de contexto, creando ilusión de simultaneidad",
@@ -64,7 +64,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "56. ¿En qué estado se encuentra un proceso que está listo para ejecutarse pero espera su turno de ejecución?",
+    question: "49. ¿En qué estado se encuentra un proceso que está listo para ejecutarse pero espera su turno de ejecución?",
     options: [
       "Estado bloqueado (Blocked)",
       "Estado en espera (Waiting)",
@@ -74,7 +74,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "57. ¿Qué mecanismo de IPC (Inter-Process Communication) conecta la salida estándar de un proceso con la entrada estándar de otro?",
+    question: "50. ¿Qué mecanismo de IPC (Inter-Process Communication) conecta la salida estándar de un proceso con la entrada estándar de otro?",
     options: [
       "Socket Unix",
       "Cola de mensajes (Message Queue)",
@@ -84,7 +84,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "58. ¿Qué describe mejor la situación de deadlock o abrazo mortal en sistemas concurrentes?",
+    question: "51. ¿Qué describe mejor la situación de deadlock o abrazo mortal en sistemas concurrentes?",
     options: [
       "El bloqueo temporal de un proceso mientras espera a que termine su quantum de tiempo",
       "Un estado donde dos o más procesos quedan indefinidamente bloqueados esperándose mutuamente para liberar recursos",
@@ -94,7 +94,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "59. ¿Por qué se prefiere implementar la interfaz Runnable en lugar de extender la clase Thread en Java?",
+    question: "52. ¿Por qué se prefiere implementar la interfaz Runnable en lugar de extender la clase Thread en Java?",
     options: [
       "Porque Runnable es más rápido en ejecución que Thread",
       "Porque Java permite herencia múltiple de interfaces pero no de clases, preservando la arquitectura de la clase",
@@ -104,7 +104,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "60. ¿Qué tipos de vulnerabilidades puede prevenir una validación rigurosa de tipo, longitud, formato y rango en las entradas?",
+    question: "53. ¿Qué tipos de vulnerabilidades puede prevenir una validación rigurosa de tipo, longitud, formato y rango en las entradas?",
     options: [
       "Únicamente ataques de denegación de servicio distribuido",
       "Inyección SQL, desbordamiento de búfer, formateo incorrecto de datos y comportamientos inesperados",
@@ -114,7 +114,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "61. ¿Cuál fue el factor técnico clave que permitió la brecha de seguridad de Equifax en 2017?",
+    question: "54. ¿Cuál fue el factor técnico clave que permitió la brecha de seguridad de Equifax en 2017?",
     options: [
       "Falta de validación de entrada en un componente web conocido sin parche disponible",
       "Validación de certificados SSL correctamente implementada pero con falsos positivos",
@@ -124,7 +124,7 @@ const questions: Question[] = [
     correctAnswer: 0
   },
   {
-    question: "62. ¿Qué es un servicio o daemon en el contexto de sistemas operativos?",
+    question: "55. ¿Qué es un servicio o daemon en el contexto de sistemas operativos?",
     options: [
       "Un programa interactivo que requiere entrada constante del usuario para funcionar",
       "Un proceso de larga duración que ejecuta en segundo plano sin interfaz de usuario, proporcionando servicios al sistema",
@@ -134,7 +134,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "63. ¿Cuál fue la solución implementada por la NASA para resolver el problema de priority inversion en la misión Mars Pathfinder?",
+    question: "56. ¿Cuál fue la solución implementada por la NASA para resolver el problema de priority inversion en la misión Mars Pathfinder?",
     options: [
       "Aumentar la frecuencia de reloj del procesador del rover",
       "Implementar herencia de prioridad para los locks, permitiendo que un hilo de baja prioridad que posee un lock sea promovido a la prioridad del hilo de alta prioridad esperando",
@@ -144,7 +144,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "64. En Java, cuando un hilo ejecuta Thread.sleep(5000), ¿qué ocurre con dicho hilo durante ese período?",
+    question: "57. En Java, cuando un hilo ejecuta Thread.sleep(5000), ¿qué ocurre con dicho hilo durante ese período?",
     options: [
       "Sigue ejecutándose pero reduce su prioridad temporalmente",
       "Entra en estado bloqueado, cede la CPU y mantiene sus locks adquiridos",
@@ -154,7 +154,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "65. En el contexto del paralelismo, ¿qué principio describe el límite o 'techo' de la aceleración que se puede conseguir al añadir más núcleos?",
+    question: "58. En el contexto del paralelismo, ¿qué principio describe el límite o 'techo' de la aceleración que se puede conseguir al añadir más núcleos?",
     options: [
       "La condición de carrera (Race condition)",
       "La Ley de Moore",
@@ -164,7 +164,7 @@ const questions: Question[] = [
     correctAnswer: 3
   },
   {
-    question: "66. ¿Qué modelo de control de accesos se caracteriza porque las reglas son centralizadas y no pueden ser modificadas por los usuarios?",
+    question: "59. ¿Qué modelo de control de accesos se caracteriza porque las reglas son centralizadas y no pueden ser modificadas por los usuarios?",
     options: [
       "DAC (Discretionary Access Control)",
       "MAC (Mandatory Access Control)",
@@ -174,7 +174,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "67. Respecto a la criptografía simétrica (como AES), ¿cuál es su principal ventaja y su mayor debilidad según la teoría?",
+    question: "60. Respecto a la criptografía simétrica (como AES), ¿cuál es su principal ventaja y su mayor debilidad según la teoría?",
     options: [
       "Es muy segura para el intercambio de claves, pero ineficiente para grandes volúmenes de datos",
       "No requiere claves, pero su algoritmo matemático es fácilmente reversible",
@@ -184,7 +184,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "68. En el caso de estudio de Linux, ¿qué mecanismo de IPC (Comunicación Entre Procesos) utiliza 'systemd' para permitir que las aplicaciones se comuniquen entre sí?",
+    question: "61. En el caso de estudio de Linux, ¿qué mecanismo de IPC (Comunicación Entre Procesos) utiliza 'systemd' para permitir que las aplicaciones se comuniquen entre sí?",
     options: [
       "Sockets TCP puros",
       "Tuberías anónimas (pipes)",
@@ -194,7 +194,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "69. ¿Qué modelo de control de acceso se caracteriza porque el propio propietario de un recurso es quien tiene la autoridad para decidir qué otros usuarios pueden acceder a él?",
+    question: "62. ¿Qué modelo de control de acceso se caracteriza porque el propio propietario de un recurso es quien tiene la autoridad para decidir qué otros usuarios pueden acceder a él?",
     options: [
       "DAC (Discretionary Access Control)",
       "MAC (Mandatory Access Control)",
@@ -204,7 +204,7 @@ const questions: Question[] = [
     correctAnswer: 0
   },
   {
-    question: "70. ¿Qué modelo de control de acceso permite establecer reglas dinámicas analizando variables del entorno y del contexto, tales como la ubicación geográfica o la hora del día en la que se solicita el acceso?",
+    question: "63. ¿Qué modelo de control de acceso permite establecer reglas dinámicas analizando variables del entorno y del contexto, tales como la ubicación geográfica o la hora del día en la que se solicita el acceso?",
     options: [
       "DAC (Discretionary Access Control)",
       "MAC (Mandatory Access Control)",
@@ -214,7 +214,7 @@ const questions: Question[] = [
     correctAnswer: 3
   },
   {
-    question: "71. Al configurar un bloque o método 'synchronized' en Java, ¿sobre qué elemento se adquiere el bloqueo (monitor lock) si el método es estático?",
+    question: "64. Al configurar un bloque o método 'synchronized' en Java, ¿sobre qué elemento se adquiere el bloqueo (monitor lock) si el método es estático?",
     options: [
       "Sobre la instancia concreta representada por la palabra clave 'this'",
       "Sobre el hilo actual que está invocando el método (Thread.currentThread())",
@@ -224,7 +224,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "72. ¿Qué diferencia fundamental existe entre aplicar una función Hash y un algoritmo de Cifrado sobre un conjunto de datos?",
+    question: "65. ¿Qué diferencia fundamental existe entre aplicar una función Hash y un algoritmo de Cifrado sobre un conjunto de datos?",
     options: [
       "El cifrado utiliza claves públicas y el hash solo claves privadas compartidas",
       "El hash transforma los datos en una cadena reversible, mientras que el cifrado es siempre irreversible",
@@ -234,7 +234,7 @@ const questions: Question[] = [
     correctAnswer: 3
   },
   {
-    question: "73. ¿Qué herremienta gráfica open-source se recomienda en el temario para enviar y recibir payloads de red (TCP/UDP) a un puerto concreto sin necesidad de programar el código del cliente?",
+    question: "66. ¿Qué herremienta gráfica open-source se recomienda en el temario para enviar y recibir payloads de red (TCP/UDP) a un puerto concreto sin necesidad de programar el código del cliente?",
     options: [
       "Let's Encrypt",
       "Packet Sender",
@@ -244,7 +244,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "74. ¿Cuál es el error conceptual del mito 'Si una variable se declara como volatile en Java, ya no necesito utilizar synchronized o bloques atómicos'?",
+    question: "67. ¿Cuál es el error conceptual del mito 'Si una variable se declara como volatile en Java, ya no necesito utilizar synchronized o bloques atómicos'?",
     options: [
       "Que 'volatile' está deprecated desde Java 8",
       "Que 'volatile' solo garantiza la visibilidad de los cambios entre las memorias de los hilos, pero no asegura la atomicidad en operaciones compuestas (como un contador++)",
@@ -254,7 +254,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "75. En sistemas concurrentes, ¿a qué tipo de errores efímeros, no deterministas y difíciles de replicar se les denomina 'Heisenbugs'?",
+    question: "68. En sistemas concurrentes, ¿a qué tipo de errores efímeros, no deterministas y difíciles de replicar se les denomina 'Heisenbugs'?",
     options: [
       "A los errores de compilación causados por una sintaxis JSON incorrecta",
       "A fallos de hardware provocados por la temperatura del procesador",
@@ -264,7 +264,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "76. En la programación multihilo de Java, ¿qué ocurre si intentas invocar el método start() sobre un hilo que ya se encuentra en estado TERMINATED?",
+    question: "69. En la programación multihilo de Java, ¿qué ocurre si intentas invocar el método start() sobre un hilo que ya se encuentra en estado TERMINATED?",
     options: [
       "El hilo se reinicia desde el principio volviendo al estado NEW",
       "El hilo pasa directamente a competir por la CPU en estado RUNNABLE",
@@ -274,7 +274,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "77. Al diseñar la estrategia de concurrencia en un servidor, ¿qué número óptimo de hilos activos se recomienda si la tarea es puramente computacional e intensiva (CPU-bound)?",
+    question: "70. Al diseñar la estrategia de concurrencia en un servidor, ¿qué número óptimo de hilos activos se recomienda si la tarea es puramente computacional e intensiva (CPU-bound)?",
     options: [
       "Un número de hilos igual o cercano al número de núcleos físicos de la CPU",
       "Tantos hilos como clientes concurrentes soliciten acceso, sin límite establecido",
@@ -284,7 +284,7 @@ const questions: Question[] = [
     correctAnswer: 0
   },
   {
-    question: "78. Al consumir servicios web orientados a la integración de sistemas distribuidos, ¿qué estilo arquitectónico destaca por ser flexible, no requerir un contrato rígido XML (como el WSDL de SOAP) y representar habitualmente los recursos en formato JSON?",
+    question: "71. Al consumir servicios web orientados a la integración de sistemas distribuidos, ¿qué estilo arquitectónico destaca por ser flexible, no requerir un contrato rígido XML (como el WSDL de SOAP) y representar habitualmente los recursos en formato JSON?",
     options: [
       "RMI (Remote Method Invocation)",
       "RPC (Remote Procedure Call)",
@@ -294,7 +294,7 @@ const questions: Question[] = [
     correctAnswer: 3
   },
   {
-    question: "79. En el ecosistema de Google Workspace, además del modelo de roles predefinidos (RBAC), ¿qué características del modelo ABAC implementan para robustecer el control de accesos?",
+    question: "72. En el ecosistema de Google Workspace, además del modelo de roles predefinidos (RBAC), ¿qué características del modelo ABAC implementan para robustecer el control de accesos?",
     options: [
       "Permitir que cualquier usuario propietario configure de forma discrecional los permisos",
       "Limitar o denegar los accesos basándose en atributos dinámicos como la ubicación geográfica o la dirección IP del usuario",
