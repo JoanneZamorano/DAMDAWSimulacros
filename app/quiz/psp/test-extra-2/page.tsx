@@ -291,7 +291,7 @@ const questions: Question[] = [
       "REST (Representational State Transfer)",
       "D-Bus"
     ],
-    correctAnswer: 3
+    correctAnswer: 2
   },
   {
     question: "72. En el ecosistema de Google Workspace, además del modelo de roles predefinidos (RBAC), ¿qué características del modelo ABAC implementan para robustecer el control de accesos?",
