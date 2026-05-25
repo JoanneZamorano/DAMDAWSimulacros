@@ -14,17 +14,7 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "1. ¿Qué tipo de vulnerabilidades pueden mitigarse mediante la validación rigurosa de entrada en términos de tipo, longitud, formato y límites?",
-    options: [
-      "Solo vulnerabilidades de configuración del servidor",
-      "Ataques de inyección de código y scripting entre sitios",
-      "Fallos de hardware en memoria RAM",
-      "Pérdida de sesión por timeout de red"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "2. ¿Cuál fue el factor técnico determinante que permitió la exfiltración masiva de datos personales en el incidente de seguridad de 2017 de una agencia crediticia estadounidense?",
+    question: "1. ¿Cuál fue el factor técnico determinante que permitió la exfiltración masiva de datos personales en el incidente de seguridad de 2017 de una agencia crediticia estadounidense?",
     options: [
       "Implementación defectuosa de Multi-Factor Authentication en el acceso administrativo",
       "Falta de aplicación oportuna de una actualización crítica de seguridad en un framework web",
@@ -34,7 +24,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "3. ¿Qué característica distintiva define el funcionamiento de la criptografía simétrica?",
+    question: "2. ¿Qué característica distintiva define el funcionamiento de la criptografía simétrica?",
     options: [
       "Utiliza dos claves diferentes, una para cifrar y otra para descifrar",
       "Utiliza una única clave compartida tanto para cifrar como para descifrar los datos",
@@ -44,7 +34,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "4. ¿Qué modelo de control de acceso asigna permisos a usuarios basándose en funciones organizacionales predeterminadas?",
+    question: "3. ¿Qué modelo de control de acceso asigna permisos a usuarios basándose en funciones organizacionales predeterminadas?",
     options: [
       "Control de acceso basado en discreción del propietario",
       "Control de acceso basado en roles asignados",
@@ -54,7 +44,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "5. ¿Qué concepto describe la capacidad de un sistema para gestionar múltiples tareas cuya ejecución se intercala en el tiempo compartiendo el procesador, sin necesidad de ejecutarse simultáneamente?",
+    question: "4. ¿Qué concepto describe la capacidad de un sistema para gestionar múltiples tareas cuya ejecución se intercala en el tiempo compartiendo el procesador, sin necesidad de ejecutarse simultáneamente?",
     options: [
       "Paralelismo, que requiere múltiples núcleos ejecutando tareas al mismo tiempo",
       "Concurrencia, que permite intercalar la ejecución de varias tareas en el tiempo",
@@ -64,7 +54,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "6. ¿En cuál estado del ciclo de vida de un proceso se encuentra cuando ha sido admitido por el sistema operativo pero aún no dispone de tiempo de CPU?",
+    question: "5. ¿En cuál estado del ciclo de vida de un proceso se encuentra cuando ha sido admitido por el sistema operativo pero aún no dispone de tiempo de CPU?",
     options: [
       "Estado de creación inicial",
       "Estado de espera por recurso o evento externo",
@@ -74,7 +64,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "7. ¿Cuál es la definición técnica de un demonio o servicio del sistema operativo?",
+    question: "6. ¿Cuál es la definición técnica de un demonio o servicio del sistema operativo?",
     options: [
       "Un segmento de memoria compartida entre múltiples procesos en ejecución",
       "Un proceso en segundo plano sin interfaz visual que proporciona servicios al sistema",
@@ -84,7 +74,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "8. ¿Qué mecanismo de comunicación entre procesos enlaza directamente la salida estándar de un proceso con la entrada estándar de otro?",
+    question: "7. ¿Qué mecanismo de comunicación entre procesos enlaza directamente la salida estándar de un proceso con la entrada estándar de otro?",
     options: [
       "Sistema de señales del SO",
       "Conductos o tuberías de datos",
@@ -94,7 +84,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "9. ¿Cuál es la situación de bloqueo permanente que ocurre cuando dos o más procesos e hilos quedan mutuamente a la espera de recursos que poseen los demás?",
+    question: "8. ¿Cuál es la situación de bloqueo permanente que ocurre cuando dos o más procesos e hilos quedan mutuamente a la espera de recursos que poseen los demás?",
     options: [
       "Una planificación subóptima de tareas de baja prioridad",
       "Un círculo de espera donde ninguna entidad puede progresar",
@@ -104,7 +94,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "10. ¿Cuál fue la solución técnica implementada por la NASA para resolver un problema de prioridad inversa en la sonda Mars Pathfinder?",
+    question: "9. ¿Cuál fue la solución técnica implementada por la NASA para resolver un problema de prioridad inversa en la sonda Mars Pathfinder?",
     options: [
       "Modificación de la herencia de prioridades en el planificador",
       "Cambio del gestor de inicio de sistema operativo",
@@ -114,27 +104,7 @@ const questions: Question[] = [
     correctAnswer: 0
   },
   {
-    question: "11. ¿Cuál es la principal ventaja de implementar la interfaz Runnable en lugar de extender la clase Thread en Java?",
-    options: [
-      "Permite reiniciar la ejecución múltiples veces en el mismo hilo",
-      "Java no permite herencia múltiple y Runnable proporciona mayor flexibilidad arquitectónica",
-      "Garantiza un orden determinista de ejecución entre hilos",
-      "Elimina completamente la intervención del planificador de la JVM"
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "12. ¿Qué estado exacto adopta un hilo Java según la API de Thread.State cuando ejecuta Thread.sleep(5000)?",
-    options: [
-      "NEW, ya que el hilo queda pendiente de reinicio",
-      "BLOCKED, esperando adquirir el monitor de un objeto",
-      "TIMED_WAITING, pausado durante un intervalo de tiempo definido",
-      "TERMINATED, tras completar su ejecución temporal"
-    ],
-    correctAnswer: 2
-  },
-  {
-    question: "13. ¿Por qué AtomicInteger se considera superior a synchronized en operaciones sobre contadores compartidos?",
+    question: "10. ¿Por qué AtomicInteger se considera superior a synchronized en operaciones sobre contadores compartidos?",
     options: [
       "Porque permite suspender y reanudar hilos de forma selectiva.",
       "Porque realiza operaciones atómicas mediante CAS (Compare-And-Swap) sin bloqueos explícitos, mejorando la escalabilidad.",
@@ -144,7 +114,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "14. ¿En qué nivel del modelo TCP/IP reside la responsabilidad de determinar la ruta que deben seguir los datos entre dos redes diferentes?",
+    question: "11. ¿En qué nivel del modelo TCP/IP reside la responsabilidad de determinar la ruta que deben seguir los datos entre dos redes diferentes?",
     options: [
       "En la capa de Aplicación, donde se ejecutan los navegadores y servidores web.",
       "En la capa de Transporte, donde operan TCP y UDP.",
@@ -154,7 +124,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "15. En un servidor de mensajería instantánea con soporte store-and-forward, ¿qué ocurre cuando el receptor está temporalmente desconectado?",
+    question: "12. En un servidor de mensajería instantánea con soporte store-and-forward, ¿qué ocurre cuando el receptor está temporalmente desconectado?",
     options: [
       "Se rechaza el mensaje y se notifica al remitente del error.",
       "El servidor almacena el mensaje y lo entrega al reconectarse el receptor.",
@@ -164,7 +134,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "16. ¿Cuál es la clase fundamental en Java para implementar un servidor que acepte conexiones TCP de múltiples clientes?",
+    question: "13. ¿Cuál es la clase fundamental en Java para implementar un servidor que acepte conexiones TCP de múltiples clientes?",
     options: [
       "Socket, que representa una conexión cliente-servidor establecida.",
       "ServerSocket, que escucha en un puerto y acepta conexiones entrantes.",
@@ -174,7 +144,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "17. En juegos de acción multijugador, ¿por qué se prefiere UDP frente a TCP para transmitir las posiciones y movimientos de los jugadores?",
+    question: "14. En juegos de acción multijugador, ¿por qué se prefiere UDP frente a TCP para transmitir las posiciones y movimientos de los jugadores?",
     options: [
       "Porque UDP garantiza entrega ordenada y completa de todos los paquetes.",
       "Porque UDP tiene menor latencia al no esperar confirmación, permitiendo experiencia en tiempo real fluida.",
@@ -184,7 +154,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "18. ¿Cuál es el propósito principal de utilizar un ExecutorService o Thread Pool en un servidor que atiende múltiples clientes?",
+    question: "15. ¿Cuál es el propósito principal de utilizar un ExecutorService o Thread Pool en un servidor que atiende múltiples clientes?",
     options: [
       "Garantizar que todos los clientes reciban respuesta exactamente en el mismo momento.",
       "Reutilizar hilos del pool para manejar diferentes clientes, evitando la creación costosa de hilos nuevos.",
@@ -194,7 +164,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "19. ¿Cuál es el puerto estándar utilizado por servidores HTTPS para recibir conexiones seguras cifradas?",
+    question: "16. ¿Cuál es el puerto estándar utilizado por servidores HTTPS para recibir conexiones seguras cifradas?",
     options: [
       "El puerto 80, destinado a tráfico HTTP sin cifrar.",
       "El puerto 8443, usado principalmente en desarrollo local y servidores proxy.",
@@ -204,7 +174,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "20. ¿Cuál es la configuración mínima recomendada para garantizar comunicaciones seguras en aplicaciones modernas?",
+    question: "17. ¿Cuál es la configuración mínima recomendada para garantizar comunicaciones seguras en aplicaciones modernas?",
     options: [
       "Usar SSL sin validación de certificados para simplificar la configuración.",
       "Activar TLSv1.0 para compatibilidad con sistemas antiguos.",
@@ -214,37 +184,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "21. En el patrón cliente-servidor, ¿cuál es la responsabilidad principal del cliente en el establecimiento de la comunicación?",
-    options: [
-      "Esperar pasivamente en un puerto a que el servidor envíe una solicitud.",
-      "Iniciar la conexión hacia el servidor e enviar la solicitud de servicio.",
-      "Encaminar los paquetes entre múltiples redes usando algoritmos de routing.",
-      "Almacenar permanentemente los datos del servidor para responder más rápido."
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "22. ¿Qué herramienta de línea de comandos es más adecuada para verificar qué puertos están escuchando conexiones en el sistema local?",
-    options: [
-      "ping, para enviar solicitudes ICMP y medir latencia.",
-      "netstat o ss, para listar conexiones activas y puertos en escucha.",
-      "Wireshark, para capturar y analizar tráfico de red a nivel de paquete.",
-      "traceroute, para determinar la ruta que toman los paquetes hacia un destino."
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "23. ¿Qué característica fundamental diferencia a UDP de TCP en relación con la entrega de datos?",
-    options: [
-      "UDP garantiza que todos los datagramas lleguen en el orden exacto de envío.",
-      "UDP es un protocolo sin conexión que no garantiza entrega ni orden de los datos.",
-      "UDP requiere que el servidor use un puerto específico como 443.",
-      "UDP serializa automáticamente los objetos Java antes de transmitirlos."
-    ],
-    correctAnswer: 1
-  },
-  {
-    question: "24. ¿Qué conjunto de propiedades define exclusivamente a las funciones hash criptográficas frente a otras funciones de resumen?",
+    question: "18. ¿Qué conjunto de propiedades define exclusivamente a las funciones hash criptográficas frente a otras funciones de resumen?",
     options: [
       "Salida de longitud variable, reversibles mediante clave pública y resistentes a colisiones",
       "Salida de longitud fija, deterministas, irreversibles y resistentes a colisiones",
@@ -254,7 +194,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "25. ¿Qué plataforma proporciona certificados X.509 de corta duración sin coste y con renovación automatizada?",
+    question: "19. ¿Qué plataforma proporciona certificados X.509 de corta duración sin coste y con renovación automatizada?",
     options: [
       "OpenSSL, un conjunto de herramientas de criptografía",
       "Let's Encrypt, una autoridad certificadora no comercial",
@@ -264,7 +204,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "26. ¿Cuál es la práctica actual de mayor efectividad para aumentar la resistencia de una cuenta de usuario ante robo de credenciales?",
+    question: "20. ¿Cuál es la práctica actual de mayor efectividad para aumentar la resistencia de una cuenta de usuario ante robo de credenciales?",
     options: [
       "Aumentar la complejidad de la contraseña cada mes",
       "Implementar autenticación multifactor con segundos factores independientes",
@@ -274,7 +214,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "27. ¿Qué concepto de seguridad establece que los usuarios deben recibir únicamente los permisos imprescindibles para realizar sus funciones?",
+    question: "21. ¿Qué concepto de seguridad establece que los usuarios deben recibir únicamente los permisos imprescindibles para realizar sus funciones?",
     options: [
       "Principio de disponibilidad total",
       "Principio del menor privilegio",
@@ -284,7 +224,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "28. En sistemas distribuidos, ¿cuál es el mecanismo fundamental mediante el cual los nodos independientes intercambian información?",
+    question: "22. En sistemas distribuidos, ¿cuál es el mecanismo fundamental mediante el cual los nodos independientes intercambian información?",
     options: [
       "Memoria compartida sincronizada en tiempo real",
       "Paso de mensajes entre procesos",
@@ -304,7 +244,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "30. ¿Qué mecanismo de aislamiento utiliza Google Chrome para contener el impacto de vulnerabilidades en componentes del navegador?",
+    question: "23. ¿Qué mecanismo de aislamiento utiliza Google Chrome para contener el impacto de vulnerabilidades en componentes del navegador?",
     options: [
       "Proceso único compartido para todas las pestañas y extensiones",
       "Aislamiento mediante procesos separados y sandboxing",
@@ -314,7 +254,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "31. ¿Cuál es el sistema de paso de mensajes utilizado por systemd para la comunicación interuproceso en sistemas Linux modernos?",
+    question: "24. ¿Cuál es el sistema de paso de mensajes utilizado por systemd para la comunicación interuproceso en sistemas Linux modernos?",
     options: [
       "FTP para protocolo de transferencia de archivos",
       "D-Bus para comunicación de mensajes de sistema",
@@ -324,7 +264,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "32. ¿Qué señal del SO (POSIX) solicita la terminación ordenada de un proceso permitiendo liberar recursos?",
+    question: "25. ¿Qué señal del SO (POSIX) solicita la terminación ordenada de un proceso permitiendo liberar recursos?",
     options: [
       "SIGKILL (señal 9), que fuerza terminación inmediata",
       "SIGTERM (señal 15), que solicita término ordenado",
@@ -334,7 +274,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "33. ¿Cuál es la situación de inanición (starvation) en un contexto de concurrencia y planificación?",
+    question: "26. ¿Cuál es la situación de inanición (starvation) en un contexto de concurrencia y planificación?",
     options: [
       "Un proceso permanece bloqueado esperando mutuamente a otro proceso indefinidamente",
       "Un hilo nunca recibe los recursos o tiempo de CPU que necesita para ejecutarse",
@@ -344,7 +284,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "34. ¿Por qué en Java es generalmente preferible implementar la interfaz Runnable en lugar de extender la clase Thread?",
+    question: "27. ¿Por qué en Java es generalmente preferible implementar la interfaz Runnable en lugar de extender la clase Thread?",
     options: [
       "Porque Runnable permite reiniciar el mismo hilo múltiples veces",
       "Porque Java no soporta herencia múltiple, ofreciendo mayor flexibilidad arquitectónica",
@@ -354,7 +294,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "35. Cuando un hilo Java invoca Thread.sleep(3000) o wait(3000), ¿en cuál estado del ciclo de vida entra?",
+    question: "28. Cuando un hilo Java invoca Thread.sleep(3000) o wait(3000), ¿en cuál estado del ciclo de vida entra?",
     options: [
       "NEW, estado inicial no iniciado",
       "BLOCKED, esperando adquirir un lock",
@@ -364,7 +304,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "36. En la arquitectura de un servidor de juego multijugador con mundo persistente, ¿cuál es la función principal del pool de hilos dedicado al procesamiento de chunks?",
+    question: "29. En la arquitectura de un servidor de juego multijugador con mundo persistente, ¿cuál es la función principal del pool de hilos dedicado al procesamiento de chunks?",
     options: [
       "Gestionar la síntesis y reproducción de audio del servidor",
       "Cargar, generar y descargar fragmentos del mundo según la posición de los jugadores",
@@ -374,7 +314,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "37. En una arquitectura cliente-servidor, ¿cuál es el rol del cliente en el establecimiento de la comunicación?",
+    question: "30. En una arquitectura cliente-servidor, ¿cuál es el rol del cliente en el establecimiento de la comunicación?",
     options: [
       "Permanece en escucha en un puerto específico aguardando solicitudes entrantes.",
       "Inicia de forma activa la conexión hacia el servidor y envía la petición de servicio.",
@@ -384,7 +324,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "38. ¿Cuál es la utilidad principal de la herramienta netstat en el contexto de diagnóstico de conectividad de red?",
+    question: "31. ¿Cuál es la utilidad principal de la herramienta netstat en el contexto de diagnóstico de conectividad de red?",
     options: [
       "Genera tráfico de red para probar la capacidad de ancho de banda disponible.",
       "Captura y analiza paquetes a nivel de trama Ethernet y protocolo IP.",
@@ -394,7 +334,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "39. ¿Qué característica fundamental distingue a UDP del protocolo TCP?",
+    question: "32. ¿Qué característica fundamental distingue a UDP del protocolo TCP?",
     options: [
       "UDP garantiza la entrega ordenada de todos los paquetes mediante confirmación automática.",
       "UDP envía datagramas independientes sin establecer conexión previa y sin garantizar entrega ni orden.",
@@ -404,7 +344,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "40. Al desarrollar una aplicación que usa DatagramSocket en Java, ¿qué aspecto crítico debe validar el programador?",
+    question: "33. Al desarrollar una aplicación que usa DatagramSocket en Java, ¿qué aspecto crítico debe validar el programador?",
     options: [
       "Que el servidor escuche obligatoriamente en el puerto 8080 para compatibilidad global.",
       "Que cada datagrama no exceda el tamaño máximo permitido para evitar fragmentación indeseada.",
@@ -414,7 +354,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "41. ¿Qué clases de Java proporcionan una abstracción de sockets que incorpora cifrado TLS/SSL de forma transparente?",
+    question: "34. ¿Qué clases de Java proporcionan una abstracción de sockets que incorpora cifrado TLS/SSL de forma transparente?",
     options: [
       "DatagramSocket y DatagramPacket para transporte cifrado.",
       "SSLSocket y SSLServerSocket para conexiones TCP cifradas.",
@@ -424,7 +364,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "42. ¿En qué archivo de configuración de Apache Tomcat se especifica un conector HTTPS con certificado digital?",
+    question: "35. ¿En qué archivo de configuración de Apache Tomcat se especifica un conector HTTPS con certificado digital?",
     options: [
       "web.xml para declarar la configuración de seguridad de la aplicación web.",
       "pom.xml para gestionar las dependencias de seguridad del proyecto.",
@@ -434,7 +374,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "43. ¿Cuál es el comando SMTP que el cliente debe enviar para especificar quién recibirá el correo?",
+    question: "36. ¿Cuál es el comando SMTP que el cliente debe enviar para especificar quién recibirá el correo?",
     options: [
       "DATA para iniciar la transmisión del cuerpo del mensaje.",
       "MAIL FROM para indicar el remitente del correo.",
@@ -444,7 +384,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "44. ¿Qué protocolo de correo electrónico permite que los mensajes se mantengan sincronizados entre múltiples dispositivos y almacenados en el servidor?",
+    question: "37. ¿Qué protocolo de correo electrónico permite que los mensajes se mantengan sincronizados entre múltiples dispositivos y almacenados en el servidor?",
     options: [
       "POP3 que descarga y elimina los mensajes del servidor.",
       "SMTP que es exclusivamente para envío de correos.",
@@ -454,7 +394,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "45. ¿Cuál es la herramienta recomendada para construir y enviar peticiones HTTP manualmente sin escribir código de cliente?",
+    question: "38. ¿Cuál es la herramienta recomendada para construir y enviar peticiones HTTP manualmente sin escribir código de cliente?",
     options: [
       "Wireshark para capturar y analizar paquetes de red.",
       "Postman para componer y testear peticiones HTTP interactivamente.",
@@ -464,7 +404,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "46. En el patrón de servidor concurrente basado en hilos, ¿qué responsabilidad tiene cada Handler asignado a un cliente?",
+    question: "39. En el patrón de servidor concurrente basado en hilos, ¿qué responsabilidad tiene cada Handler asignado a un cliente?",
     options: [
       "Generar direcciones IP de forma dinámica para nuevos clientes.",
       "Gestionar toda la comunicación con su cliente asignado mientras el hilo principal continúa aceptando nuevas conexiones.",
@@ -474,7 +414,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "47. ¿Qué API de Java permite gestionar múltiples canales de comunicación simultáneamente usando un único hilo mediante la clase Selector?",
+    question: "40. ¿Qué API de Java permite gestionar múltiples canales de comunicación simultáneamente usando un único hilo mediante la clase Selector?",
     options: [
       "java.rmi para invocación remota de métodos.",
       "java.mail para gestión de correo electrónico.",
@@ -484,7 +424,7 @@ const questions: Question[] = [
     correctAnswer: 2
   },
   {
-    question: "48. En los servicios web SOAP, ¿qué documento XML describe formalmente la interfaz del servicio, incluyendo operaciones y tipos de datos?",
+    question: "41. En los servicios web SOAP, ¿qué documento XML describe formalmente la interfaz del servicio, incluyendo operaciones y tipos de datos?",
     options: [
       "JSON Schema para validar estructuras de datos en formato JSON.",
       "WSDL (Web Services Description Language) que define operaciones, parámetros y tipos.",
@@ -494,7 +434,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "49. ¿Cuál es el objetivo principal de aplicar el principio de 'security by design' en el desarrollo de software?",
+    question: "42. ¿Cuál es el objetivo principal de aplicar el principio de 'security by design' en el desarrollo de software?",
     options: [
       "Integrar medidas de seguridad únicamente en la fase de testing del proyecto",
       "Incorporar consideraciones de seguridad desde las fases iniciales del diseño y arquitectura",
@@ -504,7 +444,7 @@ const questions: Question[] = [
     correctAnswer: 1
   },
   {
-    question: "50. ¿Qué conjunto de ataques se mitiga directamente mediante una validación estricta de entrada que controle tipo, longitud, formato y rango de los datos recibidos?",
+    question: "43. ¿Qué conjunto de ataques se mitiga directamente mediante una validación estricta de entrada que controle tipo, longitud, formato y rango de los datos recibidos?",
     options: [
       "Ataques de fuerza bruta, sniffing de red y spoofing de direcciones MAC",
       "Inyección SQL, desbordamiento de búfer, falsificación de parámetros y manipulación de datos",
