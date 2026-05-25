@@ -25,7 +25,7 @@ const questions: Question[] = [
   },
   {
     question: "3. En la arquitectura cliente-servidor, ¿qué caracteriza al servidor?",
-    options: ["Es un proceso pasivo que escucha en un puerto", "Es un proceso pasivo que escucha en un puerto", "Se encarga de traducir nombres DNS", "Solo funciona con HTTP"],
+    options: ["Es un proceso pasivo que escucha en un puerto", "Es un proceso activo que escucha en un puerto", "Se encarga de traducir nombres DNS", "Solo funciona con HTTP"],
     correctAnswer: 0,
   },
   {
