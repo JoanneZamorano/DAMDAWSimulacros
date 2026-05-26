@@ -14,15 +14,155 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Desarrollo de Interfaces",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    "question": "¿Qué framework se utiliza en Java para crear aplicaciones de escritorio?",
+    "options": ["React Native", "Flutter", "JavaFX", ".NET MAUI"],
+    "correctAnswer": 2
   },
   {
-    question: "Pregunta de ejemplo 2 para Desarrollo de Interfaces",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    "question": "¿Qué tecnología está basada en el lenguaje Dart?",
+    "options": ["Flutter", "JavaFX", ".NET", "React"],
+    "correctAnswer": 0
   },
+  {
+    "question": "¿Qué componente transforma las acciones del usuario en eventos?",
+    "options": ["Backend", "GUI", "Base de datos", "Servidor"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué capa se encarga de almacenar y gestionar la información?",
+    "options": ["Eventos", "Interfaz gráfica", "Datos y servicios", "Usuario"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué ayuda a disminuir la carga cognitiva en una interfaz?",
+    "options": ["Más colores", "Jerarquía visual", "Mayor código", "Backend"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué representa fx:id en JavaFX?",
+    "options": ["Una excepción", "Un identificador de componente", "Un estilo visual", "Una animación"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué facilita la creación rápida de prototipos visuales?",
+    "options": ["Depuración", "Editores visuales", "Backend", "Programación manual"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué programa se emplea normalmente con JavaFX para diseñar interfaces?",
+    "options": ["Photoshop", "Excel", "Scene Builder", "Blender"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué significa el concepto WYSIWYG?",
+    "options": ["Editor visual", "Código optimizado", "Lenguaje compilado", "Framework web"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Cuál de estas afirmaciones es incorrecta sobre los editores visuales?",
+    "options": ["Separan diseño y lógica", "Aumentan la productividad", "Generan siempre código desordenado", "Permiten diseñar más rápido"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué lenguaje declarativo se utiliza con frecuencia para definir interfaces?",
+    "options": ["Python", "Java", "XML", "C++"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué tipo de archivo usa JavaFX para definir interfaces gráficas?",
+    "options": ["JSON", "FXML", "HTML", "TXT"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué describe principalmente un archivo XML/FXML?",
+    "options": ["La lógica del programa", "La seguridad", "La estructura visual", "Las consultas SQL"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué efecto positivo tiene separar la interfaz de la lógica?",
+    "options": ["Más facilidad de mantenimiento", "Más errores", "Menor claridad", "Menos reutilización"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿En qué carpeta se guardan los layouts en Android?",
+    "options": ["src/layout", "res/layout", "res/java", "assets/xml"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué clase sirve de base para los controles en JavaFX?",
+    "options": ["Stage", "Object", "Control", "Node"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué ventaja principal tiene reutilizar componentes?",
+    "options": ["Más consumo de memoria", "Mayor cantidad de errores", "Uso en varios proyectos", "Más código repetido"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué propiedad suele tener un botón de “Me gusta”?",
+    "options": ["Liked", "Nombre", "EstadoUI", "Contador"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué ventaja aporta separar la apariencia de la lógica?",
+    "options": ["Mayor control visual", "Más memoria", "Más errores", "Menos flexibilidad"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Cómo define la ISO 9241 la usabilidad?",
+    "options": ["Velocidad del sistema", "Aspecto visual", "Nivel de efectividad, eficiencia y satisfacción", "Capacidad gráfica"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué aspecto NO pertenece directamente a la usabilidad?",
+    "options": ["Eficiencia", "Satisfacción", "Rendimiento técnico", "Efectividad"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué caracteriza al diseño minimalista?",
+    "options": ["Gran cantidad de botones", "Menos elementos innecesarios", "Uso excesivo de colores", "Más información visual"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué hace que una interfaz sea más fácil de entender visualmente?",
+    "options": ["Animaciones complejas", "Decoración", "Uso de iconos aleatorios", "Organización visual de la información"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Cuál es la finalidad de la simplicidad en diseño?",
+    "options": ["Incrementar opciones", "Reducir la carga cognitiva", "Añadir más elementos", "Usar más colores"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué sucede cuando una interfaz contiene demasiados elementos?",
+    "options": ["Aumenta la claridad", "Disminuye la confusión", "Genera mayor confusión", "Mejora la experiencia"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué se entiende por reporting en software?",
+    "options": ["Guardar información", "Transformar datos en documentos", "Optimizar procesos", "Crear interfaces"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué herramienta es muy utilizada en Java para generar informes?",
+    "options": ["Hibernate", "Spring", "JasperReports", "Docker"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué es un archivo JRXML?",
+    "options": ["Un script de base de datos", "Una plantilla de informe", "Código Java", "Un ejecutable"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué aporta principalmente la documentación en un proyecto software?",
+    "options": ["Mayor memoria", "Comunicación y comprensión", "Velocidad", "Diseño gráfico"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿A quién va dirigida la documentación de usuario?",
+    "options": ["Administradores", "Desarrolladores", "Usuarios finales", "Técnicos de red"],
+    "correctAnswer": 2
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
