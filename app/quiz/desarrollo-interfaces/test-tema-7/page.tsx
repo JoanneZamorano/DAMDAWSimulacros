@@ -192,7 +192,7 @@ export default function DesarrolloInterfacesSimulacro1Quiz() {
             <h1 className="text-4xl font-bold">
               <span className="text-foreground">Desarrollo de Interfaces</span>
             </h1>
-            <h2 className="text-xl text-muted-foreground">Simulacro I</h2>
+            <h2 className="text-xl text-muted-foreground">Test tema 7</h2>
             <p className="text-muted-foreground text-lg">Interfaces de usuario y usabilidad</p>
 
             <div className="space-y-4 text-left py-6">
