@@ -38,6 +38,14 @@ const secondYearSubjects = [
     tests: {
       testI: "/quiz/desarrollo-interfaces/test-1",
       testII: "/quiz/desarrollo-interfaces/test-2",
+      test_tema_1: "/quiz/desarrollo-interfaces/test-tema-1",
+      test_tema_2: "/quiz/desarrollo-interfaces/test-tema-2",
+      test_tema_3: "/quiz/desarrollo-interfaces/test-tema-3",
+      test_tema_4: "/quiz/desarrollo-interfaces/test-tema-4",
+      test_tema_5: "/quiz/desarrollo-interfaces/test-tema-5",
+      test_tema_6: "/quiz/desarrollo-interfaces/test-tema-6",
+      test_tema_7: "/quiz/desarrollo-interfaces/test-tema-7",
+      test_tema_8: "/quiz/desarrollo-interfaces/test-tema-8",
     },
     extraSimulacros: [
     { label: "Test Extra 1", link: "/quiz/desarrollo-interfaces/test-extra-1" },
