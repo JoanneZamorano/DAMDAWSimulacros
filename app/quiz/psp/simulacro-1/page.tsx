@@ -14,16 +14,306 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para PSP",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    "question": "1. ¿Qué significa aplicar el enfoque \"security by design\" en el desarrollo de software?",
+    "options": [
+      "Añadir medidas de seguridad sólo al final del proyecto",
+      "Pensar en la seguridad desde la concepción del software",
+      "Cifrar todos los archivos del sistema operativo",
+      "Sustituir la validación de datos por un antivirus"
+    ],
+    "correctAnswer": 1
   },
   {
-    question: "Pregunta de ejemplo 2 para PSP",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    "question": "2. ¿Por qué no se debe confiar automáticamente en los datos introducidos por un usuario en un formulario, una API o un archivo cargado?",
+    "options": [
+      "Porque siempre contienen errores de compilación",
+      "Porque pueden contener código malicioso diseñado para romper la aplicación",
+      "Porque Java no permite recibir datos externos",
+      "Porque los datos externos solo sirven para interfaces gráficas"
+    ],
+    "correctAnswer": 1
   },
-]
+  {
+    "question": "3. ¿Qué puede prevenir una validación estricta de tipo, longitud, formato y rango?",
+    "options": [
+      "Únicamente errores de compilación",
+      "Ataques como la inyección SQL o el XSS",
+      "La pérdida de conexión a internet",
+      "Los fallos físicos del disco duro"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "4. Según el material, ¿cuál es una práctica adecuada para almacenar contraseñas?",
+    "options": [
+      "Guardarlas en texto plano para recuperarlas fácilmente",
+      "Cifrarlas con la misma clave que todos los archivos del sistema",
+      "Aplicar hash con salting, usando técnicas como bcrypt o Argon2",
+      "Guardarlas únicamente en una variable temporal del programa"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "5. ¿Qué tres propiedades forman la triada CIA mencionada en programación segura?",
+    "options": [
+      "Compilación, instalación y actualización",
+      "Confidencialidad, integridad y disponibilidad",
+      "Cliente, interfaz y aplicación",
+      "Control, identificación y archivo"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "6. ¿Qué caracteristica define a la criptografia simétrica?",
+    "options": [
+      "Usa una clave pública y otra privada",
+      "Emplea una única clave compartida para cifrar y descifrar",
+      "No permite cifrar grandes volúmenes de datos",
+      "Solo se utiliza en firmas digitales"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "7. ¿Qué caracteriza a la criptografia asimétrica?",
+    "options": [
+      "Usa una única clave compartida entre emisor y receptor",
+      "Utiliza una clave pública y una clave privada relacionadas entre si",
+      "No puede utilizarse en comunicaciones por Internet",
+      "Solo sirve para comprimir archivos grandes"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "8. ¿Cuál es la finalidad principal de una función hash en seguridad?",
+    "options": [
+      "Crear una huella o resumen de datos de forma no reversible",
+      "Permitir descifrar cualquier mensaje con una clave privada",
+      "Sustituir completamente a los certificados digitales",
+      "Aumentar la velocidad de la tarjeta de red"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "9. ¿Qué protocolo se presenta en el documento como sustituto seguro de Telnet para conexiones remotas?",
+    "options": [
+      "FTP",
+      "HTTP",
+      "SSH",
+      "SMTP"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "10. ¿Qué protege principalmente HTTPS mediante TLS?",
+    "options": [
+      "La comunicación en tránsito entre cliente y servidor",
+      "La batería del equipo cliente",
+      "La estructura física del disco duro",
+      "La velocidad de ejecución de los hilos"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "11. ¿Qué modelo de control de accesos asigna permisos según roles predefinidos como administrador, editor o lector?",
+    "options": [
+      "DAC",
+      "MAC",
+      "RBAC",
+      "ABAC"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "12. Según el apartado de mitos y realidades, ¿por qué una contraseña fuerte no basta por si sola?",
+    "options": [
+      "Porque las contraseñas fuertes no pueden almacenarse en servidores",
+      "Porque los ataques de phishing o robo de credenciales siguen siendo posibles y conviene añadir medidas como MFA",
+      "Porque una contraseña fuerte impide usar cifrado",
+      "Porque las contraseñas fuertes solo funcionan en Linux"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "13. ¿Qué caracteriza a la concurrencia?",
+    "options": [
+      "Ejecutar siempre tareas al mismo tiempo en varios núcleos.",
+      "Gestionar múltiples tareas cuyos tiempos de ejecución se solapan.",
+      "Repartir una tarea entre varias máquinas por red.",
+      "Crear únicamente procesos en segundo plano."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "14. ¿Qué define mejor el paralelismo?",
+    "options": [
+      "La espera indefinida de un hilo bloqueado",
+      "La ejecución de tareas únicamente en un único núcleo",
+      "La ejecución simultánea real en hardware con varios núcleos o CPUs",
+      "La traducción de nombres de dominio a direcciones IP"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "15. ¿Qué añade la programación distribuida frente a la concurrencia dentro de una sola máquina?",
+    "options": [
+      "El uso obligatorio de una interfaz gráfica",
+      "La eliminación total de la latencia",
+      "La coordinación de varias máquinas conectadas por red mediante mensajes",
+      "La imposibilidad de que existan fallos parciales"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "16. ¿En qué estado está un proceso que está preparado para ejecutarse, pero espera su turno de CPU?",
+    "options": [
+      "Nuevo",
+      "Bloqueado",
+      "Listo",
+      "Terminado"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "17. ¿Cuál es la diferencia esencial entre un proceso y un hilo?",
+    "options": [
+      "Un proceso siempre comparte memoria y un hilo siempre tiene memoria aislada",
+      "Un proceso tiene espacio de memoria propio; un hilo comparte memoria y recursos del proceso",
+      "Un proceso solo existe en Windows y un hilo solo en Linux",
+      "No existe ninguna diferencia real entre ambos"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "18. ¿Qué es un servicio o daemon?",
+    "options": [
+      "Un hilo que comparte memoria con otros hilos.",
+      "Un proceso especial que se ejecuta en segundo plano, sin interfaz gráfica ni intervención del usuario.",
+      "Un mecanismo de IPC basado en colas de mensajes.",
+      "Un proceso que solo existe en sistemas Windows."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "19. ¿Qué mecanismo de IPC conecta la salida de un proceso con la entrada de otro?",
+    "options": [
+      "Señales",
+      "Tuberías (pipes)",
+      "Mutex",
+      "Barreras"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "20. ¿Qué representa el árbol de procesos de un sistema operativo?",
+    "options": [
+      "Una lista de archivos ordenados alfabéticamente",
+      "La relación jerárquica entre procesos padre y procesos hijo",
+      "El mapa físico de sectores del disco duro",
+      "La tabla de usuarios conectados por SSH"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "21. ¿Qué describe mejor un deadlock?",
+    "options": [
+      "Un hilo de baja prioridad que tarda mucho en ejecutarse.",
+      "Dos o más procesos o hilos bloqueados para siempre, esperando un recurso que otro posee.",
+      "Una técnica para acelerar tareas con varios núcleos.",
+      "Un proceso que ya ha liberado todos sus recursos."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "22. ¿Qué se entiende por inanición o starvation en concurrencia?",
+    "options": [
+      "Que un proceso termina correctamente y libera todos sus recursos",
+      "Que un proceso o hilo espera indefinidamente porque otros reciben siempre prioridad o recursos antes que él",
+      "Que el sistema operativo elimina todos los hilos de golpe",
+      "Que se ejecutan dos tareas exactamente al mismo tiempo"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "23. ¿Qué problema se produjo en la misión Mars Pathfinder antes de activar la solución?",
+    "options": [
+      "Una pérdida de señal por usar DNS incorrecto",
+      "Una inversión de prioridades que provocaba bloqueos y reinicios",
+      "Un fallo por no usar el puerto 443",
+      "Una incompatibilidad entre FTP y HTTP"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "24. ¿Qué práctica ayuda a reducir la probabilidad de deadlocks?",
+    "options": [
+      "Adquirir los bloqueos siempre en cualquier orden aleatorio",
+      "Definir un orden global de adquisición de bloqueos y usar timeouts cuando sea adecuado",
+      "Eliminar todos los logs de depuración",
+      "Crear un número ilimitado de hilos por cada tarea"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "25. ¿Por qué suele preferirse implementar Runnable frente a extender Thread?",
+    "options": [
+      "Porque Runnable permite reiniciar un mismo hilo varias veces.",
+      "Porque Java no soporta herencia múltiple y Runnable ofrece más flexibilidad.",
+      "Porque Runnable garantiza siempre un orden fijo de ejecución.",
+      "Porque Runnable evita por completo el uso del planificador de la JVM."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "26. Al crear una subclase de Thread en Java, ¿qué método se sobrescribe normalmente para definir la tarea del hilo?",
+    "options": [
+      "main()",
+      "sleep()",
+      "run()",
+      "equals()"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "27. ¿Qué diferencia hay entre llamar a start() y llamar directamente a run() sobre un objeto Thread?",
+    "options": [
+      "run() crea un hilo nuevo y start() no ejecuta nada",
+      "start() inicia un hilo nuevo; run() llamado directamente se ejecuta como una llamada normal en el hilo actual",
+      "Ambos métodos hacen exactamente lo mismo",
+      "start() solo puede usarse con DatagramSocket"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "28. Cuando en Java un hilo llama a Thread.sleep() o a wait(5000), ¿en qué estado entra?",
+    "options": [
+      "NEW",
+      "BLOCKED",
+      "TIMED_WAITING",
+      "TERMINATED"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "29. ¿Qué significa que el planificador de hilos de la JVM no sea determinista?",
+    "options": [
+      "Que los hilos no pueden ejecutarse nunca",
+      "Que Java prohíbe usar prioridades",
+      "Que el orden de ejecución siempre será idéntico",
+      "Que el orden final puede variar según el sistema operativo y la carga"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "30. ¿Qué ventaja aporta ExecutorService frente a crear hilos manualmente de forma continua?",
+    "options": [
+      "Impide que existan tareas concurrentes",
+      "Permite ejecutar solo un hilo en toda la aplicación",
+      "Gestiona un pool de hilos y facilita enviar tareas para su ejecución",
+      "Convierte automáticamente UDP en TCP"
+    ],
+    "correctAnswer": 2
+  }
+];
 
 function shuffleArray<T>(array: T[]): T[] {
   const newArray = [...array]
