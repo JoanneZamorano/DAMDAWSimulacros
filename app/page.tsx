@@ -52,8 +52,8 @@ const secondYearSubjects = [
     color: "bg-indigo-500",
     hoverBorder: "hover:border-indigo-500/50",
     simulacros: {
-      //simulacroI: "/quiz/psp/simulacro-1",
-      //simulacroII: "/quiz/psp/simulacro-2",
+      simulacroI: "/quiz/psp/simulacro-1",
+      simulacroII: "/quiz/psp/simulacro-2",
     },
     tests: {
       testI: "/quiz/psp/test-1",
