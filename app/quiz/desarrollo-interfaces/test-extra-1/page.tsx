@@ -41,7 +41,7 @@ const questions: Question[] = [
   {
     question: "6. ¿Cuál es la clase base de la que heredan la mayoría de componentes gráficos en JavaFX?",
     options: ["Object", "Stage", "Control", "Node"],
-    correctAnswer: 3,
+    correctAnswer: 2,
   },
   {
     question: "7. En JavaFX, cuando se utiliza FXML para definir la interfaz y una clase Java como controlador asociado mediante `fx:controller`, ¿qué patrón de diseño se aplica principalmente para separar la vista de la lógica de presentación?",
@@ -56,7 +56,7 @@ const questions: Question[] = [
   {
     question: "9. En un componente personalizable como LikeButton, ¿cuál de estos atributos es una propiedad estructural del componente?",
     options: ["Nombre", "Valor de likes", "Estado de interacción", "Identificador de usuario"],
-    correctAnswer: 0,
+    correctAnswer: 2,
   },
   {
     question: "10. ¿Cuál de estos aspectos NO constituye un pilar de la usabilidad en una aplicación?",
