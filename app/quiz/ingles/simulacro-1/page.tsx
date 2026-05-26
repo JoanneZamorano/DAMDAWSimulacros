@@ -14,15 +14,105 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Ingles",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    "question": "In a phone call, the phrase ‘I’ll call back later’ is used when ………….",
+    "options": ["you want to leave a message", "you will phone again at another time", "you are confirming a meeting", "you don’t understand"],
+    "correctAnswer": 1
   },
   {
-    question: "Pregunta de ejemplo 2 para Ingles",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    "question": "I have a ………… job, so I work from 9 to 5 every day.",
+    "options": ["part-time", "full-time", "temporary", "permanent"],
+    "correctAnswer": 1
   },
+  {
+    "question": "A ………… person works in a very organized and systematic way.",
+    "options": ["motivated", "self-driven", "methodical", "numerate"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "In an email, the phrase ‘Looking forward to your reply’ is used when ………….",
+    "options": ["no answer is needed", "you attach a document", "you expect a response", "you introduce yourself"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "In a phone call, the phrase ………… is used to ask the caller to wait for a moment.",
+    "options": ["Hold the line, please", "I’ll call again", "Can you repeat that?", "Who’s calling?"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Due to technical problems, they decided to ………… the meeting.",
+    "options": ["attend", "call off", "take off", "miss"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "In an email, the abbreviation FYI is used when ………….",
+    "options": ["you ask for help", "you make a complaint", "you give information for reference", "you close the email"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Employees can ………… in at any time between 8 and 10.",
+    "options": ["shift", "sign", "log", "clock"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "In a meeting, the phrase ‘Can I just come in here?’ is used when ………….",
+    "options": ["you agree", "you interrupt politely", "you finish the meeting", "you ask for clarification"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "In an email, the phrase ………… is used to close the message politely in both formal and informal situations.",
+    "options": ["Best regards", "Dear Sir or Madam", "Please find attached", "Just a quick note"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Can you ………… for a moment, please? I’ll put you through now.",
+    "options": ["pick up", "call back", "hang up", "hold on"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Tony is ………… of the IT department at a multinational company.",
+    "options": ["in charge", "confident", "responsible", "the manager for"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "My total ………… includes my salary and bonuses.",
+    "options": ["income", "overtime", "benefit", "wage"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "In a phone call, the phrase ………… is used to ask if a day is convenient for the other person.",
+    "options": ["Would Monday suit you?", "Does Monday come well to you?", "Is Monday coming good to you?", "Would Monday be suit?"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "In a meeting, you use the phrase ………… to disagree politely.",
+    "options": ["Of course not", "That’s ridiculous", "That’s absurd", "I’m afraid I can’t agree with you there"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "In an email, the phrase ………… is used as a friendly informal closing.",
+    "options": ["All the best", "Yours faithfully", "Yours sincerely", "Yours truly"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "When someone says ‘I’m afraid the line is busy’, it means that ………….",
+    "options": ["The person is not in the office", "The phone is broken", "The person is already on another call", "The call has ended"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "In an email, the phrase ‘I would be grateful if you could…” is used to ………….",
+    "options": ["Given an order", "Make a polite request", "Complain strongly", "Refuse a request"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "In a meeting, the phrase ………………… is used to show partial agreement before disagreeing.",
+    "options": ["I see your point, but…", "I completely agree", "That’s correct", "Exactly"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Sue is very good ………… dealing with complaints and solving problems.",
+    "options": ["with", "in", "on", "at"],
+    "correctAnswer": 3
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
