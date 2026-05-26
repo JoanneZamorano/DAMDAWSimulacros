@@ -56,7 +56,7 @@ const secondYearSubjects = [
     { label: "Test Tema 5", link: "/quiz/desarrollo-interfaces/test-tema-5" },
     { label: "Test Tema 6", link: "/quiz/desarrollo-interfaces/test-tema-6" },
     { label: "Test Tema 7", link: "/quiz/desarrollo-interfaces/test-tema-7" },
-    { label: "Test Tema 8", link: "/quiz/desarrollo-interfaces/test-tema-8" }
+    { label: "Test Tema 8", link: "/quiz/desarrollo-interfaces/test-tema-8" },
     { label: "Test Extra 1", link: "/quiz/desarrollo-interfaces/test-extra-1" },
     { label: "Test Extra 2", link: "/quiz/desarrollo-interfaces/test-extra-2" },
 
