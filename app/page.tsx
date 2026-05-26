@@ -38,18 +38,29 @@ const secondYearSubjects = [
     tests: {
       testI: "/quiz/desarrollo-interfaces/test-1",
       testII: "/quiz/desarrollo-interfaces/test-2",
-      test_tema_1: "/quiz/desarrollo-interfaces/test-tema-1",
-      test_tema_2: "/quiz/desarrollo-interfaces/test-tema-2",
-      test_tema_3: "/quiz/desarrollo-interfaces/test-tema-3",
-      test_tema_4: "/quiz/desarrollo-interfaces/test-tema-4",
-      test_tema_5: "/quiz/desarrollo-interfaces/test-tema-5",
-      test_tema_6: "/quiz/desarrollo-interfaces/test-tema-6",
-      test_tema_7: "/quiz/desarrollo-interfaces/test-tema-7",
-      test_tema_8: "/quiz/desarrollo-interfaces/test-tema-8",
+      //test_tema_1: "/quiz/desarrollo-interfaces/test-tema-1",
+      //test_tema_2: "/quiz/desarrollo-interfaces/test-tema-2",
+      //test_tema_3: "/quiz/desarrollo-interfaces/test-tema-3",
+      //test_tema_4: "/quiz/desarrollo-interfaces/test-tema-4",
+      //test_tema_5: "/quiz/desarrollo-interfaces/test-tema-5",
+      //test_tema_6: "/quiz/desarrollo-interfaces/test-tema-6",
+      //test_tema_7: "/quiz/desarrollo-interfaces/test-tema-7",
+      //test_tema_8: "/quiz/desarrollo-interfaces/test-tema-8",
     },
     extraSimulacros: [
+
+    { label: "Test Tema 1", link: "/quiz/desarrollo-interfaces/test-tema-1" },
+    { label: "Test Tema 2", link: "/quiz/desarrollo-interfaces/test-tema-2" },
+    { label: "Test Tema 3", link: "/quiz/desarrollo-interfaces/test-tema-3" },
+    { label: "Test Tema 4", link: "/quiz/desarrollo-interfaces/test-tema-4" },
+    { label: "Test Tema 5", link: "/quiz/desarrollo-interfaces/test-tema-5" },
+    { label: "Test Tema 6", link: "/quiz/desarrollo-interfaces/test-tema-6" },
+    { label: "Test Tema 7", link: "/quiz/desarrollo-interfaces/test-tema-7" },
+    { label: "Test Tema 8", link: "/quiz/desarrollo-interfaces/test-tema-8" }
     { label: "Test Extra 1", link: "/quiz/desarrollo-interfaces/test-extra-1" },
     { label: "Test Extra 2", link: "/quiz/desarrollo-interfaces/test-extra-2" },
+
+      
   ],
   },
   {
