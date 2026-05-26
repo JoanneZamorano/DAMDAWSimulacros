@@ -14,15 +14,155 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Desarrollo de Interfaces",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    "question": "¿Cuál de los siguientes elementos NO pertenece a una interfaz gráfica de usuario?",
+    "options": ["Etiquetas", "Ventanas", "Métodos de búsqueda", "Botones"],
+    "correctAnswer": 2
   },
   {
-    question: "Pregunta de ejemplo 2 para Desarrollo de Interfaces",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    "question": "¿Qué framework se utiliza principalmente para aplicaciones de escritorio en Java?",
+    "options": ["JavaFX", "Flutter", "React Native", ".NET MAUI"],
+    "correctAnswer": 0
   },
+  {
+    "question": "¿Qué tecnología está basada en el lenguaje C#?",
+    "options": ["React", "Flutter", ".NET MAUI", "JavaFX"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué herramienta de desarrollo emplea el lenguaje Dart?",
+    "options": ["React", ".NET", "JavaFX", "Flutter"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "¿Qué ventaja ofrecen los editores visuales de interfaces?",
+    "options": ["Gestionar bases de datos", "Diseñar mediante arrastrar y soltar", "Reducir el uso de RAM", "Crear servidores"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué tipo de archivo suele generar JavaFX para las interfaces?",
+    "options": ["JSON", "FXML", "HTML", "TXT"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué formato utiliza Android para definir interfaces gráficas?",
+    "options": ["FXML", "XML", "CSS", "CSV"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué beneficio tiene separar la lógica del diseño?",
+    "options": ["Mayor dificultad", "Más líneas de código", "Mejor mantenimiento del proyecto", "Menor reutilización"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Cuál es la función de FXMLLoader en JavaFX?",
+    "options": ["Aplicar animaciones", "Cargar archivos FXML", "Optimizar memoria", "Compilar código"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué representa la estructura jerárquica en XML?",
+    "options": ["La conexión de red", "La organización de la interfaz", "El sistema operativo", "La base de datos"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué permite la vista previa en un editor visual?",
+    "options": ["Ejecutar consultas SQL", "Visualizar la interfaz sin ejecutar", "Detectar virus", "Mejorar el rendimiento"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "En plataformas como Netflix, ¿qué puede representar el XML?",
+    "options": ["El diseño de los carruseles", "El motor de búsqueda", "Las contraseñas", "El almacenamiento"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué puede contener un archivo JAR?",
+    "options": ["Únicamente imágenes", "Clases y recursos del proyecto", "Sólo hojas de estilo", "Archivos XML únicamente"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué herramienta se usa habitualmente para gestionar dependencias?",
+    "options": ["Git", "Docker", "Maven o Gradle", "VirtualBox"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Cuál es una función principal de Maven?",
+    "options": ["Crear animaciones", "Gestionar bibliotecas y dependencias", "Diseñar interfaces", "Configurar redes"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué aporta una librería interna bien diseñada?",
+    "options": ["Mayor coherencia y productividad", "Más errores", "Duplicidad de código", "Menos reutilización"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué significa la visibilidad del estado del sistema en UX?",
+    "options": ["Que el usuario entienda lo que sucede", "Usar muchos colores", "Reducir ventanas", "Mostrar gráficos 3D"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué implica la correspondencia con el mundo real en diseño?",
+    "options": ["Utilizar lenguaje cercano al usuario", "Aplicar inteligencia artificial", "Usar efectos visuales", "Emplear animaciones complejas"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué principio de usabilidad facilita revertir acciones?",
+    "options": ["Minimalismo", "Consistencia", "Control y libertad del usuario", "Seguridad"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué define la consistencia en una interfaz?",
+    "options": ["Uso continuo de patrones similares", "Cambios constantes de diseño", "Animaciones avanzadas", "Uso exclusivo de iconos"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué problema aparece cuando no existe consistencia?",
+    "options": ["La interfaz es más clara", "El usuario debe aprender de nuevo", "Mejora la experiencia", "Disminuyen los errores"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué suelen utilizar compañías como Google para mantener uniformidad visual?",
+    "options": ["Sistemas de diseño", "Servidores dedicados", "Bases de datos", "Máquinas virtuales"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué separa JasperReports en los informes?",
+    "options": ["La lógica y la seguridad", "Los datos y el diseño visual", "El frontend y el backend", "El código y el hardware"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué determina la plantilla de un informe?",
+    "options": ["El comportamiento del servidor", "La estructura visual del documento", "La conexión a internet", "Los permisos de usuario"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué representa un DataSource en programación?",
+    "options": ["Una hoja de estilos", "Una fuente de datos", "Un botón", "Un controlador gráfico"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Cómo debe ser normalmente la documentación para usuarios?",
+    "options": ["Muy técnica", "Extensa y compleja", "Breve y comprensible", "Sólo visual"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué es la ayuda contextual en una aplicación?",
+    "options": ["Un tutorial externo", "Ayuda integrada dentro de la aplicación", "Un archivo ejecutable", "Un compilador"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué ventaja tiene una ayuda integrada adecuada?",
+    "options": ["Reduce la curva de aprendizaje", "Consume menos CPU", "Elimina errores de compilación", "Reduce la memoria RAM"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué describe la documentación de una API?",
+    "options": ["Aspectos técnicos para desarrolladores", "Diseños gráficos", "Tutoriales de usuario final", "Archivos multimedia"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué información suele incluir un archivo README?",
+    "options": ["Sólo ejemplos de código", "Instalación y funcionamiento básico", "Bases de datos completas", "Diseños CSS"],
+    "correctAnswer": 1
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
