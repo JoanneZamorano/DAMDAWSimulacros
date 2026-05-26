@@ -33,7 +33,7 @@ const secondYearSubjects = [
     hoverBorder: "hover:border-pink-500/50",
     simulacros: {
       simulacroI: "/quiz/desarrollo-interfaces/simulacro-1",
-      //simulacroII: "/quiz/desarrollo-interfaces/simulacro-2",
+      simulacroII: "/quiz/desarrollo-interfaces/simulacro-2",
     },
     tests: {
       testI: "/quiz/desarrollo-interfaces/test-1",
