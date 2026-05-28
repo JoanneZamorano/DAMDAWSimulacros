@@ -12,7 +12,7 @@ interface Question {
   correctAnswer: number
 }
 
-const questions2: Question[] = [
+const questions: Question[] = [
   {
     "question": "1. ¿Qué objetivo tiene la accesibilidad en apps móviles?",
     "options": ["Reducir batería", "Diseñar para todas las personas", "Mejorar gráficos", "Aumentar animaciones"],
