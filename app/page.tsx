@@ -106,7 +106,7 @@ const secondYearSubjects = [
     hoverBorder: "hover:border-amber-500/50",
     simulacros: {
       simulacroI: "/quiz/sistemas-gestion-empresarial/simulacro-1",
-      //simulacroII: "/quiz/sistemas-gestion-empresarial/simulacro-2",
+      simulacroII: "/quiz/sistemas-gestion-empresarial/simulacro-2",
     },
     tests: {
       testI: "/quiz/sistemas-gestion-empresarial/test-1",
