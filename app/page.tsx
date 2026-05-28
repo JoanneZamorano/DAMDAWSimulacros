@@ -85,6 +85,8 @@ const secondYearSubjects = [
     simulacros: {
       simulacroI: "/quiz/pmdm/simulacro-1",
       simulacroII: "/quiz/pmdm/simulacro-2",
+      simulacroII: "/quiz/pmdm/simulacro-3",
+      simulacroII: "/quiz/pmdm/simulacro-4",
     },
     tests: {
       testI: "/quiz/pmdm/test-1",
