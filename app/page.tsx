@@ -85,8 +85,8 @@ const secondYearSubjects = [
     simulacros: {
       simulacroI: "/quiz/pmdm/simulacro-1",
       simulacroII: "/quiz/pmdm/simulacro-2",
-      simulacroII: "/quiz/pmdm/simulacro-3",
-      simulacroII: "/quiz/pmdm/simulacro-4",
+      simulacroIII: "/quiz/pmdm/simulacro-3",
+      simulacroIV: "/quiz/pmdm/simulacro-4",
     },
     tests: {
       testI: "/quiz/pmdm/test-1",
@@ -411,6 +411,26 @@ export default function HomePage() {
                         </div>
                       )}
 
+                      {/* Simulacro III */}
+                        {subject.simulacros.simulacroIII ? (
+                          <Link
+                            href={subject.simulacros.simulacroIII}
+                            className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                          >
+                            → {subject.customLabels?.simulacroIII || "Simulacro III"}
+                          </Link>
+                        ) : null}
+                        
+                        {/* Simulacro IV */}
+                        {subject.simulacros.simulacroIV ? (
+                          <Link
+                            href={subject.simulacros.simulacroIV}
+                            className="block text-sm text-blue-500 hover:text-blue-400 hover:underline transition-colors"
+                          >
+                            → {subject.customLabels?.simulacroIV || "Simulacro IV"}
+                          </Link>
+                        ) : null}
+          
                       {/* Test I */}
                       {subject.tests.testI ? (
                         <Link
