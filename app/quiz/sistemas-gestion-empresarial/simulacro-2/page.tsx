@@ -14,15 +14,305 @@ interface Question {
 
 const questions: Question[] = [
   {
-    question: "Pregunta de ejemplo 1 para Sistemas de Gestion Empresarial",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 0,
+    "question": "¿Cuál es el principal objetivo de un ERP?",
+    "options": [
+      "Crear videojuegos",
+      "Gestionar redes sociales",
+      "Diseñar páginas web",
+      "Integrar y gestionar procesos empresariales"
+    ],
+    "correctAnswer": 3
   },
   {
-    question: "Pregunta de ejemplo 2 para Sistemas de Gestion Empresarial",
-    options: ["Opcion A", "Opcion B", "Opcion C", "Opcion D"],
-    correctAnswer: 1,
+    "question": "¿Qué significa CRM?",
+    "options": [
+      "Computer Relationship Module",
+      "Central Resource Manager",
+      "Customer Resource Machine",
+      "Customer Relationship Management"
+    ],
+    "correctAnswer": 3
   },
+  {
+    "question": "¿Qué ventaja ofrece la arquitectura SOA en Odoo?",
+    "options": [
+      "Eliminar bases de datos",
+      "Crear videojuegos",
+      "Flexibilidad modular",
+      "Sustituir APIs"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué base de datos utiliza Odoo normalmente?",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "Oracle",
+      "MongoDB"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué permite la modularidad en Odoo?",
+    "options": [
+      "Instalar solo funciones necesarias",
+      "Eliminar usuarios",
+      "Sustituir internet",
+      "Evitar actualizaciones"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué módulo se centra en la relación con clientes?",
+    "options": [
+      "Inventario",
+      "RRHH",
+      "CRM",
+      "Contabilidad"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué ocurre al validar una factura en Odoo?",
+    "options": [
+      "Se elimina",
+      "Se genera un asiento automático",
+      "Se reinicia el servidor",
+      "Se crea un usuario"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué herramienta permite probar APIs de Odoo?",
+    "options": [
+      "Photoshop",
+      "Blender",
+      "Postman",
+      "Canva"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué significa conciliación bancaria?",
+    "options": [
+      "Diseñar balances",
+      "Comparar movimientos bancarios y registros",
+      "Crear módulos",
+      "Gestionar empleados"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué vista visual destaca en el CRM de Odoo?",
+    "options": [
+      "Kanban",
+      "Árbol binario",
+      "Consola",
+      "Terminal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué fase del CRM ocurre antes de generar un pedido?",
+    "options": [
+      "Facturación",
+      "Calificación de oportunidades",
+      "Conciliación bancaria",
+      "Cierre contable"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué filosofía recomienda Odoo antes de programar?",
+    "options": [
+      "Programar todo",
+      "Configurar antes que programar",
+      "Usar solo XML",
+      "Eliminar módulos"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué archivo define dependencias y metadatos de un módulo Odoo?",
+    "options": [
+      "app.js",
+      "config.xml",
+      "manifest.py",
+      "index.php"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "¿Qué lenguaje se usa principalmente para la lógica de negocio en Odoo?",
+    "options": [
+      "Java",
+      "Python",
+      "C#",
+      "Swift"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué contiene normalmente la carpeta views/ en un módulo Odoo?",
+    "options": [
+      "Bases de datos",
+      "Archivos XML de interfaz",
+      "Archivos APK",
+      "Drivers"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué ventaja ofrece integrar Ventas y Contabilidad?",
+    "options": [
+      "Más duplicidades",
+      "Coherencia entre áreas comerciales y financieras",
+      "Menos automatización",
+      "Eliminar balances"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué representa el frontend en Odoo?",
+    "options": [
+      "La interfaz visual para el usuario",
+      "El servidor PostgreSQL",
+      "La lógica Python",
+      "El sistema operativo"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué problema suele evitar una buena migración de datos?",
+    "options": [
+      "Errores e incoherencias",
+      "Diseño web",
+      "Problemas gráficos",
+      "Eliminación de APIs"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué ventaja aporta la automatización contable?",
+    "options": [
+      "Más trabajo manual",
+      "Reducción de errores humanos",
+      "Menos integración",
+      "Más duplicidades"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué herramienta permite crear personalizaciones rápidas sin programar?",
+    "options": [
+      "Odoo Studio",
+      "VS Code",
+      "GitHub",
+      "pgAdmin"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué fase del ciclo de implantación analiza procesos actuales?",
+    "options": [
+      "Formación",
+      "Auditoría inicial",
+      "Go-Live",
+      "Facturación"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué objetivo tiene el análisis funcional?",
+    "options": [
+      "Diseñar videojuegos",
+      "Traducir procesos de negocio al ERP",
+      "Sustituir PostgreSQL",
+      "Eliminar APIs"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué se recomienda hacer antes del Go-Live?",
+    "options": [
+      "Eliminar usuarios",
+      "Realizar pruebas piloto",
+      "Desactivar módulos",
+      "Reiniciar servidores externos"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué hace el módulo CRM además de registrar clientes?",
+    "options": [
+      "Gestiona oportunidades y seguimiento comercial",
+      "Diseña hardware",
+      "Sustituir contabilidad",
+      "Gestiona videojuegos"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué herramienta visual sirve para documentar procesos?",
+    "options": [
+      "Miro",
+      "Spotify",
+      "VLC",
+      "Steam"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué ventaja tiene una arquitectura modular?",
+    "options": [
+      "Escalabilidad y adaptación",
+      "Menos integración",
+      "Más redundancia",
+      "Menos flexibilidad"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué aplicación sincroniza movimientos bancarios en Odoo?",
+    "options": [
+      "Odoo Dashboard",
+      "Bank Synchronization App",
+      "Odoo Shell",
+      "Pivot Tables"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué sucede cuando un presupuesto es confirmado en CRM?",
+    "options": [
+      "Se convierte en pedido de venta",
+      "Se elimina automáticamente",
+      "Se reinicia el sistema",
+      "Se genera un empleado"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué característica tienen los módulos en una arquitectura SOA?",
+    "options": [
+      "Son totalmente aislados",
+      "Son independientes pero se comunican",
+      "Solo funcionan offline",
+      "No usan APIs"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué lenguaje define formularios y vistas en Odoo?",
+    "options": [
+      "XML",
+      "Kotlin",
+      "SQL",
+      "Bash"
+    ],
+    "correctAnswer": 0
+  }
 ]
 
 function shuffleArray<T>(array: T[]): T[] {
