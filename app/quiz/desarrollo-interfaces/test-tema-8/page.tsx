@@ -24,7 +24,7 @@ const questions: Question[] = [
     "correctAnswer": 1
   },
   {
-    "question": "¿Qué caracteriza esta documentación?",
+    "question": "¿Qué caracteriza a la documentación de usuario?",
     "options": ["Técnica", "Compleja", "Clara y concisa", "Larga"],
     "correctAnswer": 2
   },
