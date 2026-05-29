@@ -91,7 +91,7 @@ const questions: Question[] = [
   {
     "question": "¿Qué clase sirve de base para los controles en JavaFX?",
     "options": ["Stage", "Object", "Control", "Node"],
-    "correctAnswer": 3
+    "correctAnswer": 2
   },
   {
     "question": "¿Qué ventaja principal tiene reutilizar componentes?",
