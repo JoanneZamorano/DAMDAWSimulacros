@@ -49,7 +49,7 @@ const questions: Question[] = [
     "correctAnswer": 2
   },
   {
-    "question": "¿Para quién es?",
+    "question": "¿Para quién es la documentación API?",
     "options": ["Usuarios", "Clientes", "Desarrolladores", "Admins"],
     "correctAnswer": 2
   },
