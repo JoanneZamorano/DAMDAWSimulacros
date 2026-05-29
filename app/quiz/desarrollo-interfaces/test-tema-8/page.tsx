@@ -39,7 +39,7 @@ const questions: Question[] = [
     "correctAnswer": 2
   },
   {
-    "question": "¿Qué reduce?",
+    "question": "¿Qué reduce la ayuda contextual?",
     "options": ["CPU", "Curva de aprendizaje", "Memoria", "Errores código"],
     "correctAnswer": 1
   },
