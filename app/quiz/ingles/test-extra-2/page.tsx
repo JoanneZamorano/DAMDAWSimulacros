@@ -82,7 +82,7 @@ const questions: Question[] = [
   {
     question: "15. My colleague is very good _______ numbers and financial data.",
     options: ["with", "on", "at", "in"],
-    correctAnswer: 2
+    correctAnswer: 0
   },
   {
     question: "16. She is very skilled _______ using Excel and data analysis.",
